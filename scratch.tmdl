@@ -1,0 +1,590 @@
+createOrReplace
+
+	table DimStudent
+		isHidden
+		lineageTag: 7a764764-31fd-47f9-b42b-140cae669a0a
+
+		column FirstGen
+			dataType: int64
+			isHidden
+			formatString: 0
+			lineageTag: cd65394b-5a8d-43f5-b57e-4fbdfa7d7478
+			summarizeBy: none
+			sourceColumn: FirstGen
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"DimStudent","TableItemName":"Students FirstGen","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+		column PellElig
+			dataType: string
+			isHidden
+			lineageTag: 301aa3b6-e75c-43a6-adc2-f763fbf9dcc7
+			summarizeBy: none
+			sourceColumn: PellElig
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"DimStudent","TableItemName":"Student Pell Eligibility","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+		column URP
+			dataType: int64
+			isHidden
+			formatString: 0
+			lineageTag: 4c864eaa-9da2-432a-9205-96f12e919082
+			summarizeBy: none
+			sourceColumn: URP
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"DimStudent","TableItemName":"Student URP","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+		column 'High School'
+			dataType: string
+			isHidden
+			lineageTag: f582a93a-bfaf-474e-be40-1be9ba41be37
+			summarizeBy: none
+			sourceColumn: High School
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'HS Grad Year'
+			dataType: int64
+			isHidden
+			formatString: 0
+			lineageTag: 83b692f9-0737-4862-8b2a-6a3dbe11ad9b
+			summarizeBy: none
+			sourceColumn: HS Grad Year
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'Previously Enrolled'
+			dataType: string
+			isHidden
+			lineageTag: b3065385-49af-4cd5-8a44-0a5341115aeb
+			summarizeBy: none
+			sourceColumn: Previously Enrolled
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"DimStudent","TableItemName":"Student Previously Enrolled","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+		column 'Student DE'
+			dataType: string
+			isHidden
+			lineageTag: 0272dd02-84e3-4022-83cb-7a471c82208e
+			summarizeBy: none
+			sourceColumn: Student DE
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"DimStudent","TableItemName":"Student DE Groups","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+		column Residency
+			dataType: string
+			isHidden
+			lineageTag: b568ffb0-14c9-4048-a380-732396e72729
+			summarizeBy: none
+			sourceColumn: Residency
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'Age Group'
+			dataType: string
+			isHidden
+			displayFolder: StudentAttributes
+			lineageTag: fb6b49c0-6e2b-4ba4-ae59-7337b6ae0b6c
+			summarizeBy: none
+			sourceColumn: Age Group
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column Term_Begin_Age
+			dataType: int64
+			isHidden
+			formatString: 0
+			lineageTag: 3305fc1d-6f25-481e-bbff-a2f1051cbab5
+			summarizeBy: none
+			sourceColumn: Term_Begin_Age
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column acadplan
+			dataType: string
+			isHidden
+			lineageTag: a5887f44-5586-4fb6-8efc-c5063d8fe438
+			summarizeBy: none
+			sourceColumn: acadplan
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column STRM
+			dataType: string
+			isHidden
+			lineageTag: 508018ce-1681-4a90-a437-0c0781712b80
+			summarizeBy: none
+			sourceColumn: STRM
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column EMPLID
+			dataType: string
+			isHidden
+			lineageTag: 994abb35-3560-4985-92cd-8f935e69ca66
+			isDefaultLabel
+			summarizeBy: none
+			sourceColumn: EMPLID
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'strm-stu key'
+			dataType: string
+			isHidden
+			isKey
+			lineageTag: dbe36618-424e-4a68-8894-22d68caa112d
+			summarizeBy: none
+			sourceColumn: strm-stu key
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column Race
+			dataType: string
+			isHidden
+			displayFolder: StudentAttributes
+			lineageTag: 1fd77d59-3511-40bd-bdd2-047e9f5bafb9
+			summarizeBy: none
+			sourceColumn: Race
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column FTIC
+			dataType: string
+			isHidden
+			displayFolder: StudentAttributes
+			lineageTag: 5fc4439e-0e49-40a8-9e25-ca1ad35c436a
+			summarizeBy: none
+			sourceColumn: FTIC
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column County
+			dataType: string
+			isHidden
+			displayFolder: StudentAttributes
+			lineageTag: 764620b0-85eb-4c36-b582-46f5cd7e407b
+			summarizeBy: none
+			sourceColumn: County
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'Service Area'
+			dataType: string
+			isHidden
+			lineageTag: fd2abc2b-7bd3-4b6b-b207-d3dd7706460e
+			summarizeBy: none
+			sourceColumn: Service Area
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"DimStudent","TableItemName":"Student Service Area","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+		column 'Military Status'
+			dataType: string
+			isHidden
+			displayFolder: StudentAttributes
+			lineageTag: 0e4b250b-85c2-48c3-a09a-99713c514fcc
+			summarizeBy: none
+			sourceColumn: Military Status
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'Academic Plan'
+			dataType: string
+			isHidden
+			displayFolder: StudentAttributes
+			lineageTag: 4b46da62-ef8e-4dfd-85bb-d8ce582f984c
+			summarizeBy: none
+			sourceColumn: Academic Plan
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column Degree
+			dataType: string
+			isHidden
+			displayFolder: StudentAttributes
+			lineageTag: 9098c5af-e8d7-4844-a7cb-6601e4ad86d9
+			summarizeBy: none
+			sourceColumn: Degree
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'Student DE Groups' = 
+				SWITCH(
+					TRUE,
+					ISBLANK('DimStudent'[Student DE]),
+					"(Blank)",
+					'DimStudent'[Student DE] IN {"1"},
+					"DE",
+					'DimStudent'[Student DE] IN {"0"},
+					"NonDE",
+					'DimStudent'[Student DE]
+				)
+			isHidden
+			displayFolder: StudentAttributes
+			lineageTag: e202f074-8261-4cab-a5fa-6ffa3249d837
+			summarizeBy: none
+
+			extendedProperty GroupingMetadata = 
+					{
+					  "version": 0,
+					  "groupedColumns": [
+					    {
+					      "Column": {
+					        "Expression": {
+					          "SourceRef": {
+					            "Entity": "DimStudent"
+					          }
+					        },
+					        "Property": "Student DE"
+					      }
+					    }
+					  ]
+					}
+
+			changedProperty = IsHidden
+
+			annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"d","Entity":"DimStudent"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Student DE"}}],"GroupItems":[{"DisplayName":"(Blank)","BlankDefaultPlaceholder":true},{"DisplayName":"DE","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Student DE"}}],"Values":[[{"Literal":{"Value":"'1'"}}]]}}},{"DisplayName":"NonDE","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Student DE"}}],"Values":[[{"Literal":{"Value":"'0'"}}]]}}}]}
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'Student Service Area' = 
+				SWITCH(
+					TRUE,
+					ISBLANK('DimStudent'[Service Area]),
+					"(Blank)",
+					'DimStudent'[Service Area] IN {"1"},
+					"InSvcArea",
+					"NotInSvcArea"
+				)
+			isHidden
+			displayFolder: StudentAttributes
+			lineageTag: 8edf987c-d788-490c-ade2-94ffc1810cc5
+			summarizeBy: none
+
+			extendedProperty GroupingMetadata = 
+					{
+					  "version": 0,
+					  "groupedColumns": [
+					    {
+					      "Column": {
+					        "Expression": {
+					          "SourceRef": {
+					            "Entity": "DimStudent"
+					          }
+					        },
+					        "Property": "Service Area"
+					      }
+					    }
+					  ]
+					}
+
+			changedProperty = IsHidden
+
+			annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"d","Entity":"DimStudent"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Service Area"}}],"GroupItems":[{"DisplayName":"(Blank)","BlankDefaultPlaceholder":true},{"DisplayName":"InSvcArea","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Service Area"}}],"Values":[[{"Literal":{"Value":"'1'"}}]]}}},{"DisplayName":"NotInSvcArea"}]}
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'Student Previously Enrolled' = 
+				SWITCH(
+					TRUE,
+					ISBLANK('DimStudent'[Previously Enrolled]),
+					"(Blank)",
+					'DimStudent'[Previously Enrolled] IN {"Y"},
+					"PrevEnrl",
+					"NotPrevEnrl"
+				)
+			isHidden
+			displayFolder: StudentAttributes
+			lineageTag: b6317c4a-63c0-4cc1-aeba-397bcc560530
+			summarizeBy: none
+
+			extendedProperty GroupingMetadata = 
+					{
+					  "version": 0,
+					  "groupedColumns": [
+					    {
+					      "Column": {
+					        "Expression": {
+					          "SourceRef": {
+					            "Entity": "DimStudent"
+					          }
+					        },
+					        "Property": "Previously Enrolled"
+					      }
+					    }
+					  ]
+					}
+
+			changedProperty = IsHidden
+
+			annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"d","Entity":"DimStudent"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Previously Enrolled"}}],"GroupItems":[{"DisplayName":"(Blank)","BlankDefaultPlaceholder":true},{"DisplayName":"PrevEnrl","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"Previously Enrolled"}}],"Values":[[{"Literal":{"Value":"'Y'"}}]]}}},{"DisplayName":"NotPrevEnrl"}]}
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'Student Pell Eligibility' = 
+				SWITCH(
+					TRUE,
+					ISBLANK('DimStudent'[PellElig]),
+					"(Blank)",
+					'DimStudent'[PellElig] IN {"1"},
+					"PellElig",
+					"NotPellElig"
+				)
+			isHidden
+			displayFolder: StudentAttributes
+			lineageTag: a33c9d69-6c66-4d37-91af-089cf485ff1c
+			summarizeBy: none
+
+			extendedProperty GroupingMetadata = 
+					{
+					  "version": 0,
+					  "groupedColumns": [
+					    {
+					      "Column": {
+					        "Expression": {
+					          "SourceRef": {
+					            "Entity": "DimStudent"
+					          }
+					        },
+					        "Property": "PellElig"
+					      }
+					    }
+					  ]
+					}
+
+			changedProperty = IsHidden
+
+			annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"d","Entity":"DimStudent"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"PellElig"}}],"GroupItems":[{"DisplayName":"(Blank)","BlankDefaultPlaceholder":true},{"DisplayName":"PellElig","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"PellElig"}}],"Values":[[{"Literal":{"Value":"'1'"}}]]}}},{"DisplayName":"NotPellElig"}]}
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'Students FirstGen' = 
+				SWITCH(
+					TRUE,
+					ISBLANK('DimStudent'[FirstGen]),
+					"(Blank)",
+					'DimStudent'[FirstGen] IN {1},
+					"FirstGen",
+					"NotFirstGen"
+				)
+			isHidden
+			formatString: 0
+			displayFolder: StudentAttributes
+			lineageTag: d2228427-0592-41eb-b509-adbdf47353a5
+			summarizeBy: none
+
+			extendedProperty GroupingMetadata = 
+					{
+					  "version": 0,
+					  "groupedColumns": [
+					    {
+					      "Column": {
+					        "Expression": {
+					          "SourceRef": {
+					            "Entity": "DimStudent"
+					          }
+					        },
+					        "Property": "FirstGen"
+					      }
+					    }
+					  ]
+					}
+
+			changedProperty = IsHidden
+
+			annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"d","Entity":"DimStudent"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"FirstGen"}}],"GroupItems":[{"DisplayName":"(Blank)","BlankDefaultPlaceholder":true},{"DisplayName":"FirstGen","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"FirstGen"}}],"Values":[[{"Literal":{"Value":"1L"}}]]}}},{"DisplayName":"NotFirstGen"}]}
+
+			annotation SummarizationSetBy = Automatic
+
+		column 'Student URP' = SWITCH(TRUE, ISBLANK('DimStudent'[URP]), "(Blank)", 'DimStudent'[URP] IN {1}, "URP", "NonURP")
+			isHidden
+			formatString: 0
+			displayFolder: StudentAttributes
+			lineageTag: 1e5dae4b-d7a5-4a4f-97ae-88a2ed8a994f
+			summarizeBy: none
+
+			extendedProperty GroupingMetadata = 
+					{
+					  "version": 0,
+					  "groupedColumns": [
+					    {
+					      "Column": {
+					        "Expression": {
+					          "SourceRef": {
+					            "Entity": "DimStudent"
+					          }
+					        },
+					        "Property": "URP"
+					      }
+					    }
+					  ]
+					}
+
+			changedProperty = IsHidden
+
+			annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"d","Entity":"DimStudent"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"URP"}}],"GroupItems":[{"DisplayName":"(Blank)","BlankDefaultPlaceholder":true},{"DisplayName":"URP","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"URP"}}],"Values":[[{"Literal":{"Value":"1L"}}]]}}},{"DisplayName":"NonURP"}]}
+
+			annotation SummarizationSetBy = Automatic
+
+		column Gender
+			dataType: string
+			isHidden
+			lineageTag: cb235745-4d69-4660-b329-0686ba78928f
+			summarizeBy: none
+			sourceColumn: Gender
+
+			changedProperty = IsHidden
+
+			annotation SummarizationSetBy = Automatic
+
+		partition DimStudent = m
+			mode: import
+			queryGroup: Load
+			source = ```
+					let
+						Source = IR_ENROLLMENT_W_VAR,
+						SelectedColumns = Table.SelectColumns(
+							Source,
+							{
+								"new_race",
+								"gender",
+								"firstgen",
+								"pellelig",
+								"nra",
+								"urp",
+								"HS_DESC",
+								"VX_IR_HS_GRAD_YR",
+								"FTIC",
+								"prvenrl",
+								"DE_FLAG",
+								"MILITARY_STATUS",
+								"RESIDENCY",
+								"Term_Age_Group",
+								"Term_Begin_Age",
+								"JURIS",
+								"acadplan",
+								"VX_IR_EXTRACT_TYPE",
+								"STRM",
+								"EMPLID"
+							}
+						),
+						FilterByStrm = FilterBySTRM(SelectedColumns),
+						AddStrmStuKey = Table.AddColumn(FilterByStrm, "strm-stu key", each [STRM] & "-" & [EMPLID], type text),
+						Deduplicated = Table.Distinct(AddStrmStuKey, {"strm-stu key"}),
+						RemovedExtractCol = Table.RemoveColumns(Deduplicated, {"VX_IR_EXTRACT_TYPE"}),
+						// Merge lookups
+						MergeRace = Table.NestedJoin(
+							RemovedExtractCol, {"new_race"}, TRANS_New_Race, {"new_race"}, "RaceTable", JoinKind.LeftOuter
+						),
+						MergeFTIC = Table.NestedJoin(
+							MergeRace, {"FTIC"}, TRANS_FTIC_Status, {"FTIC_STATUS"}, "FTICTable", JoinKind.LeftOuter
+						),
+						MergeJuris = Table.NestedJoin(MergeFTIC, {"JURIS"}, TRANS_JURIS_TBL, {"juris"}, "JurisTable", JoinKind.LeftOuter),
+						MergeMil = Table.NestedJoin(
+							MergeJuris, {"MILITARY_STATUS"}, TRANS_Mil_Code, {"Mil_Code"}, "MilTable", JoinKind.LeftOuter
+						),
+						// Expand
+						ExpandRace = Table.ExpandTableColumn(MergeMil, "RaceTable", {"new_race_descr"}, {"Race"}),
+						RemoveMergedCols1 = Table.RemoveColumns(ExpandRace, {"new_race", "FTIC", "MILITARY_STATUS", "JURIS"}),
+						ExpandFTIC = Table.ExpandTableColumn(RemoveMergedCols1, "FTICTable", {"FTIC_DESC"}, {"FTIC"}),
+						ExpandJuris = Table.ExpandTableColumn(
+							ExpandFTIC, "JurisTable", {"name", "svc_area_flag"}, {"County", "svc_area_flag"}
+						),
+						ExpandMil = Table.ExpandTableColumn(ExpandJuris, "MilTable", {"Mil_Name"}, {"Military Status"}),
+						// Merge with current active plans
+						MergePlans = Table.NestedJoin(
+							ExpandMil, {"acadplan"}, IR_CURRENT_ACTIVE_PLANS, {"ACAD_PLAN"}, "PlanTable", JoinKind.LeftOuter
+						),
+						ExpandPlans = Table.ExpandTableColumn(MergePlans, "PlanTable", {"DESCR", "DEGREE"}),
+						HasNewPlan = Table.SelectRows(ExpandPlans, each [DESCR] <> null),
+						HasOldPlan =
+							let
+								source = Table.SelectRows(ExpandPlans, each ([DESCR] = null)),
+								RemoveNullCols = Table.RemoveColumns(source, {"DESCR", "DEGREE"}),
+								RejoinOldPlans = Table.NestedJoin(
+									RemoveNullCols, {"acadplan"}, IR_ALL_PLANS, {"ACAD_PLAN"}, "PlanTable", JoinKind.LeftOuter
+								),
+								ExpandOldPlans = Table.ExpandTableColumn(RejoinOldPlans, "PlanTable", {"DESCR", "DEGREE"})
+							in
+								Table.Combine({HasNewPlan, ExpandOldPlans}),
+						#"Replaced Value" = Table.ReplaceValue(HasOldPlan, null, "NonDeg", Replacer.ReplaceValue, {"DEGREE"}),
+						#"Renamed Columns" = Table.RenameColumns(#"Replaced Value", {{"VX_IR_HS_GRAD_YR", "HS Grad Year"}}),
+						#"Removed Columns" = Table.RemoveColumns(#"Renamed Columns", {"nra"}),
+						#"Renamed Columns1" = Table.RenameColumns(
+							#"Removed Columns",
+							{
+								{"DEGREE", "Degree"},
+								{"DESCR", "Academic Plan"},
+								{"svc_area_flag", "Service Area"},
+								{"DE_FLAG", "Student DE"},
+								{"RESIDENCY", "Residency"},
+								{"Term_Age_Group", "Age Group"},
+								{"prvenrl", "Previously Enrolled"},
+								{"HS_DESC", "High School"},
+								{"firstgen", "FirstGen"},
+								{"pellelig", "PellElig"},
+								{"urp", "URP"},
+								{"gender", "Gender"}
+							}
+						)
+					in
+						#"Renamed Columns1"
+				```
+
+		changedProperty = IsHidden
+
+		annotation PBI_NavigationStepName = Navigation
+
+		annotation PBI_ResultType = Table

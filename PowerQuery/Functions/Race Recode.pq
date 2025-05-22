@@ -1,8 +1,11 @@
+//InputTable is name of previous step, ColumnName is name of column to be created
 let
-    race_recode = Table.AddColumn(
-        table_name,
-        //Replace with name of previous step
-        "Race",
+    RecodeRace = (InputTable as table, ColumnName as text) as table =>
+    Let
+    Recode = Table.AddColumn(
+        InputTable,
+        
+        ColumnName,
         each
             if [VX_IR_ETHNIC_3] = "Y" then
                 "Hispanic"
@@ -49,4 +52,6 @@ let
                 "Unknown"
     )
 in
-    race_recode
+    Recode
+    in
+    RecodeRace
