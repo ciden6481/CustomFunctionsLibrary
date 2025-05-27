@@ -1,15 +1,11 @@
 //Import IR_STUDENT table and perform transformations. Will be used to create DimStudent table.
 let
-    Source =
-        let
-            Source = Sql.Database("IAAS-INSTANTID\CARDS", "DATA"),
-            dbo_IR_STUDENT = Source{[Schema = "dbo", Item = "IR_STUDENT"]}[Data]
-        in
-            dbo_IR_STUDENT,
+    Source = Sql.Database("IAAS-INSTANTID\CARDS", "DATA"),
+    dbo_IR_STUDENT = Source{[Schema = "dbo", Item = "IR_STUDENT"]}[Data],
     //This function filters for F2 rows and strm values that exist in pre-filtered strm table, effectively creates a universal strm filter
-    FilterStrmF2 = FilterBySTRM(Source),
+    InvokeFilterByStrm = FilterBySTRM(dbo_IR_STUDENT),
     RemoveUnnecessaryColumns = Table.RemoveColumns(
-        FilterStrmF2,
+        InvokeFilterByStrm,
         {
             "INSTITUTION",
             "ACAD_CAREER",
