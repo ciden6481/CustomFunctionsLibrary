@@ -1,11 +1,17 @@
-//Import IR_STUDENT table and perform transformations. Will be used to create DimStudent table.
+// Import IR_STUDENT table and perform transformations. Will be used to create DimStudent table.
 let
+    // Step 1: Get source table (foldable)
     Source = Sql.Database("IAAS-INSTANTID\CARDS", "DATA"),
     dbo_IR_STUDENT = Source{[Schema = "dbo", Item = "IR_STUDENT"]}[Data],
-    //This function filters for F2 rows and strm values that exist in pre-filtered strm table, effectively creates a universal strm filter
-    InvokeFilterByStrm = FilterBySTRM(dbo_IR_STUDENT),
+    // Step 2: Get buffered list of valid STRM values
+    ValidSTRM = fx_GetValidSTRMList(),
+    // Step 3: Apply STRM + ExtractType filter inline (preserves folding)
+    FilteredTable = Table.SelectRows(
+        dbo_IR_STUDENT, each [STRM] <> null and List.Contains(ValidSTRM, [STRM]) and [VX_IR_EXTRACT_TYPE] = "F2"
+    ),
+    // Step 4: Remove unnecessary columns
     RemoveUnnecessaryColumns = Table.RemoveColumns(
-        InvokeFilterByStrm,
+        FilteredTable,
         {
             "INSTITUTION",
             "ACAD_CAREER",
@@ -64,7 +70,7 @@ let
             "CAMPUS"
         }
     ),
-    //Create primary key column
-    AddStrmStuKey = Table.AddColumn(RemoveUnnecessaryColumns, "strm-stu key", each [STRM] & "-" & [EMPLID])
+    // Step 5: Add surrogate key
+    AddStrmStuKey = Table.AddColumn(RemoveUnnecessaryColumns, "strm-stu key", each [STRM] & "-" & [EMPLID], type text)
 in
     AddStrmStuKey
