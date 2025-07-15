@@ -1,238 +1,63 @@
 let
-<<<<<<< HEAD
-    Source = IR_STUDENT,
-    #"Removed Columns" = Table.RemoveColumns(
-        Source,
+    Source = Sql.Database("IAAS-INSTANTID\CARDS", "DATA"),
+    IR_STUDENT = Source{[Schema = "dbo", Item = "IR_STUDENT"]}[Data],
+    InitialColumns = Table.SelectColumns(
+        IR_STUDENT,
         {
-            "INSTITUTION",
-            "ACAD_CAREER",
-            "RUNDATE",
-            "NATIONAL_ID",
-            "DRIVERS_LIC_NBR",
-            "VX_IR_DR_LIC_STATE",
-            "VX_IR_VA_COLLG_ID",
-            "VX_IR_VA_ST_TST_ID",
-            "ACAD_PROG",
-            "VX_IR_FA_ACAD_PLAN",
-            "VX_IR_INIT_PROG",
+            "STRM",
+            "EMPLID",
             "FIRST_NAME",
             "LAST_NAME",
             "MIDDLE_NAME",
             "NAME_SUFFIX",
+            "SEX",
+            "COUNTY",
             "ADDRESS1",
             "ADDRESS2",
             "CITY",
             "STATE",
             "POSTAL",
-            "EXT_ORG_ID",
-            "STATE2",
-            "ATP_CD",
-            "EXT_GPA",
-            "ACAD_LEVEL_BOT",
-            "BIRTHCOUNTRY",
-            // "FICE_CD",
-            "VX_IR_CITZEN_CNTRY",
-            "TUITION_RES",
-            "TUITION_EXCPT",
-            "ETHNIC_GRP_CD",
-            "HISP_LATINO",
-            "VX_HIGHEST_EDU",
-            "VX_HIGHEST_EDU_1",
-            "VC_JURIS_CODE",
-            "FERPA",
-            "TERM_BEGIN_DT",
-            "TERM_END_DT",
-            "CENSUS_DT",
-            "VX_IR_TKN_GPA_ST",
-            "VX_IR_CUM_GPA_ST",
-            "VX_IR_CUM_ATMTP_ST",
-            "VX_IR_CUM_ERN_ST",
-            "FA_LOAD",
-            //"FA_STATUS_CODE_14",
-            //"VX_FA_ACTIVITY",
-            "VX_PROGPLAN_ISSUES",
-            "VX_IR_GREAT_EXP",
-            "VX_IR_XSSC",
-            "ADMIT_TERM",
-            "CIP_CODE",
-            "STDNT_CAR_NBR"
+            "VX_IR_HS_GRAD_YR",
+            "BIRTHDATE",
+            "ACAD_PLAN",
+            "VX_IR_ETHNIC_1",
+            "VX_IR_ETHNIC_2",
+            "VX_IR_ETHNIC_3",
+            "VX_IR_ETHNIC_4",
+            "VX_IR_ETHNIC_5",
+            "VX_IR_ETHNIC_6",
+            "VX_IR_ETHNIC_7",
+            "VX_XDUL_ATTRIBUTE",
+            "VX_IR_EXTRACT_TYPE",
+            "RUNDATE"
         }
     ),
-    #"Filtered Rows" = Table.SelectRows(#"Removed Columns", each ([VX_IR_EXTRACT_TYPE] = "F2")),
-    #"Added Custom" = Table.AddColumn(#"Filtered Rows", "strm-stud key", each [STRM] & "-" & [EMPLID]),
-    #"Removed Duplicates" = Table.Distinct(#"Added Custom", {"strm-stud key"}),
-    #"Added Conditional Column" = Table.AddColumn(
-        #"Removed Duplicates",
-        "Term DE",
-        each
-            if [ACAD_PLAN] = "041" then
-                1
-            else if [ACAD_PLAN] = "042" then
-                1
-            else if [ACAD_PLAN] = "043" then
-                1
-            else if [VX_XDUL_ATTRIBUTE] = "Y" then
-                1
-            else
-                0
-    ),
-    #"Removed Columns1" = Table.RemoveColumns(#"Added Conditional Column", {"VX_XDUL_ATTRIBUTE"}),
-    race_recode = Table.AddColumn(
-        #"Removed Columns1",
-        //Replace with name of previous step
-        "Race",
-        each
-            if [VX_IR_ETHNIC_3] = "Y" then
-                "Hispanic"
-            else if
-                [VX_IR_ETHNIC_1] = "N"
-                and [VX_IR_ETHNIC_2] = "N"
-                and [VX_IR_ETHNIC_3] = "N"
-                and [VX_IR_ETHNIC_4] = "N"
-                and [VX_IR_ETHNIC_5] = "N"
-                and [VX_IR_ETHNIC_7] = "N"
-            then
-                "Unknown"
-            else if [VX_IR_ETHNIC_6] = "Y" then
-                "Not Specified"
-            else if
-                ([VX_IR_ETHNIC_1] = "Y" and [VX_IR_ETHNIC_2] = "Y")
-                or ([VX_IR_ETHNIC_1] = "Y" and [VX_IR_ETHNIC_4] = "Y")
-                or ([VX_IR_ETHNIC_1] = "Y" and [VX_IR_ETHNIC_7] = "Y")
-                or ([VX_IR_ETHNIC_1] = "Y" and [VX_IR_ETHNIC_5] = "Y")
-                or ([VX_IR_ETHNIC_1] = "Y" and [VX_IR_ETHNIC_6] = "Y")
-                or ([VX_IR_ETHNIC_4] = "Y" and [VX_IR_ETHNIC_2] = "Y")
-                or ([VX_IR_ETHNIC_4] = "Y" and [VX_IR_ETHNIC_7] = "Y")
-                or ([VX_IR_ETHNIC_4] = "Y" and [VX_IR_ETHNIC_5] = "Y")
-                or ([VX_IR_ETHNIC_4] = "Y" and [VX_IR_ETHNIC_6] = "Y")
-                or ([VX_IR_ETHNIC_7] = "Y" and [VX_IR_ETHNIC_2] = "Y")
-                or ([VX_IR_ETHNIC_7] = "Y" and [VX_IR_ETHNIC_5] = "Y")
-                or ([VX_IR_ETHNIC_7] = "Y" and [VX_IR_ETHNIC_6] = "Y")
-                or ([VX_IR_ETHNIC_5] = "Y" and [VX_IR_ETHNIC_2] = "Y")
-                or ([VX_IR_ETHNIC_2] = "Y" and [VX_IR_ETHNIC_6] = "Y")
-                or ([VX_IR_ETHNIC_5] = "Y" and [VX_IR_ETHNIC_6] = "Y")
-            then
-                "Two or more"
-            else if [VX_IR_ETHNIC_1] = "Y" then
-                "White"
-            else if [VX_IR_ETHNIC_2] = "Y" then
-                "Black/African American"
-            else if [VX_IR_ETHNIC_4] = "Y" then
-                "Asian"
-            else if [VX_IR_ETHNIC_5] = "Y" then
-                "American Indian/Alaskan Native"
-            else if [VX_IR_ETHNIC_7] = "Y" then
-                "Native Hawaiian/Pacific Islander"
-            else
-                "Unknown"
-    ),
-    DeterminePriorStudent = Table.AddColumn(
-        race_recode,
-        "Prior Student",
-        each
-            if
-                [VX_IR_PRIOR_STDNT] = "Y"
-                or (
-                    [VX_IR_PRIOR_STDNT] = "N"
-                    and List.Contains(
-                        {
-                            "008659",
-                            "004004",
-                            "008660",
-                            "004004",
-                            "006819",
-                            "004988",
-                            "003748",
-                            "008660",
-                            "009629",
-                            "005223",
-                            "009159",
-                            "006871",
-                            "003712",
-                            "007260",
-                            "003760",
-                            "003761",
-                            "007099",
-                            "004996",
-                            "003759",
-                            "003727",
-                            "009928",
-                            "009160",
-                            "008661"
-                        },
-                        [FICE_CD]
-                    )
-                )
-            then
-                2
-            else if
-                [VX_IR_PRIOR_STDNT] = "N"
-                and (
-                    List.Contains({"TR", "TEF", "TRN", "ITF"}, [ADMIT_TYPE])
-                    or [VX_IR_PREV_DEGREE] <> null
-                    or [FICE_CD] <> null
-                )
-            then
-                3
-            else
-                1
-    ),
-    DeterminePriorStudent2 = Table.AddColumn(
-        DeterminePriorStudent,
-        "Prior Student2",
-        each
-            if [ADMIT_TYPE] = "ITF" or ([FICE_CD] <> "008569" or [FICE_CD] <> null) or [VX_IR_PREV_DEGREE] <> null
-            then
-                3
-            else if [VX_IR_PRIOR_STDNT] = "Y" then
-                2
-            else
-                1
-    ),
-    DetermineNRA = Table.AddColumn(
-        DeterminePriorStudent2, "NRA", each if [CITIZENSHIP_STATUS] = "4" and [VISA_PERMIT_TYPE] <> "PR" then 1 else 0
-    ),
-    JoinWithPellEligibility = Table.NestedJoin(
-        DetermineNRA, "strm-stud key", PellEligibility, "strm-stud key", "PellEligibility"
-    )
+    FilterF2Rows = Table.SelectRows(InitialColumns, each [VX_IR_EXTRACT_TYPE] = "F2"),
+    RemoveExtractType = Table.RemoveColumns(FilterF2Rows, {"VX_IR_EXTRACT_TYPE"}),
+AddRaceColumn = Table.AddColumn(
+    RemoveExtractType,
+    "Race",
+    each
+        if [VX_IR_ETHNIC_1] = "1" then "American Indian or Alaska Native"
+        else if [VX_IR_ETHNIC_2] = "1" then "Asian"
+        else if [VX_IR_ETHNIC_3] = "1" then "Black or African American"
+        else if [VX_IR_ETHNIC_4] = "1" then "Hispanic or Latino"
+        else if [VX_IR_ETHNIC_5] = "1" then "Native Hawaiian or Other Pacific Islander"
+        else if [VX_IR_ETHNIC_6] = "1" then "White"
+        else if [VX_IR_ETHNIC_7] = "1" then "Two or More Races"
+        else "Unknown"
+),
+RemoveVX_IR_ETHNICcolumns = Table.RemoveColumns(
+    AddRaceColumn,
+    {
+        "VX_IR_ETHNIC_1",
+        "VX_IR_ETHNIC_2",
+        "VX_IR_ETHNIC_3",
+        "VX_IR_ETHNIC_4",
+        "VX_IR_ETHNIC_5",
+        "VX_IR_ETHNIC_6",
+        "VX_IR_ETHNIC_7"
+    }
+)
 in
-    JoinWithPellEligibility
-=======
-    Source = Oracle.Database("s92qery"),
-    tableFetch = Source{[Schema = "SYSADM", Item = "PS_CLASS_TBL_SE_VW"]}[Data],
-    FilterLF298 = Table.SelectRows(tableFetch, each [INSTITUTION] = "LF298"),
-    RemoveUnusedCols = Table.SelectColumns(
-        FilterLF298,
-        {
-            "EMPLID",
-            "STRM",
-            "CLASS_NBR",
-            "GRADING_BASIS_ENRL",
-            "STDNT_ENRL_STATUS",
-            "CRSE_ID",
-            "ENRL_STATUS_REASON",
-            "CRSE_GRADE_INPUT",
-            "CRSE_GRADE_OFF",
-            "EARN_CREDIT",
-            "INCLUDE_IN_GPA"
-        }
-    ),
-    // Get buffered list of valid STRM values
-    ValidSTRM = fx_GetValidSTRMList(),
-    // Apply STRM + ExtractType filter inline (preserves folding)
-    FilteredTable = Table.SelectRows(RemoveUnusedCols, each [STRM] <> null and List.Contains(ValidSTRM, [STRM])),
-    //FIlter out non-enrolled students, non-graded courses, and incomplete/audit/withdraw grades
-    FilterGrades = Table.SelectRows(
-        FilteredTable,
-        each
-            ([GRADING_BASIS_ENRL] <> "NON")
-            and ([STDNT_ENRL_STATUS] = "E")
-            and ([CRSE_GRADE_INPUT] <> "R" and [CRSE_GRADE_INPUT] <> "X" and [CRSE_GRADE_INPUT] <> "I")
-    ),
-    // Unique key for class by term, will serve as foreign key to DimClass
-    AddStrmCls = Table.AddColumn(FilterGrades, "strm-cls key", each [STRM] & "-" & Text.From([CLASS_NBR]), type text),
-    // Add unique value for each for term-student, will serve as foreign key to DimStudent
-    AddStrmStu = Table.AddColumn(AddStrmCls, "strm-stu key", each [STRM] & "-" & [EMPLID], type text)
-in
-    AddStrmStu
->>>>>>> 1fbed3393dbb53ad17336244ef248ebbfda5bf3f
+    RemoveVX_IR_ETHNICcolumns
