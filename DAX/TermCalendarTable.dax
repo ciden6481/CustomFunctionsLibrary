@@ -1,0 +1,91 @@
+Date = 
+VAR MinTermDate = MIN( IR_STRM_TBL[TERM_BEGIN_DT] )
+VAR MaxTermDate = MAX( IR_STRM_TBL[TERM_END_DT] )
+RETURN
+GENERATE (
+    CALENDAR ( MinTermDate, MaxTermDate ),
+    VAR CurrentDate = [Date]
+    
+    // Standard Calendar Attributes
+    VAR Yr = YEAR ( CurrentDate )
+    VAR Mn = MONTH ( CurrentDate )
+    VAR Mdn = DAY ( CurrentDate )
+    VAR DateKey = Yr * 10000 + Mn * 100 + Mdn
+    VAR Wd = WEEKDAY ( CurrentDate, 2 ) // 2 = Monday is 1, Sunday is 7
+    VAR WorkingDay = ( WEEKDAY ( CurrentDate, 2 ) IN { 1, 2, 3, 4, 5 } ) // Monday to Friday
+
+    // Academic Year and Term Attributes from IR_STRM_TBL
+    // We use CALCULATE(TOPN...) to ensure we pick the correct term if there were any overlapping dates,
+    // although for sequential terms, FILTER alone should suffice.
+    VAR AcademicTermRow =
+    //    CALCULATE (
+    //        TOPN (
+    //            1,
+                FILTER (
+                    IR_STRM_TBL,
+                    CurrentDate >= IR_STRM_TBL[TERM_BEGIN_DT] && CurrentDate <= IR_STRM_TBL[TERM_END_DT]
+    //            ),
+    //            IR_STRM_TBL[TERM_BEGIN_DT], ASC // Ensures consistent term selection if date ranges were to overlap (unlikely for academic terms)
+    //        )
+        )
+    
+    VAR TermFound = NOT ISEMPTY(AcademicTermRow)
+
+    VAR TermID = IF ( TermFound, SELECTCOLUMNS ( AcademicTermRow, "TermID", IR_STRM_TBL[STRM] ), BLANK() )
+    VAR AcademicTermName = IF ( TermFound, SELECTCOLUMNS ( AcademicTermRow, "TermName", IR_STRM_TBL[DESCR] ), BLANK() )
+    VAR TermStartDate = IF ( TermFound, SELECTCOLUMNS ( AcademicTermRow, "StartDate", IR_STRM_TBL[TERM_BEGIN_DT] ), BLANK() )
+    VAR TermEndDate = IF ( TermFound, SELECTCOLUMNS ( AcademicTermRow, "EndDate", IR_STRM_TBL[TERM_END_DT] ), BLANK() )
+    VAR AcademicYearEnding = IF ( TermFound, VALUE ( SELECTCOLUMNS ( AcademicTermRow, "AcadYear", IR_STRM_TBL[ACAD_YEAR] ) ), BLANK() )
+
+    // Derived Academic Year Display (e.g., "AY 2024-2025")
+    VAR AcademicYearDisplay = 
+        IF (
+            NOT ISBLANK(AcademicYearEnding),
+            "AY " & FORMAT(AcademicYearEnding - 1, "0") & "-" & FORMAT(AcademicYearEnding, "0"),
+            BLANK()
+        )
+
+    // Derived Academic Term Type (e.g., "Spring", "Summer", "Fall") from STRM ID
+    VAR TermTypeDigit = IF ( TermFound, RIGHT(TermID, 1), BLANK() )
+    VAR AcademicTermType = 
+        SWITCH (
+            TermTypeDigit,
+            "2", "Spring",
+            "3", "Summer",
+            "4", "Fall",
+            BLANK()
+        )
+
+    // Derived Academic Term Sort Order from STRM ID
+    VAR AcademicTermSortOrder = 
+        SWITCH (
+            TermTypeDigit,
+            "4", 1, // Fall (often sorted first for academic year start)
+            "2", 2, // Spring
+            "3", 3, // Summer
+            BLANK()
+        )
+
+    RETURN
+        ROW (
+//            "Date", CurrentDate,
+            "DateKey", INT ( DateKey ),
+            "Sequential Day Number", INT ( CurrentDate ),
+            "Calendar Year", Yr,
+            "Calendar Month Number", Mn,
+            "Day of Month", Mdn,
+            "Day of Week", FORMAT ( CurrentDate, "ddd" ),
+            "Day of Week Number", Wd,
+            "Working Day", IF ( WorkingDay, "Working Day", "Non-Working Day" ),
+
+            // Academic Columns
+            "Academic Year Display", AcademicYearDisplay,
+            "Academic Year Ending Calendar Year", AcademicYearEnding, // Useful for numeric sorting/filtering
+            "Academic Term ID", TermID,
+            "Academic Term Name", AcademicTermName, // e.g., "2010 Fall"
+            "Academic Term Type", AcademicTermType, // e.g., "Fall", "Spring"
+            "Academic Term Start Date", TermStartDate,
+            "Academic Term End Date", TermEndDate,
+            "Academic Term Sort Order", AcademicTermSortOrder
+        )
+)
