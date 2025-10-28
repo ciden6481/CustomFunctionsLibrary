@@ -1,0 +1,5 @@
+{
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+    "powerquery.general.mode": "SDK",
+    "powerquery.sdk.defaultExtension": "${workspaceFolder}\\bin\\AnyCPU\\Debug\\${workspaceFolderBasename}.mez"
+}

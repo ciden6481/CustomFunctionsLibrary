@@ -8,15 +8,15 @@ LibPQPath:
 **/
 [
     Local = {
-        "C:\Users\ciden\OneDrive - laurelridge.edu\Documents\Power Query Files\Libraries\LibPQ\LibPQ-master\Modules",
-        "C:\Users\ciden\OneDrive - laurelridge.edu\Documents\Power Query Files\Libraries\LibPQ\LibPQ-master\Tests",
-        "C:\Users\ciden\OneDrive - laurelridge.edu\Documents\Power Query Files\Libraries\pquery-master"
+       // "C:\Users\ciden\OneDrive - laurelridge.edu\Documents\Power Query Files\Libraries\LibPQ\LibPQ-master\Modules",
+       // "C:\Users\ciden\OneDrive - laurelridge.edu\Documents\Power Query Files\Libraries\LibPQ\LibPQ-master\Tests",
+      //  "C:\Users\ciden\OneDrive - laurelridge.edu\Documents\Power Query Files\Libraries\pquery-master"
         //    "D:\ExtractLocation\LibPQ\Modules",
         //    "D:\ExtractLocation\LibPQ\Tests"
     },
     Web = {
-        "https://gist.github.com/ciden6481/630c41001ea656f5f70572adb5d8299a"
-        //"https://github.com/sio/LibPQ/raw/master/Modules/",
+        "https://github.com/sio/LibPQ/raw/master/Modules/",
+        "https://github.com/ciden6481/CustomFunctionsLibrary/raw/master/Modules/"
         // "https://github.com/tycho01/pquery/raw/master/",
     }
 ]
