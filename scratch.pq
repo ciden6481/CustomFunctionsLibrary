@@ -1,38 +1,84 @@
 let
-    Source = Oracle.Database("s92qery"),
-    tableFetch = Source{[Schema = "SYSADM", Item = "PS_CLASS_TBL_SE_VW"]}[Data],
-    FilterLF298 = Table.SelectRows(tableFetch, each [INSTITUTION] = "LF298"),
-    RemoveUnusedCols = Table.SelectColumns(
-        FilterLF298,
+    Source = fnAlphaSortCols(#"Staged_WDSEnrollmentTables"),
+    RemovedColumns = Table.RemoveColumns(Source, {"File Name", "institution", "acad_career", "ssno"}),
+    EmptyToNull = Table.ReplaceValue(
+        RemovedColumns, "", null, Replacer.ReplaceValue, Table.ColumnNames(RemovedColumns)
+    ),
+    FormatBirthdates = Table.TransformColumns(
+        EmptyToNull,
         {
-            "EMPLID",
-            "STRM",
-            "CLASS_NBR",
-            "GRADING_BASIS_ENRL",
-            "STDNT_ENRL_STATUS",
-            "CRSE_ID",
-            "ENRL_STATUS_REASON",
-            "CRSE_GRADE_INPUT",
-            "CRSE_GRADE_OFF",
-            "EARN_CREDIT",
-            "INCLUDE_IN_GPA"
+            {
+                "birthdate",
+                each
+                    try
+                        if _ = null then
+                            null
+                        else if Text.Contains(_, "/") then
+                            Date.From(_)
+                        else
+                            Date.From(Text.Insert(Text.Insert(_, 2, "/"), 5, "/"))
+                        otherwise null,
+                type date
+            }
         }
     ),
-    // Get buffered list of valid STRM values
-    ValidSTRM = fx_GetValidSTRMList(),
-    // Apply STRM + ExtractType filter inline (preserves folding)
-    FilteredTable = Table.SelectRows(RemoveUnusedCols, each [STRM] <> null and List.Contains(ValidSTRM, [STRM])),
-    //FIlter out non-enrolled students, non-graded courses, and incomplete/audit/withdraw grades
-    FilterGrades = Table.SelectRows(
-        FilteredTable,
-        each
-            ([GRADING_BASIS_ENRL] <> "NON")
-            and ([STDNT_ENRL_STATUS] = "E")
-            and ([CRSE_GRADE_INPUT] <> "R" and [CRSE_GRADE_INPUT] <> "X" and [CRSE_GRADE_INPUT] <> "I")
+    TypeColumns = Table.TransformColumnTypes(
+        FormatBirthdates,
+        {
+            {"end_dt", type date},
+            {"start_dt", type date},
+            {"count", type number},
+            {"complete_cnt", type number},
+            {"contact_hours", type number},
+            {"min_hrs", type number},
+            {"ff", type number},
+            {"wcg", type number},
+            {"urp_race", type number},
+            {"urp_loc", type number},
+            {"urp", type number},
+            {"limited", type number}
+        }
     ),
-    // Unique key for class by term, will serve as foreign key to DimClass
-    AddStrmCls = Table.AddColumn(FilterGrades, "strm-cls key", each [STRM] & "-" & Text.From([CLASS_NBR]), type text),
-    // Add unique value for each for term-student, will serve as foreign key to DimStudent
-    AddStrmStu = Table.AddColumn(AddStrmCls, "strm-stu key", each [STRM] & "-" & [EMPLID], type text)
+    FilterFF = Table.SelectRows(TypeColumns, each ([wcg] = 1) or ([ff] = 1)),
+    RenamedColumns = Table.RenameColumns(
+        FilterFF,
+        {
+            {"address1", "Address"},
+            {"birthdate", "Birthdate"},
+            {"catalog_nbr", "Catalog Number"},
+            {"city", "City"},
+            {"class_nbr", "Class Number"},
+            {"class_section", "Class Section"},
+            {"complete_cnt", "Complete Count"},
+            {"contact_hours", "Contact Hours"},
+            {"count", "County"},
+            {"crse_attr", "Course Attr"},
+            {"crse_attr_value", "Course Attr Value"},
+            {"crse_id", "Course ID"},
+            {"descr", "Class Description"},
+            {"end_dt", "Class End Date"},
+            {"ff", "FF"},
+            {"first name", "First Name"},
+            {"grade", "Grade"},
+            {"instruct_mode", "Instruction Mode"},
+            {"last_name", "Last Name"},
+            {"limited", "Limited"},
+            {"location", "Location"},
+            {"middle_name", "Middle Name"},
+            {"min_hrs", "Min Hours"},
+            {"race", "Race"},
+            {"sex", "Sex"},
+            {"start_dt", "Class Start Date"},
+            {"state", "State"},
+            {"subject", "Class Subject"},
+            {"urp", "URP Flag"},
+            {"urp_loc", "URP Location Flag"},
+            {"urp_race", "URP Race Flag"},
+            {"wcg", "WCG"},
+            {"zip", "ZIP"},
+            {"juris", "Juris Code"},
+            {"emplid", "EMPLID"}
+        }
+    )
 in
-    AddStrmStu
+    RenamedColumns
