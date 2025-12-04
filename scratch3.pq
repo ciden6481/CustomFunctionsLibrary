@@ -1,67 +1,71 @@
 let
-    Source = Table.Combine(
-        {udt_y20202021_anstu, udt_y20242025_anstu, udt_y20232024_anstu, udt_y20222023_anstu, udt_y20212022_anstu}
-    ),
-    FilterForDE = Table.SelectRows(Source, each ([DEFLAG] = "1")),
-    JoinJURIS = Table.NestedJoin(
-        FilterForDE, {"JURIS"}, TRANS_JURIS_TBL, {"juris"}, "TRANS_JURIS_TBL", JoinKind.LeftOuter
-    ),
-    JoinCEEB = Table.NestedJoin(JoinJURIS, {"ATP_CD"}, CEEB, {"CEEB"}, "CEEB (Sheet1)", JoinKind.LeftOuter),
-    ExpandCEEB = Table.ExpandTableColumn(
-        JoinCEEB,
-        "CEEB (Sheet1)",
-        {"CEEB", "School", "School District", "LR_Division"},
-        {"CEEB", "School", "School District", "LR_Division"}
-    ),
-    ExpandJURIS = Table.ExpandTableColumn(ExpandCEEB, "TRANS_JURIS_TBL", {"name"}, {"Location"}),
-    RecodeRace = Table.AddColumn(
-        ExpandJURIS,
-        "Race",
-        each
-            if [VX_IR_ETHNIC_3] = "Y" then
-                "Hispanic"
-            else if
-                [VX_IR_ETHNIC_1] = "N"
-                and [VX_IR_ETHNIC_2] = "N"
-                and [VX_IR_ETHNIC_3] = "N"
-                and [VX_IR_ETHNIC_4] = "N"
-                and [VX_IR_ETHNIC_5] = "N"
-                and [VX_IR_ETHNIC_7] = "N"
-            then
-                "Unknown"
-            else if [VX_IR_ETHNIC_6] = "Y" then
-                "Not Specified"
-            else if
-                ([VX_IR_ETHNIC_1] = "Y" and [VX_IR_ETHNIC_2] = "Y")
-                or ([VX_IR_ETHNIC_1] = "Y" and [VX_IR_ETHNIC_4] = "Y")
-                or ([VX_IR_ETHNIC_1] = "Y" and [VX_IR_ETHNIC_7] = "Y")
-                or ([VX_IR_ETHNIC_1] = "Y" and [VX_IR_ETHNIC_5] = "Y")
-                or ([VX_IR_ETHNIC_1] = "Y" and [VX_IR_ETHNIC_6] = "Y")
-                or ([VX_IR_ETHNIC_4] = "Y" and [VX_IR_ETHNIC_2] = "Y")
-                or ([VX_IR_ETHNIC_4] = "Y" and [VX_IR_ETHNIC_7] = "Y")
-                or ([VX_IR_ETHNIC_4] = "Y" and [VX_IR_ETHNIC_5] = "Y")
-                or ([VX_IR_ETHNIC_4] = "Y" and [VX_IR_ETHNIC_6] = "Y")
-                or ([VX_IR_ETHNIC_7] = "Y" and [VX_IR_ETHNIC_2] = "Y")
-                or ([VX_IR_ETHNIC_7] = "Y" and [VX_IR_ETHNIC_5] = "Y")
-                or ([VX_IR_ETHNIC_7] = "Y" and [VX_IR_ETHNIC_6] = "Y")
-                or ([VX_IR_ETHNIC_5] = "Y" and [VX_IR_ETHNIC_2] = "Y")
-                or ([VX_IR_ETHNIC_2] = "Y" and [VX_IR_ETHNIC_6] = "Y")
-                or ([VX_IR_ETHNIC_5] = "Y" and [VX_IR_ETHNIC_6] = "Y")
-            then
-                "Two or more"
-            else if [VX_IR_ETHNIC_1] = "Y" then
-                "White"
-            else if [VX_IR_ETHNIC_2] = "Y" then
-                "Black/African American"
-            else if [VX_IR_ETHNIC_4] = "Y" then
-                "Asian"
-            else if [VX_IR_ETHNIC_5] = "Y" then
-                "American Indian/Alaskan Native"
-            else if [VX_IR_ETHNIC_7] = "Y" then
-                "Native Hawaiian/Pacific Islander"
-            else
-                "Unknown",
-        type text
-    )
+    Source = (filename as text) as any =>
+        let
+            Source = Pdf.Tables(PASFiles{[Name=filename]}[Content], [Implementation="1.3"]),
+            Pages = Table.SelectRows(Source, each [Kind] = "Page"),
+            CombinedTables = Table.Combine(Pages[Data]),
+            RemoveEmpties = (inputTable as table) as table =>
+                let
+                    RowCount = Table.RowCount(inputTable),
+            ColumnNames = Table.ColumnNames(inputTable),
+            NullCounts = List.Transform(
+                ColumnNames, 
+                each {_, List.Count(List.Select(Table.Column(inputTable, _), each _ = null))}
+            ),
+            ColumnsToKeep = List.Transform(
+                List.Select(NullCounts, each _{1} <= RowCount / 2), 
+                each _{0}
+            ),
+            CleanedTable = Table.SelectColumns(inputTable, ColumnsToKeep)
+        in
+            CleanedTable,
+
+            RemoveBadRows = RemoveEmpties(Source),
+            #"Replaced Value" = Table.ReplaceValue(
+                RemoveBadRows,
+                null,
+                each if [Column2] = "De Arment-Don, DC FT" or [Column2] = "Van Dyke Simm, TA PT" then [Column2] else "b",
+                Replacer.ReplaceValue,
+                {"Column1"}
+            ),
+            #"Filtered Rows" = Table.SelectRows(
+                #"Replaced Value", each ([Column1] <> "b" and [Column1] <> "OCTOBER 15, 2025")
+            ),
+            #"Replaced Value1" = Table.ReplaceValue(
+                #"Filtered Rows", "Van Dyke Simm, TA PT", "PT", Replacer.ReplaceText, {"Column2"}
+            ),
+            #"Replaced Value2" = Table.ReplaceValue(
+                #"Replaced Value1", "De Arment-Don, DC FT", "FT", Replacer.ReplaceText, {"Column2"}
+            ),
+            #"Renamed Columns" = Table.RenameColumns(
+                #"Replaced Value2",
+                {
+                    {"Column1", "Name"},
+                    {"Column2", "FT/PT"},
+                    {"Column3", "DistRatio(CR/HR)"},
+                    {"Column4", "DistRatio(ST/HR)"},
+                    {"Column5", "CrsCredHrLd(CR/HR)"},
+                    {"Column6", "CrsCredHrLd(FTEF)"},
+                    {"Column9", "StudHrsGen(ST/HR)"},
+                    {"Column10", "StudHrsGen(FTEF)"},
+                    {"Column13", "Preparations"},
+                    {"Column15", "ContactHrs"}
+                }
+            ),
+            #"Changed Type" = Table.TransformColumnTypes(
+                #"Renamed Columns",
+                {
+                    {"ContactHrs", type number},
+                    {"Preparations", type number},
+                    {"StudHrsGen(FTEF)", type number},
+                    {"StudHrsGen(ST/HR)", type number},
+                    {"CrsCredHrLd(FTEF)", type number},
+                    {"CrsCredHrLd(CR/HR)", type number},
+                    {"DistRatio(ST/HR)", type number},
+                    {"DistRatio(CR/HR)", type number}
+                }
+            )
+        in
+            #"Changed Type"
 in
-    RecodeRace
+    Source
