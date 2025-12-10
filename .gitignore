@@ -1,8 +1,20 @@
+# Ignore individual scratch files (legacy)
 scratch.pq
 scratch2.pq
 scratch3.pq
 scratch.tmdl
-scratch.pq
-scratch.pq
-scratch2.pq
-scratch3.pq
+
+# Ignore the entire ScratchFiles working folder (and its contents)
+# Use the repository root path `/ScratchFiles/` so the rule is explicit.
+/ScratchFiles/
+
+# Also ignore any ScratchFiles folder added with different casing
+ScratchFiles/
+
+## Visual Studio Code workspace and settings
+# Ignore the workspace folder and VS Code workspace files
+/.vscode/
+*.code-workspace
+
+
+
