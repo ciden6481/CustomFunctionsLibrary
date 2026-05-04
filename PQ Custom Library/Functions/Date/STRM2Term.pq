@@ -11,7 +11,6 @@
 //
 // Keep file and folder names PascalCase, no spaces.
 // =============================================================================
-
 let
     // =========================================================================
     // STEP 1 — Parameter documentation metadata
@@ -24,18 +23,18 @@ let
     // To remove a parameter:         delete the entire block including its comma
     // =========================================================================
     metaDocumentation = type function (
-
         // ── [REQUIRED PARAM — copy this block to add more] ─────────────────
-        strm as (type text meta [
-            Documentation.FieldCaption      = "STRM text",
-            Documentation.FieldDescription  = "STRM value (e.g. ""2264"").",
-            Documentation.SampleValues      = {"2264"},
-            // Documentation.AllowedValues  = {"Value1", "Value2"},  // uncomment to restrict
-            Formatting.IsMultiLine          = false,
-            Formatting.IsCode               = false
-        ])
+        strm as (
+            type text meta [
+                Documentation.FieldCaption = "STRM text",
+                Documentation.FieldDescription = "STRM value (e.g. ""2264"").",
+                Documentation.SampleValues = {"2264"},
+                // Documentation.AllowedValues  = {"Value1", "Value2"},  // uncomment to restrict
+                Formatting.IsMultiLine = false,
+                Formatting.IsCode = false
+            ]
+        )
         // ── [END REQUIRED PARAM] ────────────────────────────────────────────
-
         // ── [REQUIRED PARAM — copy this block to add more] ─────────────────
         /* param2 as (type number meta [
             Documentation.FieldCaption      = "Parameter 2",
@@ -46,10 +45,9 @@ let
             Formatting.IsCode               = false
         ]), */
         // ── [END REQUIRED PARAM] ────────────────────────────────────────────
-
         // ── [OPTIONAL PARAM — copy or remove this block] ───────────────────
         // Optional params must come AFTER all required params.
-       /*  optional param3 as (type nullable logical meta [
+        /*  optional param3 as (type nullable logical meta [
             Documentation.FieldCaption      = "Parameter 3 (optional)",
             Documentation.FieldDescription  = "Describe what param3 controls. Leave blank to use the default.",
             Documentation.SampleValues      = {true, false},
@@ -58,18 +56,16 @@ let
             Formatting.IsCode               = false
         ]) */
         // ── [END OPTIONAL PARAM] ────────────────────────────────────────────
-
-    ) as text   // ← change the return type to match what your function actually returns
-                //   common values: text, number, date, list, table, record, any
-
+    ) as text
+    // ← change the return type to match what your function actually returns
+    //   common values: text, number, date, list, table, record, any
     // =========================================================================
     // STEP 2 — Function-level documentation
     // =========================================================================
     meta [
-        Documentation.Name        = "Date.STRM2Term",   // match folder.filename
-        Documentation.Author      = "Win Iden",
-        Documentation.LongDescription =
-        "
+        Documentation.Name = "Date.STRM2Term",
+        Documentation.Author = "Win Iden",
+        Documentation.LongDescription = "
             <p><b>Date.STRM2Term</b></p>
             <li>Converts STRM values to text terms (e.g., ""Summer""</li>
             <li><b>Parameters:</b></li>
@@ -82,18 +78,11 @@ let
         Documentation.Examples = {
             [
                 Description = "Describe this example.",
-                Code        = "Category.FunctionName(""hello"", 42, true)",
-                Result      = """expected output"""
+                Code = "Category.FunctionName(""hello"", 42, true)",
+                Result = """expected output"""
             ]
-            // Add more examples:
-            // ,[
-            //     Description = "Second example description.",
-            //     Code        = "Category.FunctionName(""world"", 10)",
-            //     Result      = """other output"""
-            // ]
         }
     ],
-
     // =========================================================================
     // STEP 3 — Function implementation
     //
@@ -108,11 +97,10 @@ let
         let
             // ── Your function logic here ──────────────────────────────────
             termNumber = Text.End(strm, 1),
-            result    = if termNumber = "4" then "Fall" else if termNumber = "3" then "Spring" else "Summer"
+            result = if termNumber = "4" then "Fall" else if termNumber = "3" then "Spring" else "Summer"
             // ─────────────────────────────────────────────────────────────
         in
             result
-
 in
     // Bind documentation metadata to the function (required for PQ UI tooltips)
     Value.ReplaceType(STRM2Term, metaDocumentation)
