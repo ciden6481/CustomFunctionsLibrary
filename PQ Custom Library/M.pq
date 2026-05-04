@@ -99,11 +99,22 @@ let
                     Date.Month = Date.Month,
                     Date.MyFunc = Date.MyFunc,
                     Date.Year = Date.Year,
+                    List.Difference = List.Difference,
+                    List.IsEmpty = List.IsEmpty,
+                    List.Sum = List.Sum,
+                    List.Transform = List.Transform,
                     Number.Abs = Number.Abs,
                     Number.IntegerDivide = Number.IntegerDivide,
                     Number.Mod = Number.Mod,
                     Number.ToText = Number.ToText,
+                    Record.FieldOrDefault = Record.FieldOrDefault,
+                    Table.AddColumn = Table.AddColumn,
+                    Table.ColumnNames = Table.ColumnNames,
+                    Text.Combine = Text.Combine,
                     Text.End = Text.End,
+                    Text.Format = Text.Format,
+                    Text.From = Text.From,
+                    Text.Upper = Text.Upper,
                     Value.ReplaceType = Value.ReplaceType
                     // Web.Contents is intentionally excluded -- it causes a dynamic
                     // data source error in Power BI Service when inside Expression.Evaluate.
