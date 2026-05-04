@@ -21,12 +21,82 @@ SCRIPT_DIR     = os.path.dirname(os.path.abspath(__file__))
 FUNCTIONS_DIR  = os.path.join(SCRIPT_DIR, "Functions")
 OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "M.pq")
 
+# Skip template files so placeholder symbols never affect native function scans.
+SKIP_FILE_BASENAMES = {
+    "functiontemplate.pq",
+}
+
 # ---------------------------------------------------------------------------
 # Regex: match Namespace.Function tokens (e.g. Date.Year, Text.From).
 # Both halves must start with an uppercase letter to match PQ native functions
 # and exclude lowercase comment fragments like "e.g" or "e.g."
 # ---------------------------------------------------------------------------
 PATTERN = r'\b[A-Z][A-Za-z0-9]*\.[A-Z][A-Za-z0-9]*\b'
+
+
+def strip_m_comments_and_strings(content: str) -> str:
+    """Return code with comments and string literals removed.
+
+    This prevents false positives like Category.FunctionName and Date.MyFunc
+    from documentation text, examples, and comments.
+    """
+    result: list[str] = []
+    i = 0
+    n = len(content)
+    block_depth = 0
+
+    while i < n:
+        ch = content[i]
+        nxt = content[i + 1] if i + 1 < n else ""
+
+        # Inside block comment: support nested /* ... */
+        if block_depth > 0:
+            if ch == "/" and nxt == "*":
+                block_depth += 1
+                i += 2
+            elif ch == "*" and nxt == "/":
+                block_depth -= 1
+                i += 2
+            else:
+                # Preserve line breaks to keep token boundaries stable
+                result.append("\n" if ch == "\n" else " ")
+                i += 1
+            continue
+
+        # Line comment
+        if ch == "/" and nxt == "/":
+            i += 2
+            while i < n and content[i] != "\n":
+                i += 1
+            continue
+
+        # Block comment
+        if ch == "/" and nxt == "*":
+            block_depth = 1
+            i += 2
+            continue
+
+        # String literal (M escapes quotes by doubling "")
+        if ch == '"':
+            result.append(" ")
+            i += 1
+            while i < n:
+                sch = content[i]
+                snxt = content[i + 1] if i + 1 < n else ""
+                if sch == '"' and snxt == '"':
+                    i += 2
+                    continue
+                if sch == '"':
+                    i += 1
+                    break
+                result.append("\n" if sch == "\n" else " ")
+                i += 1
+            continue
+
+        result.append(ch)
+        i += 1
+
+    return "".join(result)
 
 # ---------------------------------------------------------------------------
 # Exclusion list — URLs, documentation metadata fields, library-specific names,
@@ -231,9 +301,14 @@ in
 def extract_functions(file_path: str) -> list[str]:
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
-    matches = re.findall(PATTERN, content)
+    cleaned = strip_m_comments_and_strings(content)
+    matches = re.findall(PATTERN, cleaned)
     return [m for m in matches
             if not re.match(r'^\d+\.\d+$', m) and m not in EXCLUDE]
+
+
+def should_scan_file(name: str) -> bool:
+    return name.endswith('.pq') and name.lower() not in SKIP_FILE_BASENAMES
 
 
 # ---------------------------------------------------------------------------
@@ -244,7 +319,7 @@ def get_library_function_names(directory: str) -> set[str]:
     names = set()
     for root, _dirs, files in os.walk(directory):
         for name in files:
-            if name.endswith('.pq'):
+            if should_scan_file(name):
                 category = os.path.basename(root)
                 func = name[:-3]  # strip .pq
                 names.add(f"{category}.{func}")
@@ -258,7 +333,7 @@ def scan_functions_dir(directory: str) -> list[str]:
     found = []
     for root, _dirs, files in os.walk(directory):
         for name in files:
-            if name.endswith('.pq'):
+            if should_scan_file(name):
                 found.extend(extract_functions(os.path.join(root, name)))
     return found
 
