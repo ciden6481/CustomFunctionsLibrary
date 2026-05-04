@@ -104,7 +104,7 @@ let
  
         
         addedRace = 
-                each
+                
                 if colHisp = "Y" or colHispFlag = "Y" then "Hispanic"
                 else if colNspec = "Y" then "Not Specified"
                 else if List.Count(List.Select({colWhite, colBlack, colAsian, colAmInAlk, colHawPac}, each _ = "Y")) > 1 then "Two or more"
