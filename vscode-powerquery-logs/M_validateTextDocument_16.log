@@ -1,0 +1,2587 @@
+Validation	e	1		0	Entry	[Empty]
+AnalysisBase	tryLexParse	2		0	Entry	[Empty]
+LexParse	e	3	2	0	Entry	[Empty]
+ParserUtils	e	4	3	0	Entry	[Empty]
+ParserUtils	p	5	4	0	Entry	[Empty]
+ParserUtils	m	6	4	0	Entry	[Empty]
+Parse	e	7	6	0	Entry	{"TokenIndex":0}
+Parse	e	8	7	0	Entry	{"TokenIndex":0}
+Parse	R	9	8	0	Entry	{"TokenIndex":0}
+Parse	R	10	9	0	Entry	{"TokenIndex":0}
+Parse	R	10	9	0	Exit	{"TokenIndex":1,"IsError":false}
+Parse	R	9	8	0	Exit	{"TokenIndex":1}
+Parse	g	11	8	0	Entry	{"TokenIndex":1}
+Parse	T	12	11	0	Entry	{"TokenIndex":1}
+Parse	g	13	11	0	Entry	{"TokenIndex":1}
+Parse	N	14	13	0	Entry	{"TokenIndex":1}
+Parse	e	15	13	0	Entry	{"TokenIndex":1}
+Parse	e	15	13	0	Exit	{"TokenIndex":2}
+Parse	R	16	14	0	Entry	{"TokenIndex":2}
+Parse	R	17	16	0	Entry	{"TokenIndex":2}
+Parse	R	17	16	0	Exit	{"TokenIndex":3,"IsError":false}
+Parse	R	16	14	0	Exit	{"TokenIndex":3}
+Parse	e	18	13	0	Entry	{"TokenIndex":3}
+Parse	e	19	18	0	Entry	{"TokenIndex":3}
+CombinatorialParseV2	p	20	18	0	Entry	[Empty]
+CombinatorialParseV2	e	21	20	0	Entry	[Empty]
+CombinatorialParseV2	e	22	21	0	Entry	[Empty]
+CombinatorialParseV2	e	22	21	0	Exit	[Empty]
+Parse	e	23	22	0	Entry	{"TokenIndex":3}
+Parse	e	23	22	0	Exit	{"TokenIndex":4,"IsThrowing":false}
+CombinatorialParseV2	e	21	20	0	Exit	[Empty]
+CombinatorialParseV2	p	20	18	0	Exit	[Empty]
+Parse	h	24	19	0	Entry	{"TokenIndex":4}
+Parse	h	24	19	0	Exit	[Empty]
+Parse	e	19	18	0	Exit	{"TokenIndex":4}
+Parse	e	18	13	0	Exit	{"TokenIndex":4}
+Parse	N	14	13	0	Exit	{"TokenIndex":4}
+Parse	g	13	11	0	Exit	{"TokenIndex":4}
+Parse	g	25	11	0	Entry	{"TokenIndex":5}
+Parse	N	26	25	0	Entry	{"TokenIndex":5}
+Parse	e	27	25	0	Entry	{"TokenIndex":5}
+Parse	e	27	25	0	Exit	{"TokenIndex":6}
+Parse	R	28	26	0	Entry	{"TokenIndex":6}
+Parse	R	29	28	0	Entry	{"TokenIndex":6}
+Parse	R	29	28	0	Exit	{"TokenIndex":7,"IsError":false}
+Parse	R	28	26	0	Exit	{"TokenIndex":7}
+Parse	e	30	25	0	Entry	{"TokenIndex":7}
+Parse	e	31	30	0	Entry	{"TokenIndex":7}
+CombinatorialParseV2	p	32	30	0	Entry	[Empty]
+CombinatorialParseV2	e	33	32	0	Entry	[Empty]
+CombinatorialParseV2	e	34	33	0	Entry	[Empty]
+CombinatorialParseV2	e	34	33	0	Exit	[Empty]
+Parse	e	35	34	0	Entry	{"TokenIndex":7}
+Parse	e	35	34	0	Exit	{"TokenIndex":8,"IsThrowing":false}
+CombinatorialParseV2	e	33	32	0	Exit	[Empty]
+CombinatorialParseV2	p	32	30	0	Exit	[Empty]
+Parse	h	36	31	0	Entry	{"TokenIndex":8}
+Parse	h	36	31	0	Exit	[Empty]
+Parse	e	31	30	0	Exit	{"TokenIndex":8}
+Parse	e	30	25	0	Exit	{"TokenIndex":8}
+Parse	N	26	25	0	Exit	{"TokenIndex":8}
+Parse	g	25	11	0	Exit	{"TokenIndex":8}
+Parse	g	37	11	0	Entry	{"TokenIndex":9}
+Parse	N	38	37	0	Entry	{"TokenIndex":9}
+Parse	e	39	37	0	Entry	{"TokenIndex":9}
+Parse	e	39	37	0	Exit	{"TokenIndex":10}
+Parse	R	40	38	0	Entry	{"TokenIndex":10}
+Parse	R	41	40	0	Entry	{"TokenIndex":10}
+Parse	R	41	40	0	Exit	{"TokenIndex":11,"IsError":false}
+Parse	R	40	38	0	Exit	{"TokenIndex":11}
+Parse	e	42	37	0	Entry	{"TokenIndex":11}
+Parse	e	43	42	0	Entry	{"TokenIndex":11}
+CombinatorialParseV2	p	44	42	0	Entry	[Empty]
+CombinatorialParseV2	e	45	44	0	Entry	[Empty]
+CombinatorialParseV2	e	46	45	0	Entry	[Empty]
+CombinatorialParseV2	e	46	45	0	Exit	[Empty]
+Parse	e	47	46	0	Entry	{"TokenIndex":11}
+Parse	e	47	46	0	Exit	{"TokenIndex":12,"IsThrowing":false}
+CombinatorialParseV2	e	45	44	0	Exit	[Empty]
+CombinatorialParseV2	p	44	42	0	Exit	[Empty]
+Parse	h	48	43	0	Entry	{"TokenIndex":12}
+Parse	h	48	43	0	Exit	[Empty]
+Parse	e	43	42	0	Exit	{"TokenIndex":12}
+Parse	e	42	37	0	Exit	{"TokenIndex":12}
+Parse	N	38	37	0	Exit	{"TokenIndex":12}
+Parse	g	37	11	0	Exit	{"TokenIndex":12}
+Parse	g	49	11	0	Entry	{"TokenIndex":13}
+Parse	N	50	49	0	Entry	{"TokenIndex":13}
+Parse	e	51	49	0	Entry	{"TokenIndex":13}
+Parse	e	51	49	0	Exit	{"TokenIndex":14}
+Parse	R	52	50	0	Entry	{"TokenIndex":14}
+Parse	R	53	52	0	Entry	{"TokenIndex":14}
+Parse	R	53	52	0	Exit	{"TokenIndex":15,"IsError":false}
+Parse	R	52	50	0	Exit	{"TokenIndex":15}
+Parse	e	54	49	0	Entry	{"TokenIndex":15}
+Parse	e	55	54	0	Entry	{"TokenIndex":15}
+CombinatorialParseV2	p	56	54	0	Entry	[Empty]
+CombinatorialParseV2	e	57	56	0	Entry	[Empty]
+CombinatorialParseV2	e	58	57	0	Entry	[Empty]
+CombinatorialParseV2	e	58	57	0	Exit	[Empty]
+Parse	e	59	58	0	Entry	{"TokenIndex":15}
+Parse	e	59	58	0	Exit	{"TokenIndex":16,"IsThrowing":false}
+CombinatorialParseV2	e	57	56	0	Exit	[Empty]
+CombinatorialParseV2	p	56	54	0	Exit	[Empty]
+Parse	h	60	55	0	Entry	{"TokenIndex":16}
+Parse	h	60	55	0	Exit	[Empty]
+Parse	e	55	54	0	Exit	{"TokenIndex":16}
+Parse	e	54	49	0	Exit	{"TokenIndex":16}
+Parse	N	50	49	0	Exit	{"TokenIndex":16}
+Parse	g	49	11	0	Exit	{"TokenIndex":16}
+Parse	g	61	11	0	Entry	{"TokenIndex":17}
+Parse	N	62	61	0	Entry	{"TokenIndex":17}
+Parse	e	63	61	0	Entry	{"TokenIndex":17}
+Parse	e	63	61	0	Exit	{"TokenIndex":18}
+Parse	R	64	62	0	Entry	{"TokenIndex":18}
+Parse	R	65	64	0	Entry	{"TokenIndex":18}
+Parse	R	65	64	0	Exit	{"TokenIndex":19,"IsError":false}
+Parse	R	64	62	0	Exit	{"TokenIndex":19}
+Parse	e	66	61	0	Entry	{"TokenIndex":19}
+Parse	e	67	66	0	Entry	{"TokenIndex":19}
+CombinatorialParseV2	p	68	66	0	Entry	[Empty]
+CombinatorialParseV2	e	69	68	0	Entry	[Empty]
+CombinatorialParseV2	e	70	69	0	Entry	[Empty]
+CombinatorialParseV2	e	70	69	0	Exit	[Empty]
+Parse	e	71	70	0	Entry	{"TokenIndex":19}
+Parse	e	71	70	0	Exit	{"TokenIndex":20,"IsThrowing":false}
+CombinatorialParseV2	e	69	68	0	Exit	[Empty]
+CombinatorialParseV2	p	68	66	0	Exit	[Empty]
+Parse	h	72	67	0	Entry	{"TokenIndex":20}
+Parse	h	72	67	0	Exit	[Empty]
+Parse	e	67	66	0	Exit	{"TokenIndex":20}
+Parse	e	66	61	0	Exit	{"TokenIndex":20}
+Parse	N	62	61	0	Exit	{"TokenIndex":20}
+Parse	g	61	11	0	Exit	{"TokenIndex":20}
+Parse	g	73	11	0	Entry	{"TokenIndex":21}
+Parse	N	74	73	0	Entry	{"TokenIndex":21}
+Parse	e	75	73	0	Entry	{"TokenIndex":21}
+Parse	e	75	73	0	Exit	{"TokenIndex":22}
+Parse	R	76	74	0	Entry	{"TokenIndex":22}
+Parse	R	77	76	0	Entry	{"TokenIndex":22}
+Parse	R	77	76	0	Exit	{"TokenIndex":23,"IsError":false}
+Parse	R	76	74	0	Exit	{"TokenIndex":23}
+Parse	e	78	73	0	Entry	{"TokenIndex":23}
+Parse	e	79	78	0	Entry	{"TokenIndex":23}
+Parse	R	80	79	0	Entry	{"TokenIndex":23}
+Parse	R	81	80	0	Entry	{"TokenIndex":23}
+Parse	R	81	80	0	Exit	{"TokenIndex":24,"IsError":false}
+Parse	R	80	79	0	Exit	{"TokenIndex":24}
+Parse	e	82	79	0	Entry	{"TokenIndex":24}
+Parse	e	83	82	0	Entry	{"TokenIndex":24}
+CombinatorialParseV2	p	84	82	0	Entry	[Empty]
+CombinatorialParseV2	e	85	84	0	Entry	[Empty]
+CombinatorialParseV2	e	86	85	0	Entry	[Empty]
+Parse	e	87	86	0	Entry	{"TokenIndex":24}
+Parse	e	88	87	0	Entry	{"TokenIndex":24}
+Parse	e	88	87	0	Exit	{"TokenIndex":25}
+Parse	e	87	86	0	Exit	{"TokenIndex":25}
+CombinatorialParseV2	e	86	85	0	Exit	[Empty]
+Parse	R	89	85	0	Entry	{"TokenIndex":25}
+Parse	R	90	89	0	Entry	{"TokenIndex":25}
+Parse	R	90	89	0	Exit	{"TokenIndex":26,"IsError":false}
+Parse	R	89	85	0	Exit	{"TokenIndex":26}
+CombinatorialParseV2	e	91	85	0	Entry	[Empty]
+CombinatorialParseV2	e	91	85	0	Exit	[Empty]
+Parse	e	92	91	0	Entry	{"TokenIndex":26}
+Parse	e	92	91	0	Exit	{"TokenIndex":27,"IsThrowing":false}
+CombinatorialParseV2	e	85	84	0	Exit	[Empty]
+CombinatorialParseV2	e	93	84	0	Entry	[Empty]
+CombinatorialParseV2	e	93	84	0	Exit	[Empty]
+CombinatorialParseV2	p	84	82	0	Exit	[Empty]
+Parse	h	94	83	0	Entry	{"TokenIndex":27}
+Parse	h	94	83	0	Exit	[Empty]
+Parse	e	83	82	0	Exit	{"TokenIndex":27}
+Parse	e	82	79	0	Exit	{"TokenIndex":27}
+Parse	R	95	79	0	Entry	{"TokenIndex":27}
+Parse	R	96	95	0	Entry	{"TokenIndex":27}
+Parse	R	96	95	0	Exit	{"TokenIndex":28,"IsError":false}
+Parse	R	95	79	0	Exit	{"TokenIndex":28}
+Parse	e	97	79	0	Entry	{"TokenIndex":28}
+Parse	e	98	97	0	Entry	{"TokenIndex":28}
+CombinatorialParseV2	p	99	97	0	Entry	[Empty]
+CombinatorialParseV2	e	100	99	0	Entry	[Empty]
+CombinatorialParseV2	e	101	100	0	Entry	[Empty]
+Disambiguation	e	102	101	0	Entry	[Empty]
+Disambiguation	p	103	102	0	Entry	[Empty]
+Disambiguation	p	103	102	0	Exit	{"Result":"RecordExpression"}
+Parse	e	104	102	0	Entry	{"TokenIndex":28}
+Parse	x	105	104	0	Entry	{"TokenIndex":28}
+Parse	R	106	104	0	Entry	{"TokenIndex":28}
+Parse	R	107	106	0	Entry	{"TokenIndex":28}
+Parse	R	107	106	0	Exit	{"TokenIndex":29,"IsError":false}
+Parse	R	106	104	0	Exit	{"TokenIndex":29}
+Parse	e	108	104	0	Entry	[Empty]
+Parse	T	109	108	0	Entry	{"TokenIndex":29}
+Parse	e	110	108	0	Entry	{"TokenIndex":29}
+Parse	N	111	110	0	Entry	{"TokenIndex":29}
+Parse	e	112	110	0	Entry	{"TokenIndex":29}
+Parse	e	112	110	0	Exit	{"TokenIndex":30,"IsThrowing":false}
+Parse	R	113	111	0	Entry	{"TokenIndex":30}
+Parse	R	114	113	0	Entry	{"TokenIndex":30}
+Parse	R	114	113	0	Exit	{"TokenIndex":31,"IsError":false}
+Parse	R	113	111	0	Exit	{"TokenIndex":31}
+Parse	e	115	110	0	Entry	{"TokenIndex":31}
+Parse	e	116	115	0	Entry	{"TokenIndex":31}
+CombinatorialParseV2	p	117	115	0	Entry	[Empty]
+CombinatorialParseV2	e	118	117	0	Entry	[Empty]
+CombinatorialParseV2	e	119	118	0	Entry	[Empty]
+CombinatorialParseV2	e	119	118	0	Exit	[Empty]
+Parse	e	120	119	0	Entry	{"TokenIndex":31}
+Parse	e	120	119	0	Exit	{"TokenIndex":32,"IsThrowing":false}
+Parse	R	121	118	0	Entry	{"TokenIndex":32}
+Parse	R	122	121	0	Entry	{"TokenIndex":32}
+Parse	R	122	121	0	Exit	{"TokenIndex":33,"IsError":false}
+Parse	R	121	118	0	Exit	{"TokenIndex":33}
+CombinatorialParseV2	e	123	118	0	Entry	[Empty]
+Parse	e	124	123	0	Entry	{"TokenIndex":33}
+Parse	e	125	124	0	Entry	{"TokenIndex":33}
+Parse	e	125	124	0	Exit	{"TokenIndex":34}
+Parse	e	124	123	0	Exit	{"TokenIndex":34}
+CombinatorialParseV2	e	123	118	0	Exit	[Empty]
+CombinatorialParseV2	e	118	117	0	Exit	[Empty]
+CombinatorialParseV2	e	126	117	0	Entry	[Empty]
+CombinatorialParseV2	e	126	117	0	Exit	[Empty]
+CombinatorialParseV2	p	117	115	0	Exit	[Empty]
+Parse	h	127	116	0	Entry	{"TokenIndex":34}
+Parse	h	127	116	0	Exit	[Empty]
+Parse	e	116	115	0	Exit	{"TokenIndex":34}
+Parse	e	115	110	0	Exit	{"TokenIndex":34}
+Parse	N	111	110	0	Exit	{"TokenIndex":34}
+Parse	e	110	108	0	Exit	{"TokenIndex":34}
+Parse	T	109	108	0	Exit	{"TokenIndex":34,"IsThrowing":false}
+Parse	e	108	104	0	Exit	{"TokenIndex":34}
+Parse	R	128	104	0	Entry	{"TokenIndex":34}
+Parse	R	129	128	0	Entry	{"TokenIndex":34}
+Parse	R	129	128	0	Exit	{"TokenIndex":35,"IsError":false}
+Parse	R	128	104	0	Exit	{"TokenIndex":35}
+Parse	x	105	104	0	Exit	{"TokenIndex":35}
+Parse	e	104	102	0	Exit	{"TokenIndex":35}
+Disambiguation	e	102	101	0	Exit	{"IsThrowing":false}
+CombinatorialParseV2	e	101	100	0	Exit	[Empty]
+CombinatorialParseV2	e	100	99	0	Exit	[Empty]
+CombinatorialParseV2	p	99	97	0	Exit	[Empty]
+Parse	h	130	98	0	Entry	{"TokenIndex":35}
+Parse	h	130	98	0	Exit	[Empty]
+Parse	e	98	97	0	Exit	{"TokenIndex":35}
+Parse	e	97	79	0	Exit	{"TokenIndex":35}
+Parse	R	131	79	0	Entry	{"TokenIndex":35}
+Parse	R	132	131	0	Entry	{"TokenIndex":35}
+Parse	R	132	131	0	Exit	{"TokenIndex":36,"IsError":false}
+Parse	R	131	79	0	Exit	{"TokenIndex":36}
+Parse	e	133	79	0	Entry	{"TokenIndex":36}
+Parse	e	134	133	0	Entry	{"TokenIndex":36}
+CombinatorialParseV2	p	135	133	0	Entry	[Empty]
+CombinatorialParseV2	e	136	135	0	Entry	[Empty]
+CombinatorialParseV2	e	137	136	0	Entry	[Empty]
+Disambiguation	e	138	137	0	Entry	[Empty]
+Disambiguation	p	139	138	0	Entry	[Empty]
+Disambiguation	p	139	138	0	Exit	{"Result":"RecordExpression"}
+Parse	e	140	138	0	Entry	{"TokenIndex":36}
+Parse	x	141	140	0	Entry	{"TokenIndex":36}
+Parse	R	142	140	0	Entry	{"TokenIndex":36}
+Parse	R	143	142	0	Entry	{"TokenIndex":36}
+Parse	R	143	142	0	Exit	{"TokenIndex":37,"IsError":false}
+Parse	R	142	140	0	Exit	{"TokenIndex":37}
+Parse	e	144	140	0	Entry	[Empty]
+Parse	T	145	144	0	Entry	{"TokenIndex":37}
+Parse	T	145	144	0	Exit	{"TokenIndex":37,"IsThrowing":false}
+Parse	e	144	140	0	Exit	{"TokenIndex":37}
+Parse	R	146	140	0	Entry	{"TokenIndex":37}
+Parse	R	147	146	0	Entry	{"TokenIndex":37}
+Parse	R	147	146	0	Exit	{"TokenIndex":38,"IsError":false}
+Parse	R	146	140	0	Exit	{"TokenIndex":38}
+Parse	x	141	140	0	Exit	{"TokenIndex":38}
+Parse	e	140	138	0	Exit	{"TokenIndex":38}
+Disambiguation	e	138	137	0	Exit	{"IsThrowing":false}
+CombinatorialParseV2	e	137	136	0	Exit	[Empty]
+CombinatorialParseV2	e	136	135	0	Exit	[Empty]
+CombinatorialParseV2	p	135	133	0	Exit	[Empty]
+Parse	h	148	134	0	Entry	{"TokenIndex":38}
+Parse	h	148	134	0	Exit	[Empty]
+Parse	e	134	133	0	Exit	{"TokenIndex":38}
+Parse	e	133	79	0	Exit	{"TokenIndex":38}
+Parse	e	79	78	0	Exit	{"TokenIndex":38}
+Parse	e	78	73	0	Exit	{"TokenIndex":38}
+Parse	N	74	73	0	Exit	{"TokenIndex":38}
+Parse	g	73	11	0	Exit	{"TokenIndex":38}
+Parse	g	149	11	0	Entry	{"TokenIndex":39}
+Parse	N	150	149	0	Entry	{"TokenIndex":39}
+Parse	e	151	149	0	Entry	{"TokenIndex":39}
+Parse	e	151	149	0	Exit	{"TokenIndex":40}
+Parse	R	152	150	0	Entry	{"TokenIndex":40}
+Parse	R	153	152	0	Entry	{"TokenIndex":40}
+Parse	R	153	152	0	Exit	{"TokenIndex":41,"IsError":false}
+Parse	R	152	150	0	Exit	{"TokenIndex":41}
+Parse	e	154	149	0	Entry	{"TokenIndex":41}
+Parse	e	155	154	0	Entry	{"TokenIndex":41}
+CombinatorialParseV2	p	156	154	0	Entry	[Empty]
+CombinatorialParseV2	e	157	156	0	Entry	[Empty]
+CombinatorialParseV2	e	158	157	0	Entry	[Empty]
+Parse	e	159	158	0	Entry	{"TokenIndex":41}
+Parse	e	160	159	0	Entry	{"TokenIndex":41}
+Parse	e	160	159	0	Exit	{"TokenIndex":42}
+Parse	e	159	158	0	Exit	{"TokenIndex":42}
+Parse	e	161	158	0	Entry	{"TokenIndex":42}
+ParseStateUtils	e	162	161	0	Entry	{"existingNodeId":81}
+ParseStateUtils	e	162	161	0	Exit	[Empty]
+Parse	e	163	161	0	Entry	{"TokenIndex":42}
+Parse	x	164	163	0	Entry	{"TokenIndex":42}
+Parse	R	165	163	0	Entry	{"TokenIndex":42}
+Parse	R	166	165	0	Entry	{"TokenIndex":42}
+Parse	R	166	165	0	Exit	{"TokenIndex":43,"IsError":false}
+Parse	R	165	163	0	Exit	{"TokenIndex":43}
+Parse	T	167	163	0	Entry	{"TokenIndex":43}
+Parse	e	168	163	0	Entry	{"TokenIndex":43}
+Parse	e	169	168	0	Entry	{"TokenIndex":43}
+CombinatorialParseV2	p	170	168	0	Entry	[Empty]
+CombinatorialParseV2	e	171	170	0	Entry	[Empty]
+CombinatorialParseV2	e	172	171	0	Entry	[Empty]
+Parse	e	173	172	0	Entry	{"TokenIndex":43}
+Parse	e	174	173	0	Entry	{"TokenIndex":43}
+Parse	e	174	173	0	Exit	{"TokenIndex":44}
+Parse	e	173	172	0	Exit	{"TokenIndex":44}
+Parse	e	175	172	0	Entry	{"TokenIndex":44}
+ParseStateUtils	e	176	175	0	Entry	{"existingNodeId":90}
+ParseStateUtils	e	176	175	0	Exit	[Empty]
+Parse	e	177	175	0	Entry	{"TokenIndex":44}
+Parse	x	178	177	0	Entry	{"TokenIndex":44}
+Parse	R	179	177	0	Entry	{"TokenIndex":44}
+Parse	R	180	179	0	Entry	{"TokenIndex":44}
+Parse	R	180	179	0	Exit	{"TokenIndex":45,"IsError":false}
+Parse	R	179	177	0	Exit	{"TokenIndex":45}
+Parse	T	181	177	0	Entry	{"TokenIndex":45}
+Parse	e	182	177	0	Entry	{"TokenIndex":45}
+Parse	e	183	182	0	Entry	{"TokenIndex":45}
+CombinatorialParseV2	p	184	182	0	Entry	[Empty]
+CombinatorialParseV2	e	185	184	0	Entry	[Empty]
+CombinatorialParseV2	e	186	185	0	Entry	[Empty]
+Parse	e	187	186	0	Entry	{"TokenIndex":45}
+Parse	e	188	187	0	Entry	{"TokenIndex":45}
+Parse	e	188	187	0	Exit	{"TokenIndex":46}
+Parse	e	187	186	0	Exit	{"TokenIndex":46}
+CombinatorialParseV2	e	186	185	0	Exit	[Empty]
+CombinatorialParseV2	e	185	184	0	Exit	[Empty]
+CombinatorialParseV2	p	184	182	0	Exit	[Empty]
+Parse	h	189	183	0	Entry	{"TokenIndex":46}
+Parse	h	189	183	0	Exit	[Empty]
+Parse	e	183	182	0	Exit	{"TokenIndex":46}
+Parse	e	182	177	0	Exit	{"TokenIndex":46}
+Parse	e	190	177	0	Entry	{"TokenIndex":47}
+Parse	e	191	190	0	Entry	{"TokenIndex":47}
+CombinatorialParseV2	p	192	190	0	Entry	[Empty]
+CombinatorialParseV2	e	193	192	0	Entry	[Empty]
+CombinatorialParseV2	e	194	193	0	Entry	[Empty]
+Disambiguation	e	195	194	0	Entry	[Empty]
+Disambiguation	p	196	195	0	Entry	[Empty]
+Disambiguation	p	196	195	0	Exit	{"Result":"RecordExpression"}
+Parse	e	197	195	0	Entry	{"TokenIndex":47}
+Parse	x	198	197	0	Entry	{"TokenIndex":47}
+Parse	R	199	197	0	Entry	{"TokenIndex":47}
+Parse	R	200	199	0	Entry	{"TokenIndex":47}
+Parse	R	200	199	0	Exit	{"TokenIndex":48,"IsError":false}
+Parse	R	199	197	0	Exit	{"TokenIndex":48}
+Parse	e	201	197	0	Entry	[Empty]
+Parse	T	202	201	0	Entry	{"TokenIndex":48}
+Parse	e	203	201	0	Entry	{"TokenIndex":48}
+Parse	N	204	203	0	Entry	{"TokenIndex":48}
+Parse	e	205	203	0	Entry	{"TokenIndex":48}
+Parse	e	205	203	0	Exit	{"TokenIndex":49,"IsThrowing":false}
+Parse	R	206	204	0	Entry	{"TokenIndex":49}
+Parse	R	207	206	0	Entry	{"TokenIndex":49}
+Parse	R	207	206	0	Exit	{"TokenIndex":50,"IsError":false}
+Parse	R	206	204	0	Exit	{"TokenIndex":50}
+Parse	e	208	203	0	Entry	{"TokenIndex":50}
+Parse	e	209	208	0	Entry	{"TokenIndex":50}
+CombinatorialParseV2	p	210	208	0	Entry	[Empty]
+CombinatorialParseV2	e	211	210	0	Entry	[Empty]
+CombinatorialParseV2	e	212	211	0	Entry	[Empty]
+Parse	e	213	212	0	Entry	{"TokenIndex":50}
+Parse	e	214	213	0	Entry	{"TokenIndex":50}
+Parse	e	214	213	0	Exit	{"TokenIndex":51}
+Parse	e	213	212	0	Exit	{"TokenIndex":51}
+CombinatorialParseV2	e	212	211	0	Exit	[Empty]
+Parse	R	215	211	0	Entry	{"TokenIndex":51}
+Parse	R	216	215	0	Entry	{"TokenIndex":51}
+Parse	R	216	215	0	Exit	{"TokenIndex":52,"IsError":false}
+Parse	R	215	211	0	Exit	{"TokenIndex":52}
+CombinatorialParseV2	e	217	211	0	Entry	[Empty]
+CombinatorialParseV2	e	217	211	0	Exit	[Empty]
+Parse	e	218	217	0	Entry	{"TokenIndex":52}
+Parse	e	218	217	0	Exit	{"TokenIndex":53,"IsThrowing":false}
+Parse	R	219	211	0	Entry	{"TokenIndex":53}
+Parse	R	220	219	0	Entry	{"TokenIndex":53}
+Parse	R	220	219	0	Exit	{"TokenIndex":54,"IsError":false}
+Parse	R	219	211	0	Exit	{"TokenIndex":54}
+CombinatorialParseV2	e	221	211	0	Entry	[Empty]
+Parse	e	222	221	0	Entry	{"TokenIndex":54}
+Parse	e	223	222	0	Entry	{"TokenIndex":54}
+Parse	e	223	222	0	Exit	{"TokenIndex":55}
+Parse	e	222	221	0	Exit	{"TokenIndex":55}
+CombinatorialParseV2	e	221	211	0	Exit	[Empty]
+Parse	R	224	211	0	Entry	{"TokenIndex":55}
+Parse	R	225	224	0	Entry	{"TokenIndex":55}
+Parse	R	225	224	0	Exit	{"TokenIndex":56,"IsError":false}
+Parse	R	224	211	0	Exit	{"TokenIndex":56}
+CombinatorialParseV2	e	226	211	0	Entry	[Empty]
+CombinatorialParseV2	e	226	211	0	Exit	[Empty]
+Parse	e	227	226	0	Entry	{"TokenIndex":56}
+Parse	e	227	226	0	Exit	{"TokenIndex":57,"IsThrowing":false}
+CombinatorialParseV2	e	211	210	0	Exit	[Empty]
+CombinatorialParseV2	e	228	210	0	Entry	[Empty]
+CombinatorialParseV2	e	228	210	0	Exit	[Empty]
+CombinatorialParseV2	p	210	208	0	Exit	[Empty]
+Parse	h	229	209	0	Entry	{"TokenIndex":57}
+Parse	h	229	209	0	Exit	[Empty]
+Parse	e	209	208	0	Exit	{"TokenIndex":57}
+Parse	e	208	203	0	Exit	{"TokenIndex":57}
+Parse	N	204	203	0	Exit	{"TokenIndex":57}
+Parse	e	203	201	0	Exit	{"TokenIndex":57}
+Parse	e	230	201	0	Entry	{"TokenIndex":58}
+Parse	N	231	230	0	Entry	{"TokenIndex":58}
+Parse	e	232	230	0	Entry	{"TokenIndex":58}
+Parse	e	232	230	0	Exit	{"TokenIndex":59,"IsThrowing":false}
+Parse	R	233	231	0	Entry	{"TokenIndex":59}
+Parse	R	234	233	0	Entry	{"TokenIndex":59}
+Parse	R	234	233	0	Exit	{"TokenIndex":60,"IsError":false}
+Parse	R	233	231	0	Exit	{"TokenIndex":60}
+Parse	e	235	230	0	Entry	{"TokenIndex":60}
+Parse	e	236	235	0	Entry	{"TokenIndex":60}
+CombinatorialParseV2	p	237	235	0	Entry	[Empty]
+CombinatorialParseV2	e	238	237	0	Entry	[Empty]
+CombinatorialParseV2	e	239	238	0	Entry	[Empty]
+Disambiguation	e	240	239	0	Entry	[Empty]
+Disambiguation	p	241	240	0	Entry	[Empty]
+Disambiguation	p	241	240	0	Exit	{"Result":"RecordExpression"}
+Parse	e	242	240	0	Entry	{"TokenIndex":60}
+Parse	x	243	242	0	Entry	{"TokenIndex":60}
+Parse	R	244	242	0	Entry	{"TokenIndex":60}
+Parse	R	245	244	0	Entry	{"TokenIndex":60}
+Parse	R	245	244	0	Exit	{"TokenIndex":61,"IsError":false}
+Parse	R	244	242	0	Exit	{"TokenIndex":61}
+Parse	e	246	242	0	Entry	[Empty]
+Parse	T	247	246	0	Entry	{"TokenIndex":61}
+Parse	e	248	246	0	Entry	{"TokenIndex":61}
+Parse	N	249	248	0	Entry	{"TokenIndex":61}
+Parse	e	250	248	0	Entry	{"TokenIndex":61}
+Parse	e	250	248	0	Exit	{"TokenIndex":62,"IsThrowing":false}
+Parse	R	251	249	0	Entry	{"TokenIndex":62}
+Parse	R	252	251	0	Entry	{"TokenIndex":62}
+Parse	R	252	251	0	Exit	{"TokenIndex":63,"IsError":false}
+Parse	R	251	249	0	Exit	{"TokenIndex":63}
+Parse	e	253	248	0	Entry	{"TokenIndex":63}
+Parse	e	254	253	0	Entry	{"TokenIndex":63}
+CombinatorialParseV2	p	255	253	0	Entry	[Empty]
+CombinatorialParseV2	e	256	255	0	Entry	[Empty]
+CombinatorialParseV2	e	257	256	0	Entry	[Empty]
+CombinatorialParseV2	e	257	256	0	Exit	[Empty]
+Parse	e	258	257	0	Entry	{"TokenIndex":63}
+Parse	e	258	257	0	Exit	{"TokenIndex":64,"IsThrowing":false}
+CombinatorialParseV2	e	256	255	0	Exit	[Empty]
+CombinatorialParseV2	p	255	253	0	Exit	[Empty]
+Parse	h	259	254	0	Entry	{"TokenIndex":64}
+Parse	h	259	254	0	Exit	[Empty]
+Parse	e	254	253	0	Exit	{"TokenIndex":64}
+Parse	e	253	248	0	Exit	{"TokenIndex":64}
+Parse	N	249	248	0	Exit	{"TokenIndex":64}
+Parse	e	248	246	0	Exit	{"TokenIndex":64}
+Parse	T	247	246	0	Exit	{"TokenIndex":64,"IsThrowing":false}
+Parse	e	246	242	0	Exit	{"TokenIndex":64}
+Parse	R	260	242	0	Entry	{"TokenIndex":64}
+Parse	R	261	260	0	Entry	{"TokenIndex":64}
+Parse	R	261	260	0	Exit	{"TokenIndex":65,"IsError":false}
+Parse	R	260	242	0	Exit	{"TokenIndex":65}
+Parse	x	243	242	0	Exit	{"TokenIndex":65}
+Parse	e	242	240	0	Exit	{"TokenIndex":65}
+Disambiguation	e	240	239	0	Exit	{"IsThrowing":false}
+CombinatorialParseV2	e	239	238	0	Exit	[Empty]
+CombinatorialParseV2	e	238	237	0	Exit	[Empty]
+CombinatorialParseV2	p	237	235	0	Exit	[Empty]
+Parse	h	262	236	0	Entry	{"TokenIndex":65}
+Parse	h	262	236	0	Exit	[Empty]
+Parse	e	236	235	0	Exit	{"TokenIndex":65}
+Parse	e	235	230	0	Exit	{"TokenIndex":65}
+Parse	N	231	230	0	Exit	{"TokenIndex":65}
+Parse	e	230	201	0	Exit	{"TokenIndex":65}
+Parse	e	263	201	0	Entry	{"TokenIndex":66}
+Parse	N	264	263	0	Entry	{"TokenIndex":66}
+Parse	e	265	263	0	Entry	{"TokenIndex":66}
+Parse	e	265	263	0	Exit	{"TokenIndex":67,"IsThrowing":false}
+Parse	R	266	264	0	Entry	{"TokenIndex":67}
+Parse	R	267	266	0	Entry	{"TokenIndex":67}
+Parse	R	267	266	0	Exit	{"TokenIndex":68,"IsError":false}
+Parse	R	266	264	0	Exit	{"TokenIndex":68}
+Parse	e	268	263	0	Entry	{"TokenIndex":68}
+Parse	e	269	268	0	Entry	{"TokenIndex":68}
+CombinatorialParseV2	p	270	268	0	Entry	[Empty]
+CombinatorialParseV2	e	271	270	0	Entry	[Empty]
+CombinatorialParseV2	e	272	271	0	Entry	[Empty]
+Parse	e	273	272	0	Entry	{"TokenIndex":68}
+Parse	e	274	273	0	Entry	{"TokenIndex":68}
+Parse	e	274	273	0	Exit	{"TokenIndex":69}
+Parse	e	273	272	0	Exit	{"TokenIndex":69}
+CombinatorialParseV2	e	272	271	0	Exit	[Empty]
+CombinatorialParseV2	e	271	270	0	Exit	[Empty]
+CombinatorialParseV2	p	270	268	0	Exit	[Empty]
+Parse	h	275	269	0	Entry	{"TokenIndex":69}
+Parse	h	275	269	0	Exit	[Empty]
+Parse	e	269	268	0	Exit	{"TokenIndex":69}
+Parse	e	268	263	0	Exit	{"TokenIndex":69}
+Parse	N	264	263	0	Exit	{"TokenIndex":69}
+Parse	e	263	201	0	Exit	{"TokenIndex":69}
+Parse	T	202	201	0	Exit	{"TokenIndex":69,"IsThrowing":false}
+Parse	e	201	197	0	Exit	{"TokenIndex":69}
+Parse	R	276	197	0	Entry	{"TokenIndex":69}
+Parse	R	277	276	0	Entry	{"TokenIndex":69}
+Parse	R	277	276	0	Exit	{"TokenIndex":70,"IsError":false}
+Parse	R	276	197	0	Exit	{"TokenIndex":70}
+Parse	x	198	197	0	Exit	{"TokenIndex":70}
+Parse	e	197	195	0	Exit	{"TokenIndex":70}
+Disambiguation	e	195	194	0	Exit	{"IsThrowing":false}
+CombinatorialParseV2	e	194	193	0	Exit	[Empty]
+CombinatorialParseV2	e	193	192	0	Exit	[Empty]
+CombinatorialParseV2	p	192	190	0	Exit	[Empty]
+Parse	h	278	191	0	Entry	{"TokenIndex":70}
+Parse	h	278	191	0	Exit	[Empty]
+Parse	e	191	190	0	Exit	{"TokenIndex":70}
+Parse	e	190	177	0	Exit	{"TokenIndex":70}
+Parse	T	181	177	0	Exit	{"TokenIndex":70,"IsThrowing":false}
+Parse	R	279	177	0	Entry	{"TokenIndex":70}
+Parse	R	280	279	0	Entry	{"TokenIndex":70}
+Parse	R	280	279	0	Exit	{"TokenIndex":71,"IsError":false}
+Parse	R	279	177	0	Exit	{"TokenIndex":71}
+Parse	x	178	177	0	Exit	{"TokenIndex":71}
+Parse	e	177	175	0	Exit	{"TokenIndex":71}
+Parse	e	175	172	0	Exit	{"TokenIndex":71}
+CombinatorialParseV2	e	172	171	0	Exit	[Empty]
+CombinatorialParseV2	e	171	170	0	Exit	[Empty]
+CombinatorialParseV2	p	170	168	0	Exit	[Empty]
+Parse	h	281	169	0	Entry	{"TokenIndex":71}
+Parse	h	281	169	0	Exit	[Empty]
+Parse	e	169	168	0	Exit	{"TokenIndex":71}
+Parse	e	168	163	0	Exit	{"TokenIndex":71}
+Parse	T	167	163	0	Exit	{"TokenIndex":71,"IsThrowing":false}
+Parse	R	282	163	0	Entry	{"TokenIndex":71}
+Parse	R	283	282	0	Entry	{"TokenIndex":71}
+Parse	R	283	282	0	Exit	{"TokenIndex":72,"IsError":false}
+Parse	R	282	163	0	Exit	{"TokenIndex":72}
+Parse	x	164	163	1	Exit	{"TokenIndex":72}
+Parse	e	163	161	1	Exit	{"TokenIndex":72}
+Disambiguation	e	284	161	0	Entry	[Empty]
+Disambiguation	p	285	284	0	Entry	[Empty]
+Disambiguation	p	285	284	0	Exit	{"Result":"FieldSelection"}
+Parse	e	286	284	0	Entry	{"TokenIndex":72}
+Parse	c	287	286	0	Entry	{"TokenIndex":72}
+Parse	x	288	287	0	Entry	{"TokenIndex":72}
+Parse	R	289	287	0	Entry	{"TokenIndex":72}
+Parse	R	290	289	0	Entry	{"TokenIndex":72}
+Parse	R	290	289	0	Exit	{"TokenIndex":73,"IsError":false}
+Parse	R	289	287	0	Exit	{"TokenIndex":73}
+Parse	e	291	287	0	Entry	{"TokenIndex":73}
+Parse	e	291	287	0	Exit	{"TokenIndex":74,"IsThrowing":false}
+Parse	R	292	287	0	Entry	{"TokenIndex":74}
+Parse	R	293	292	0	Entry	{"TokenIndex":74}
+Parse	R	293	292	0	Exit	{"TokenIndex":75,"IsError":false}
+Parse	R	292	287	0	Exit	{"TokenIndex":75}
+Parse	x	288	287	0	Exit	{"TokenIndex":75}
+Parse	c	287	286	0	Exit	{"TokenIndex":75}
+Parse	e	286	284	0	Exit	{"TokenIndex":75}
+Disambiguation	e	284	161	0	Exit	{"IsThrowing":false}
+Parse	e	161	158	1	Exit	{"TokenIndex":75}
+CombinatorialParseV2	e	158	157	1	Exit	[Empty]
+CombinatorialParseV2	e	157	156	1	Exit	[Empty]
+CombinatorialParseV2	p	156	154	1	Exit	[Empty]
+Parse	h	294	155	0	Entry	{"TokenIndex":75}
+Parse	h	294	155	0	Exit	[Empty]
+Parse	e	155	154	1	Exit	{"TokenIndex":75}
+Parse	e	154	149	1	Exit	{"TokenIndex":75}
+Parse	N	150	149	1	Exit	{"TokenIndex":75}
+Parse	g	149	11	1	Exit	{"TokenIndex":75}
+Parse	g	295	11	0	Entry	{"TokenIndex":76}
+Parse	N	296	295	0	Entry	{"TokenIndex":76}
+Parse	e	297	295	0	Entry	{"TokenIndex":76}
+Parse	e	297	295	0	Exit	{"TokenIndex":77}
+Parse	R	298	296	0	Entry	{"TokenIndex":77}
+Parse	R	299	298	0	Entry	{"TokenIndex":77}
+Parse	R	299	298	0	Exit	{"TokenIndex":78,"IsError":false}
+Parse	R	298	296	0	Exit	{"TokenIndex":78}
+Parse	e	300	295	0	Entry	{"TokenIndex":78}
+Parse	e	301	300	0	Entry	{"TokenIndex":78}
+CombinatorialParseV2	p	302	300	0	Entry	[Empty]
+CombinatorialParseV2	e	303	302	0	Entry	[Empty]
+CombinatorialParseV2	e	304	303	0	Entry	[Empty]
+Parse	e	305	304	0	Entry	{"TokenIndex":78}
+Parse	e	306	305	0	Entry	{"TokenIndex":78}
+Parse	e	306	305	0	Exit	{"TokenIndex":79}
+Parse	e	305	304	0	Exit	{"TokenIndex":79}
+Parse	e	307	304	0	Entry	{"TokenIndex":79}
+ParseStateUtils	e	308	307	0	Entry	{"existingNodeId":164}
+ParseStateUtils	e	308	307	0	Exit	[Empty]
+Parse	e	309	307	0	Entry	{"TokenIndex":79}
+Parse	x	310	309	0	Entry	{"TokenIndex":79}
+Parse	R	311	309	0	Entry	{"TokenIndex":79}
+Parse	R	312	311	0	Entry	{"TokenIndex":79}
+Parse	R	312	311	0	Exit	{"TokenIndex":80,"IsError":false}
+Parse	R	311	309	0	Exit	{"TokenIndex":80}
+Parse	T	313	309	0	Entry	{"TokenIndex":80}
+Parse	e	314	309	0	Entry	{"TokenIndex":80}
+Parse	e	315	314	0	Entry	{"TokenIndex":80}
+CombinatorialParseV2	p	316	314	0	Entry	[Empty]
+CombinatorialParseV2	e	317	316	0	Entry	[Empty]
+CombinatorialParseV2	e	318	317	0	Entry	[Empty]
+Parse	e	319	318	0	Entry	{"TokenIndex":80}
+Parse	e	320	319	0	Entry	{"TokenIndex":80}
+Parse	e	320	319	0	Exit	{"TokenIndex":81}
+Parse	e	319	318	0	Exit	{"TokenIndex":81}
+CombinatorialParseV2	e	318	317	0	Exit	[Empty]
+CombinatorialParseV2	e	317	316	0	Exit	[Empty]
+CombinatorialParseV2	p	316	314	0	Exit	[Empty]
+Parse	h	321	315	0	Entry	{"TokenIndex":81}
+Parse	h	321	315	0	Exit	[Empty]
+Parse	e	315	314	0	Exit	{"TokenIndex":81}
+Parse	e	314	309	0	Exit	{"TokenIndex":81}
+Parse	e	322	309	0	Entry	{"TokenIndex":82}
+Parse	e	323	322	0	Entry	{"TokenIndex":82}
+CombinatorialParseV2	p	324	322	0	Entry	[Empty]
+CombinatorialParseV2	e	325	324	0	Entry	[Empty]
+CombinatorialParseV2	e	326	325	0	Entry	[Empty]
+Parse	e	327	326	0	Entry	{"TokenIndex":82}
+Parse	e	328	327	0	Entry	{"TokenIndex":82}
+Parse	e	328	327	0	Exit	{"TokenIndex":83}
+Parse	e	327	326	0	Exit	{"TokenIndex":83}
+Parse	e	329	326	0	Entry	{"TokenIndex":83}
+ParseStateUtils	e	330	329	0	Entry	{"existingNodeId":178}
+ParseStateUtils	e	330	329	0	Exit	[Empty]
+Parse	e	331	329	0	Entry	{"TokenIndex":83}
+Parse	x	332	331	0	Entry	{"TokenIndex":83}
+Parse	R	333	331	0	Entry	{"TokenIndex":83}
+Parse	R	334	333	0	Entry	{"TokenIndex":83}
+Parse	R	334	333	0	Exit	{"TokenIndex":84,"IsError":false}
+Parse	R	333	331	0	Exit	{"TokenIndex":84}
+Parse	T	335	331	0	Entry	{"TokenIndex":84}
+Parse	T	335	331	0	Exit	{"TokenIndex":84,"IsThrowing":false}
+Parse	R	336	331	0	Entry	{"TokenIndex":84}
+Parse	R	337	336	0	Entry	{"TokenIndex":84}
+Parse	R	337	336	0	Exit	{"TokenIndex":85,"IsError":false}
+Parse	R	336	331	0	Exit	{"TokenIndex":85}
+Parse	x	332	331	0	Exit	{"TokenIndex":85}
+Parse	e	331	329	0	Exit	{"TokenIndex":85}
+Parse	e	329	326	0	Exit	{"TokenIndex":85}
+CombinatorialParseV2	e	326	325	0	Exit	[Empty]
+CombinatorialParseV2	e	325	324	0	Exit	[Empty]
+CombinatorialParseV2	p	324	322	0	Exit	[Empty]
+Parse	h	338	323	0	Entry	{"TokenIndex":85}
+Parse	h	338	323	0	Exit	[Empty]
+Parse	e	323	322	0	Exit	{"TokenIndex":85}
+Parse	e	322	309	0	Exit	{"TokenIndex":85}
+Parse	e	339	309	0	Entry	{"TokenIndex":86}
+Parse	e	340	339	0	Entry	{"TokenIndex":86}
+CombinatorialParseV2	p	341	339	0	Entry	[Empty]
+CombinatorialParseV2	e	342	341	0	Entry	[Empty]
+CombinatorialParseV2	e	343	342	0	Entry	[Empty]
+CombinatorialParseV2	e	343	342	0	Exit	[Empty]
+Parse	e	344	343	0	Entry	{"TokenIndex":86}
+Parse	e	344	343	0	Exit	{"TokenIndex":87,"IsThrowing":false}
+CombinatorialParseV2	e	342	341	0	Exit	[Empty]
+CombinatorialParseV2	p	341	339	0	Exit	[Empty]
+Parse	h	345	340	0	Entry	{"TokenIndex":87}
+Parse	h	345	340	0	Exit	[Empty]
+Parse	e	340	339	0	Exit	{"TokenIndex":87}
+Parse	e	339	309	0	Exit	{"TokenIndex":87}
+Parse	e	346	309	0	Entry	{"TokenIndex":88}
+Parse	e	347	346	0	Entry	{"TokenIndex":88}
+CombinatorialParseV2	p	348	346	0	Entry	[Empty]
+CombinatorialParseV2	e	349	348	0	Entry	[Empty]
+CombinatorialParseV2	e	350	349	0	Entry	[Empty]
+CombinatorialParseV2	e	350	349	0	Exit	[Empty]
+Parse	e	351	350	0	Entry	{"TokenIndex":88}
+Parse	e	351	350	0	Exit	{"TokenIndex":89,"IsThrowing":false}
+CombinatorialParseV2	e	349	348	0	Exit	[Empty]
+CombinatorialParseV2	p	348	346	0	Exit	[Empty]
+Parse	h	352	347	0	Entry	{"TokenIndex":89}
+Parse	h	352	347	0	Exit	[Empty]
+Parse	e	347	346	0	Exit	{"TokenIndex":89}
+Parse	e	346	309	0	Exit	{"TokenIndex":89}
+Parse	e	353	309	0	Entry	{"TokenIndex":90}
+Parse	e	354	353	0	Entry	{"TokenIndex":90}
+CombinatorialParseV2	p	355	353	0	Entry	[Empty]
+CombinatorialParseV2	e	356	355	0	Entry	[Empty]
+CombinatorialParseV2	e	357	356	0	Entry	[Empty]
+Parse	e	358	357	0	Entry	{"TokenIndex":90}
+Parse	e	359	358	0	Entry	{"TokenIndex":90}
+Parse	e	359	358	0	Exit	{"TokenIndex":91}
+Parse	e	358	357	0	Exit	{"TokenIndex":91}
+CombinatorialParseV2	e	357	356	0	Exit	[Empty]
+CombinatorialParseV2	e	356	355	0	Exit	[Empty]
+CombinatorialParseV2	p	355	353	0	Exit	[Empty]
+Parse	h	360	354	0	Entry	{"TokenIndex":91}
+Parse	h	360	354	0	Exit	[Empty]
+Parse	e	354	353	0	Exit	{"TokenIndex":91}
+Parse	e	353	309	0	Exit	{"TokenIndex":91}
+Parse	T	313	309	0	Exit	{"TokenIndex":91,"IsThrowing":false}
+Parse	R	361	309	0	Entry	{"TokenIndex":91}
+Parse	R	362	361	0	Entry	{"TokenIndex":91}
+Parse	R	362	361	0	Exit	{"TokenIndex":92,"IsError":false}
+Parse	R	361	309	0	Exit	{"TokenIndex":92}
+Parse	x	310	309	0	Exit	{"TokenIndex":92}
+Parse	e	309	307	0	Exit	{"TokenIndex":92}
+Parse	e	307	304	0	Exit	{"TokenIndex":92}
+CombinatorialParseV2	e	304	303	0	Exit	[Empty]
+CombinatorialParseV2	e	303	302	0	Exit	[Empty]
+CombinatorialParseV2	p	302	300	0	Exit	[Empty]
+Parse	h	363	301	0	Entry	{"TokenIndex":92}
+Parse	h	363	301	0	Exit	[Empty]
+Parse	e	301	300	0	Exit	{"TokenIndex":92}
+Parse	e	300	295	0	Exit	{"TokenIndex":92}
+Parse	N	296	295	0	Exit	{"TokenIndex":92}
+Parse	g	295	11	0	Exit	{"TokenIndex":92}
+Parse	g	364	11	0	Entry	{"TokenIndex":93}
+Parse	N	365	364	0	Entry	{"TokenIndex":93}
+Parse	e	366	364	0	Entry	{"TokenIndex":93}
+Parse	e	366	364	0	Exit	{"TokenIndex":94}
+Parse	R	367	365	0	Entry	{"TokenIndex":94}
+Parse	R	368	367	0	Entry	{"TokenIndex":94}
+Parse	R	368	367	0	Exit	{"TokenIndex":95,"IsError":false}
+Parse	R	367	365	0	Exit	{"TokenIndex":95}
+Parse	e	369	364	0	Entry	{"TokenIndex":95}
+Parse	e	370	369	0	Entry	{"TokenIndex":95}
+CombinatorialParseV2	p	371	369	0	Entry	[Empty]
+CombinatorialParseV2	e	372	371	0	Entry	[Empty]
+CombinatorialParseV2	e	373	372	0	Entry	[Empty]
+Parse	e	374	373	0	Entry	{"TokenIndex":95}
+Parse	e	375	374	0	Entry	{"TokenIndex":95}
+Parse	e	375	374	0	Exit	{"TokenIndex":96}
+Parse	e	374	373	0	Exit	{"TokenIndex":96}
+Parse	e	376	373	0	Entry	{"TokenIndex":96}
+ParseStateUtils	e	377	376	0	Entry	{"existingNodeId":206}
+ParseStateUtils	e	377	376	0	Exit	[Empty]
+Parse	e	378	376	0	Entry	{"TokenIndex":96}
+Parse	x	379	378	0	Entry	{"TokenIndex":96}
+Parse	R	380	378	0	Entry	{"TokenIndex":96}
+Parse	R	381	380	0	Entry	{"TokenIndex":96}
+Parse	R	381	380	0	Exit	{"TokenIndex":97,"IsError":false}
+Parse	R	380	378	0	Exit	{"TokenIndex":97}
+Parse	T	382	378	0	Entry	{"TokenIndex":97}
+Parse	e	383	378	0	Entry	{"TokenIndex":97}
+Parse	e	384	383	0	Entry	{"TokenIndex":97}
+CombinatorialParseV2	p	385	383	0	Entry	[Empty]
+CombinatorialParseV2	e	386	385	0	Entry	[Empty]
+CombinatorialParseV2	e	387	386	0	Entry	[Empty]
+Parse	e	388	387	0	Entry	{"TokenIndex":97}
+Parse	e	389	388	0	Entry	{"TokenIndex":97}
+Parse	e	389	388	0	Exit	{"TokenIndex":98}
+Parse	e	388	387	0	Exit	{"TokenIndex":98}
+CombinatorialParseV2	e	387	386	0	Exit	[Empty]
+CombinatorialParseV2	e	386	385	0	Exit	[Empty]
+CombinatorialParseV2	p	385	383	0	Exit	[Empty]
+Parse	h	390	384	0	Entry	{"TokenIndex":98}
+Parse	h	390	384	0	Exit	[Empty]
+Parse	e	384	383	0	Exit	{"TokenIndex":98}
+Parse	e	383	378	0	Exit	{"TokenIndex":98}
+Parse	e	391	378	0	Entry	{"TokenIndex":99}
+Parse	e	392	391	0	Entry	{"TokenIndex":99}
+CombinatorialParseV2	p	393	391	0	Entry	[Empty]
+CombinatorialParseV2	e	394	393	0	Entry	[Empty]
+CombinatorialParseV2	e	395	394	0	Entry	[Empty]
+CombinatorialParseV2	e	395	394	0	Exit	[Empty]
+Parse	e	396	395	0	Entry	{"TokenIndex":99}
+Parse	e	396	395	0	Exit	{"TokenIndex":100,"IsThrowing":false}
+CombinatorialParseV2	e	394	393	0	Exit	[Empty]
+CombinatorialParseV2	p	393	391	0	Exit	[Empty]
+Parse	h	397	392	0	Entry	{"TokenIndex":100}
+Parse	h	397	392	0	Exit	[Empty]
+Parse	e	392	391	0	Exit	{"TokenIndex":100}
+Parse	e	391	378	0	Exit	{"TokenIndex":100}
+Parse	e	398	378	0	Entry	{"TokenIndex":101}
+Parse	e	399	398	0	Entry	{"TokenIndex":101}
+CombinatorialParseV2	p	400	398	0	Entry	[Empty]
+CombinatorialParseV2	e	401	400	0	Entry	[Empty]
+CombinatorialParseV2	e	402	401	0	Entry	[Empty]
+Parse	e	403	402	0	Entry	{"TokenIndex":101}
+Parse	x	404	403	0	Entry	{"TokenIndex":101}
+Parse	R	405	403	0	Entry	{"TokenIndex":101}
+Parse	R	406	405	0	Entry	{"TokenIndex":101}
+Parse	R	406	405	0	Exit	{"TokenIndex":102,"IsError":false}
+Parse	R	405	403	0	Exit	{"TokenIndex":102}
+Parse	T	407	403	0	Entry	{"TokenIndex":102}
+Parse	e	408	403	0	Entry	{"TokenIndex":102}
+Parse	e	409	408	0	Entry	{"TokenIndex":102}
+Parse	e	410	409	0	Entry	{"TokenIndex":102}
+CombinatorialParseV2	p	411	409	0	Entry	[Empty]
+CombinatorialParseV2	e	412	411	0	Entry	[Empty]
+CombinatorialParseV2	e	413	412	0	Entry	[Empty]
+CombinatorialParseV2	e	413	412	0	Exit	[Empty]
+Parse	e	414	413	0	Entry	{"TokenIndex":102}
+Parse	e	414	413	0	Exit	{"TokenIndex":103,"IsThrowing":false}
+CombinatorialParseV2	e	412	411	0	Exit	[Empty]
+CombinatorialParseV2	p	411	409	0	Exit	[Empty]
+Parse	h	415	410	0	Entry	{"TokenIndex":103}
+Parse	h	415	410	0	Exit	[Empty]
+Parse	e	410	409	0	Exit	{"TokenIndex":103}
+Parse	e	409	408	0	Exit	{"TokenIndex":103}
+Parse	e	408	403	0	Exit	{"TokenIndex":103,"IsOperatorPresent":false}
+Parse	e	416	403	0	Entry	{"TokenIndex":104}
+Parse	e	417	416	0	Entry	{"TokenIndex":104}
+Parse	e	418	417	0	Entry	{"TokenIndex":104}
+CombinatorialParseV2	p	419	417	0	Entry	[Empty]
+CombinatorialParseV2	e	420	419	0	Entry	[Empty]
+CombinatorialParseV2	e	421	420	0	Entry	[Empty]
+CombinatorialParseV2	e	421	420	0	Exit	[Empty]
+Parse	e	422	421	0	Entry	{"TokenIndex":104}
+Parse	e	422	421	0	Exit	{"TokenIndex":105,"IsThrowing":false}
+CombinatorialParseV2	e	420	419	0	Exit	[Empty]
+CombinatorialParseV2	p	419	417	0	Exit	[Empty]
+Parse	h	423	418	0	Entry	{"TokenIndex":105}
+Parse	h	423	418	0	Exit	[Empty]
+Parse	e	418	417	0	Exit	{"TokenIndex":105}
+Parse	e	417	416	0	Exit	{"TokenIndex":105}
+Parse	e	416	403	0	Exit	{"TokenIndex":105,"IsOperatorPresent":false}
+Parse	e	424	403	0	Entry	{"TokenIndex":106}
+Parse	e	425	424	0	Entry	{"TokenIndex":106}
+Parse	e	426	425	0	Entry	{"TokenIndex":106}
+CombinatorialParseV2	p	427	425	0	Entry	[Empty]
+CombinatorialParseV2	e	428	427	0	Entry	[Empty]
+CombinatorialParseV2	e	429	428	0	Entry	[Empty]
+CombinatorialParseV2	e	429	428	0	Exit	[Empty]
+Parse	e	430	429	0	Entry	{"TokenIndex":106}
+Parse	e	430	429	0	Exit	{"TokenIndex":107,"IsThrowing":false}
+CombinatorialParseV2	e	428	427	0	Exit	[Empty]
+CombinatorialParseV2	p	427	425	0	Exit	[Empty]
+Parse	h	431	426	0	Entry	{"TokenIndex":107}
+Parse	h	431	426	0	Exit	[Empty]
+Parse	e	426	425	0	Exit	{"TokenIndex":107}
+Parse	e	425	424	0	Exit	{"TokenIndex":107}
+Parse	e	424	403	0	Exit	{"TokenIndex":107,"IsOperatorPresent":false}
+Parse	T	407	403	0	Exit	{"TokenIndex":107,"IsThrowing":false}
+Parse	R	432	403	0	Entry	{"TokenIndex":107}
+Parse	R	433	432	0	Entry	{"TokenIndex":107}
+Parse	R	433	432	0	Exit	{"TokenIndex":108,"IsError":false}
+Parse	R	432	403	0	Exit	{"TokenIndex":108}
+Parse	x	404	403	0	Exit	{"TokenIndex":108}
+Parse	e	403	402	0	Exit	{"TokenIndex":108}
+CombinatorialParseV2	e	402	401	0	Exit	[Empty]
+CombinatorialParseV2	e	401	400	0	Exit	[Empty]
+CombinatorialParseV2	p	400	398	0	Exit	[Empty]
+Parse	h	434	399	0	Entry	{"TokenIndex":108}
+Parse	h	434	399	0	Exit	[Empty]
+Parse	e	399	398	0	Exit	{"TokenIndex":108}
+Parse	e	398	378	0	Exit	{"TokenIndex":108}
+Parse	e	435	378	0	Entry	{"TokenIndex":109}
+Parse	e	436	435	0	Entry	{"TokenIndex":109}
+CombinatorialParseV2	p	437	435	0	Entry	[Empty]
+CombinatorialParseV2	e	438	437	0	Entry	[Empty]
+CombinatorialParseV2	e	439	438	0	Entry	[Empty]
+Parse	e	440	439	0	Entry	{"TokenIndex":109}
+Parse	x	441	440	0	Entry	{"TokenIndex":109}
+Parse	R	442	440	0	Entry	{"TokenIndex":109}
+Parse	R	443	442	0	Entry	{"TokenIndex":109}
+Parse	R	443	442	0	Exit	{"TokenIndex":110,"IsError":false}
+Parse	R	442	440	0	Exit	{"TokenIndex":110}
+Parse	T	444	440	0	Entry	{"TokenIndex":110}
+Parse	e	445	440	0	Entry	{"TokenIndex":110}
+Parse	e	446	445	0	Entry	{"TokenIndex":110}
+Parse	e	447	446	0	Entry	{"TokenIndex":110}
+CombinatorialParseV2	p	448	446	0	Entry	[Empty]
+CombinatorialParseV2	e	449	448	0	Entry	[Empty]
+CombinatorialParseV2	e	450	449	0	Entry	[Empty]
+CombinatorialParseV2	e	450	449	0	Exit	[Empty]
+Parse	e	451	450	0	Entry	{"TokenIndex":110}
+Parse	e	451	450	0	Exit	{"TokenIndex":111,"IsThrowing":false}
+CombinatorialParseV2	e	449	448	0	Exit	[Empty]
+CombinatorialParseV2	p	448	446	0	Exit	[Empty]
+Parse	h	452	447	0	Entry	{"TokenIndex":111}
+Parse	h	452	447	0	Exit	[Empty]
+Parse	e	447	446	0	Exit	{"TokenIndex":111}
+Parse	e	446	445	0	Exit	{"TokenIndex":111}
+Parse	e	445	440	0	Exit	{"TokenIndex":111,"IsOperatorPresent":false}
+Parse	e	453	440	0	Entry	{"TokenIndex":112}
+Parse	e	454	453	0	Entry	{"TokenIndex":112}
+Parse	e	455	454	0	Entry	{"TokenIndex":112}
+CombinatorialParseV2	p	456	454	0	Entry	[Empty]
+CombinatorialParseV2	e	457	456	0	Entry	[Empty]
+CombinatorialParseV2	e	458	457	0	Entry	[Empty]
+CombinatorialParseV2	e	458	457	0	Exit	[Empty]
+Parse	e	459	458	0	Entry	{"TokenIndex":112}
+Parse	e	459	458	0	Exit	{"TokenIndex":113,"IsThrowing":false}
+CombinatorialParseV2	e	457	456	0	Exit	[Empty]
+CombinatorialParseV2	p	456	454	0	Exit	[Empty]
+Parse	h	460	455	0	Entry	{"TokenIndex":113}
+Parse	h	460	455	0	Exit	[Empty]
+Parse	e	455	454	0	Exit	{"TokenIndex":113}
+Parse	e	454	453	0	Exit	{"TokenIndex":113}
+Parse	e	453	440	0	Exit	{"TokenIndex":113,"IsOperatorPresent":false}
+Parse	e	461	440	0	Entry	{"TokenIndex":114}
+Parse	e	462	461	0	Entry	{"TokenIndex":114}
+Parse	e	463	462	0	Entry	{"TokenIndex":114}
+CombinatorialParseV2	p	464	462	0	Entry	[Empty]
+CombinatorialParseV2	e	465	464	0	Entry	[Empty]
+CombinatorialParseV2	e	466	465	0	Entry	[Empty]
+CombinatorialParseV2	e	466	465	0	Exit	[Empty]
+Parse	e	467	466	0	Entry	{"TokenIndex":114}
+Parse	e	467	466	0	Exit	{"TokenIndex":115,"IsThrowing":false}
+CombinatorialParseV2	e	465	464	0	Exit	[Empty]
+CombinatorialParseV2	p	464	462	0	Exit	[Empty]
+Parse	h	468	463	0	Entry	{"TokenIndex":115}
+Parse	h	468	463	0	Exit	[Empty]
+Parse	e	463	462	0	Exit	{"TokenIndex":115}
+Parse	e	462	461	0	Exit	{"TokenIndex":115}
+Parse	e	461	440	0	Exit	{"TokenIndex":115,"IsOperatorPresent":false}
+Parse	T	444	440	0	Exit	{"TokenIndex":115,"IsThrowing":false}
+Parse	R	469	440	0	Entry	{"TokenIndex":115}
+Parse	R	470	469	0	Entry	{"TokenIndex":115}
+Parse	R	470	469	0	Exit	{"TokenIndex":116,"IsError":false}
+Parse	R	469	440	0	Exit	{"TokenIndex":116}
+Parse	x	441	440	0	Exit	{"TokenIndex":116}
+Parse	e	440	439	0	Exit	{"TokenIndex":116}
+CombinatorialParseV2	e	439	438	0	Exit	[Empty]
+CombinatorialParseV2	e	438	437	0	Exit	[Empty]
+CombinatorialParseV2	p	437	435	0	Exit	[Empty]
+Parse	h	471	436	0	Entry	{"TokenIndex":116}
+Parse	h	471	436	0	Exit	[Empty]
+Parse	e	436	435	0	Exit	{"TokenIndex":116}
+Parse	e	435	378	0	Exit	{"TokenIndex":116}
+Parse	T	382	378	0	Exit	{"TokenIndex":116,"IsThrowing":false}
+Parse	R	472	378	0	Entry	{"TokenIndex":116}
+Parse	R	473	472	0	Entry	{"TokenIndex":116}
+Parse	R	473	472	0	Exit	{"TokenIndex":117,"IsError":false}
+Parse	R	472	378	0	Exit	{"TokenIndex":117}
+Parse	x	379	378	0	Exit	{"TokenIndex":117}
+Parse	e	378	376	0	Exit	{"TokenIndex":117}
+Parse	e	376	373	0	Exit	{"TokenIndex":117}
+CombinatorialParseV2	e	373	372	0	Exit	[Empty]
+CombinatorialParseV2	e	372	371	0	Exit	[Empty]
+CombinatorialParseV2	p	371	369	0	Exit	[Empty]
+Parse	h	474	370	0	Entry	{"TokenIndex":117}
+Parse	h	474	370	0	Exit	[Empty]
+Parse	e	370	369	0	Exit	{"TokenIndex":117}
+Parse	e	369	364	0	Exit	{"TokenIndex":117}
+Parse	N	365	364	0	Exit	{"TokenIndex":117}
+Parse	g	364	11	0	Exit	{"TokenIndex":117}
+Parse	g	475	11	0	Entry	{"TokenIndex":118}
+Parse	N	476	475	0	Entry	{"TokenIndex":118}
+Parse	e	477	475	0	Entry	{"TokenIndex":118}
+Parse	e	477	475	0	Exit	{"TokenIndex":119}
+Parse	R	478	476	0	Entry	{"TokenIndex":119}
+Parse	R	479	478	0	Entry	{"TokenIndex":119}
+Parse	R	479	478	0	Exit	{"TokenIndex":120,"IsError":false}
+Parse	R	478	476	0	Exit	{"TokenIndex":120}
+Parse	e	480	475	0	Entry	{"TokenIndex":120}
+Parse	e	481	480	0	Entry	{"TokenIndex":120}
+CombinatorialParseV2	p	482	480	0	Entry	[Empty]
+CombinatorialParseV2	e	483	482	0	Entry	[Empty]
+CombinatorialParseV2	e	484	483	0	Entry	[Empty]
+Parse	e	485	484	0	Entry	{"TokenIndex":120}
+Parse	e	486	485	0	Entry	{"TokenIndex":120}
+Parse	e	486	485	0	Exit	{"TokenIndex":121}
+Parse	e	485	484	0	Exit	{"TokenIndex":121}
+Parse	e	487	484	0	Entry	{"TokenIndex":121}
+ParseStateUtils	e	488	487	0	Entry	{"existingNodeId":270}
+ParseStateUtils	e	488	487	0	Exit	[Empty]
+Parse	e	489	487	0	Entry	{"TokenIndex":121}
+Parse	x	490	489	0	Entry	{"TokenIndex":121}
+Parse	R	491	489	0	Entry	{"TokenIndex":121}
+Parse	R	492	491	0	Entry	{"TokenIndex":121}
+Parse	R	492	491	0	Exit	{"TokenIndex":122,"IsError":false}
+Parse	R	491	489	0	Exit	{"TokenIndex":122}
+Parse	T	493	489	0	Entry	{"TokenIndex":122}
+Parse	e	494	489	0	Entry	{"TokenIndex":122}
+Parse	e	495	494	0	Entry	{"TokenIndex":122}
+CombinatorialParseV2	p	496	494	0	Entry	[Empty]
+CombinatorialParseV2	e	497	496	0	Entry	[Empty]
+CombinatorialParseV2	e	498	497	0	Entry	[Empty]
+Parse	e	499	498	0	Entry	{"TokenIndex":122}
+Parse	e	500	499	0	Entry	{"TokenIndex":122}
+Parse	e	500	499	0	Exit	{"TokenIndex":123}
+Parse	e	499	498	0	Exit	{"TokenIndex":123}
+CombinatorialParseV2	e	498	497	0	Exit	[Empty]
+CombinatorialParseV2	e	497	496	0	Exit	[Empty]
+CombinatorialParseV2	p	496	494	0	Exit	[Empty]
+Parse	h	501	495	0	Entry	{"TokenIndex":123}
+Parse	h	501	495	0	Exit	[Empty]
+Parse	e	495	494	0	Exit	{"TokenIndex":123}
+Parse	e	494	489	0	Exit	{"TokenIndex":123}
+Parse	e	502	489	0	Entry	{"TokenIndex":124}
+Parse	e	503	502	0	Entry	{"TokenIndex":124}
+Parse	K	504	503	0	Entry	{"TokenIndex":124}
+Parse	R	505	503	0	Entry	{"TokenIndex":124}
+Parse	R	506	505	0	Entry	{"TokenIndex":124}
+Parse	R	506	505	0	Exit	{"TokenIndex":125,"IsError":false}
+Parse	R	505	503	0	Exit	{"TokenIndex":125}
+Parse	e	507	503	0	Entry	{"TokenIndex":125}
+Parse	e	508	507	0	Entry	{"TokenIndex":125}
+CombinatorialParseV2	p	509	507	0	Entry	[Empty]
+CombinatorialParseV2	e	510	509	0	Entry	[Empty]
+CombinatorialParseV2	e	511	510	0	Entry	[Empty]
+Disambiguation	e	512	511	0	Entry	[Empty]
+Disambiguation	p	513	512	0	Entry	[Empty]
+Disambiguation	p	513	512	0	Exit	{"Result":"FieldSelection"}
+Parse	e	514	512	0	Entry	{"TokenIndex":125}
+Parse	c	515	514	0	Entry	{"TokenIndex":125}
+Parse	x	516	515	0	Entry	{"TokenIndex":125}
+Parse	R	517	515	0	Entry	{"TokenIndex":125}
+Parse	R	518	517	0	Entry	{"TokenIndex":125}
+Parse	R	518	517	0	Exit	{"TokenIndex":126,"IsError":false}
+Parse	R	517	515	0	Exit	{"TokenIndex":126}
+Parse	e	519	515	0	Entry	{"TokenIndex":126}
+Parse	e	519	515	0	Exit	{"TokenIndex":127,"IsThrowing":false}
+Parse	R	520	515	0	Entry	{"TokenIndex":127}
+Parse	R	521	520	0	Entry	{"TokenIndex":127}
+Parse	R	521	520	0	Exit	{"TokenIndex":128,"IsError":false}
+Parse	R	520	515	0	Exit	{"TokenIndex":128}
+Parse	x	516	515	0	Exit	{"TokenIndex":128}
+Parse	c	515	514	0	Exit	{"TokenIndex":128}
+Parse	e	514	512	0	Exit	{"TokenIndex":128}
+Disambiguation	e	512	511	0	Exit	{"IsThrowing":false}
+CombinatorialParseV2	e	511	510	0	Exit	[Empty]
+Parse	R	522	510	0	Entry	{"TokenIndex":128}
+Parse	R	523	522	0	Entry	{"TokenIndex":128}
+Parse	R	523	522	0	Exit	{"TokenIndex":129,"IsError":false}
+Parse	R	522	510	0	Exit	{"TokenIndex":129}
+CombinatorialParseV2	e	524	510	0	Entry	[Empty]
+CombinatorialParseV2	e	524	510	0	Exit	[Empty]
+Parse	e	525	524	0	Entry	{"TokenIndex":129}
+Parse	e	525	524	0	Exit	{"TokenIndex":130,"IsThrowing":false}
+Parse	R	526	510	0	Entry	{"TokenIndex":130}
+Parse	R	527	526	0	Entry	{"TokenIndex":130}
+Parse	R	527	526	0	Exit	{"TokenIndex":131,"IsError":false}
+Parse	R	526	510	0	Exit	{"TokenIndex":131}
+CombinatorialParseV2	e	528	510	0	Entry	[Empty]
+Parse	e	529	528	0	Entry	{"TokenIndex":131}
+Parse	e	530	529	0	Entry	{"TokenIndex":131}
+Parse	e	530	529	0	Exit	{"TokenIndex":132}
+Parse	e	529	528	0	Exit	{"TokenIndex":132}
+Parse	e	531	528	0	Entry	{"TokenIndex":132}
+ParseStateUtils	e	532	531	0	Entry	{"existingNodeId":295}
+ParseStateUtils	e	532	531	0	Exit	[Empty]
+Parse	e	533	531	0	Entry	{"TokenIndex":132}
+Parse	x	534	533	0	Entry	{"TokenIndex":132}
+Parse	R	535	533	0	Entry	{"TokenIndex":132}
+Parse	R	536	535	0	Entry	{"TokenIndex":132}
+Parse	R	536	535	0	Exit	{"TokenIndex":133,"IsError":false}
+Parse	R	535	533	0	Exit	{"TokenIndex":133}
+Parse	T	537	533	0	Entry	{"TokenIndex":133}
+Parse	e	538	533	0	Entry	{"TokenIndex":133}
+Parse	e	539	538	0	Entry	{"TokenIndex":133}
+CombinatorialParseV2	p	540	538	0	Entry	[Empty]
+CombinatorialParseV2	e	541	540	0	Entry	[Empty]
+CombinatorialParseV2	e	542	541	0	Entry	[Empty]
+Disambiguation	e	543	542	0	Entry	[Empty]
+Disambiguation	p	544	543	0	Entry	[Empty]
+Disambiguation	p	544	543	0	Exit	{"Result":"FieldSelection"}
+Parse	e	545	543	0	Entry	{"TokenIndex":133}
+Parse	c	546	545	0	Entry	{"TokenIndex":133}
+Parse	x	547	546	0	Entry	{"TokenIndex":133}
+Parse	R	548	546	0	Entry	{"TokenIndex":133}
+Parse	R	549	548	0	Entry	{"TokenIndex":133}
+Parse	R	549	548	0	Exit	{"TokenIndex":134,"IsError":false}
+Parse	R	548	546	0	Exit	{"TokenIndex":134}
+Parse	e	550	546	0	Entry	{"TokenIndex":134}
+Parse	e	550	546	0	Exit	{"TokenIndex":135,"IsThrowing":false}
+Parse	R	551	546	0	Entry	{"TokenIndex":135}
+Parse	R	552	551	0	Entry	{"TokenIndex":135}
+Parse	R	552	551	0	Exit	{"TokenIndex":136,"IsError":false}
+Parse	R	551	546	0	Exit	{"TokenIndex":136}
+Parse	x	547	546	0	Exit	{"TokenIndex":136}
+Parse	c	546	545	0	Exit	{"TokenIndex":136}
+Parse	e	545	543	0	Exit	{"TokenIndex":136}
+Disambiguation	e	543	542	0	Exit	{"IsThrowing":false}
+CombinatorialParseV2	e	542	541	0	Exit	[Empty]
+CombinatorialParseV2	e	541	540	0	Exit	[Empty]
+CombinatorialParseV2	p	540	538	0	Exit	[Empty]
+Parse	h	553	539	0	Entry	{"TokenIndex":136}
+Parse	h	553	539	0	Exit	[Empty]
+Parse	e	539	538	0	Exit	{"TokenIndex":136}
+Parse	e	538	533	0	Exit	{"TokenIndex":136}
+Parse	e	554	533	0	Entry	{"TokenIndex":137}
+Parse	e	555	554	0	Entry	{"TokenIndex":137}
+CombinatorialParseV2	p	556	554	0	Entry	[Empty]
+CombinatorialParseV2	e	557	556	0	Entry	[Empty]
+CombinatorialParseV2	e	558	557	0	Entry	[Empty]
+Parse	e	559	558	0	Entry	{"TokenIndex":137}
+Parse	e	560	559	0	Entry	{"TokenIndex":137}
+Parse	e	560	559	0	Exit	{"TokenIndex":138}
+Parse	e	559	558	0	Exit	{"TokenIndex":138}
+CombinatorialParseV2	e	558	557	0	Exit	[Empty]
+CombinatorialParseV2	e	557	556	0	Exit	[Empty]
+CombinatorialParseV2	p	556	554	0	Exit	[Empty]
+Parse	h	561	555	0	Entry	{"TokenIndex":138}
+Parse	h	561	555	0	Exit	[Empty]
+Parse	e	555	554	0	Exit	{"TokenIndex":138}
+Parse	e	554	533	0	Exit	{"TokenIndex":138}
+Parse	T	537	533	0	Exit	{"TokenIndex":138,"IsThrowing":false}
+Parse	R	562	533	0	Entry	{"TokenIndex":138}
+Parse	R	563	562	0	Entry	{"TokenIndex":138}
+Parse	R	563	562	0	Exit	{"TokenIndex":139,"IsError":false}
+Parse	R	562	533	0	Exit	{"TokenIndex":139}
+Parse	x	534	533	0	Exit	{"TokenIndex":139}
+Parse	e	533	531	0	Exit	{"TokenIndex":139}
+Parse	e	531	528	0	Exit	{"TokenIndex":139}
+CombinatorialParseV2	e	528	510	0	Exit	[Empty]
+Parse	R	564	510	0	Entry	{"TokenIndex":139}
+Parse	R	565	564	0	Entry	{"TokenIndex":139}
+Parse	R	565	564	0	Exit	{"TokenIndex":140,"IsError":false}
+Parse	R	564	510	0	Exit	{"TokenIndex":140}
+CombinatorialParseV2	e	566	510	0	Entry	[Empty]
+Parse	e	567	566	0	Entry	{"TokenIndex":140}
+Parse	e	568	567	0	Entry	{"TokenIndex":140}
+Parse	e	568	567	0	Exit	{"TokenIndex":141}
+Parse	e	567	566	0	Exit	{"TokenIndex":141}
+Parse	e	569	566	0	Entry	{"TokenIndex":141}
+ParseStateUtils	e	570	569	0	Entry	{"existingNodeId":316}
+ParseStateUtils	e	570	569	0	Exit	[Empty]
+Parse	e	571	569	0	Entry	{"TokenIndex":141}
+Parse	x	572	571	0	Entry	{"TokenIndex":141}
+Parse	R	573	571	0	Entry	{"TokenIndex":141}
+Parse	R	574	573	0	Entry	{"TokenIndex":141}
+Parse	R	574	573	0	Exit	{"TokenIndex":142,"IsError":false}
+Parse	R	573	571	0	Exit	{"TokenIndex":142}
+Parse	T	575	571	0	Entry	{"TokenIndex":142}
+Parse	e	576	571	0	Entry	{"TokenIndex":142}
+Parse	e	577	576	0	Entry	{"TokenIndex":142}
+CombinatorialParseV2	p	578	576	0	Entry	[Empty]
+CombinatorialParseV2	e	579	578	0	Entry	[Empty]
+CombinatorialParseV2	e	580	579	0	Entry	[Empty]
+Disambiguation	e	581	580	0	Entry	[Empty]
+Disambiguation	p	582	581	0	Entry	[Empty]
+Disambiguation	p	582	581	0	Exit	{"Result":"FieldSelection"}
+Parse	e	583	581	0	Entry	{"TokenIndex":142}
+Parse	c	584	583	0	Entry	{"TokenIndex":142}
+Parse	x	585	584	0	Entry	{"TokenIndex":142}
+Parse	R	586	584	0	Entry	{"TokenIndex":142}
+Parse	R	587	586	0	Entry	{"TokenIndex":142}
+Parse	R	587	586	0	Exit	{"TokenIndex":143,"IsError":false}
+Parse	R	586	584	0	Exit	{"TokenIndex":143}
+Parse	e	588	584	0	Entry	{"TokenIndex":143}
+Parse	e	588	584	0	Exit	{"TokenIndex":144,"IsThrowing":false}
+Parse	R	589	584	0	Entry	{"TokenIndex":144}
+Parse	R	590	589	0	Entry	{"TokenIndex":144}
+Parse	R	590	589	0	Exit	{"TokenIndex":145,"IsError":false}
+Parse	R	589	584	0	Exit	{"TokenIndex":145}
+Parse	x	585	584	0	Exit	{"TokenIndex":145}
+Parse	c	584	583	0	Exit	{"TokenIndex":145}
+Parse	e	583	581	0	Exit	{"TokenIndex":145}
+Disambiguation	e	581	580	0	Exit	{"IsThrowing":false}
+CombinatorialParseV2	e	580	579	0	Exit	[Empty]
+CombinatorialParseV2	e	579	578	0	Exit	[Empty]
+CombinatorialParseV2	p	578	576	0	Exit	[Empty]
+Parse	h	591	577	0	Entry	{"TokenIndex":145}
+Parse	h	591	577	0	Exit	[Empty]
+Parse	e	577	576	0	Exit	{"TokenIndex":145}
+Parse	e	576	571	0	Exit	{"TokenIndex":145}
+Parse	e	592	571	0	Entry	{"TokenIndex":146}
+Parse	e	593	592	0	Entry	{"TokenIndex":146}
+CombinatorialParseV2	p	594	592	0	Entry	[Empty]
+CombinatorialParseV2	e	595	594	0	Entry	[Empty]
+CombinatorialParseV2	e	596	595	0	Entry	[Empty]
+CombinatorialParseV2	e	596	595	0	Exit	[Empty]
+Parse	e	597	596	0	Entry	{"TokenIndex":146}
+Parse	e	597	596	0	Exit	{"TokenIndex":147,"IsThrowing":false}
+CombinatorialParseV2	e	595	594	0	Exit	[Empty]
+CombinatorialParseV2	p	594	592	0	Exit	[Empty]
+Parse	h	598	593	0	Entry	{"TokenIndex":147}
+Parse	h	598	593	0	Exit	[Empty]
+Parse	e	593	592	0	Exit	{"TokenIndex":147}
+Parse	e	592	571	0	Exit	{"TokenIndex":147}
+Parse	T	575	571	0	Exit	{"TokenIndex":147,"IsThrowing":false}
+Parse	R	599	571	0	Entry	{"TokenIndex":147}
+Parse	R	600	599	0	Entry	{"TokenIndex":147}
+Parse	R	600	599	0	Exit	{"TokenIndex":148,"IsError":false}
+Parse	R	599	571	0	Exit	{"TokenIndex":148}
+Parse	x	572	571	0	Exit	{"TokenIndex":148}
+Parse	e	571	569	0	Exit	{"TokenIndex":148}
+Parse	e	569	566	0	Exit	{"TokenIndex":148}
+CombinatorialParseV2	e	566	510	0	Exit	[Empty]
+CombinatorialParseV2	e	510	509	0	Exit	[Empty]
+CombinatorialParseV2	e	601	509	0	Entry	[Empty]
+CombinatorialParseV2	e	601	509	0	Exit	[Empty]
+CombinatorialParseV2	p	509	507	0	Exit	[Empty]
+Parse	h	602	508	0	Entry	{"TokenIndex":148}
+Parse	h	602	508	0	Exit	[Empty]
+Parse	e	508	507	0	Exit	{"TokenIndex":148}
+Parse	e	507	503	0	Exit	{"TokenIndex":148}
+Parse	K	504	503	0	Exit	{"TokenIndex":148}
+Parse	e	503	502	0	Exit	{"TokenIndex":148}
+Parse	e	502	489	0	Exit	{"TokenIndex":148}
+Parse	T	493	489	0	Exit	{"TokenIndex":148,"IsThrowing":false}
+Parse	R	603	489	0	Entry	{"TokenIndex":148}
+Parse	R	604	603	0	Entry	{"TokenIndex":148}
+Parse	R	604	603	0	Exit	{"TokenIndex":149,"IsError":false}
+Parse	R	603	489	0	Exit	{"TokenIndex":149}
+Parse	x	490	489	0	Exit	{"TokenIndex":149}
+Parse	e	489	487	0	Exit	{"TokenIndex":149}
+Parse	e	487	484	0	Exit	{"TokenIndex":149}
+CombinatorialParseV2	e	484	483	0	Exit	[Empty]
+CombinatorialParseV2	e	483	482	0	Exit	[Empty]
+CombinatorialParseV2	p	482	480	0	Exit	[Empty]
+Parse	h	605	481	0	Entry	{"TokenIndex":149}
+Parse	h	605	481	0	Exit	[Empty]
+Parse	e	481	480	0	Exit	{"TokenIndex":149}
+Parse	e	480	475	0	Exit	{"TokenIndex":149}
+Parse	N	476	475	0	Exit	{"TokenIndex":149}
+Parse	g	475	11	0	Exit	{"TokenIndex":149}
+Parse	g	606	11	0	Entry	{"TokenIndex":150}
+Parse	N	607	606	0	Entry	{"TokenIndex":150}
+Parse	e	608	606	0	Entry	{"TokenIndex":150}
+Parse	e	608	606	0	Exit	{"TokenIndex":151}
+Parse	R	609	607	0	Entry	{"TokenIndex":151}
+Parse	R	610	609	0	Entry	{"TokenIndex":151}
+Parse	R	610	609	0	Exit	{"TokenIndex":152,"IsError":false}
+Parse	R	609	607	0	Exit	{"TokenIndex":152}
+Parse	e	611	606	0	Entry	{"TokenIndex":152}
+Parse	e	612	611	0	Entry	{"TokenIndex":152}
+CombinatorialParseV2	p	613	611	0	Entry	[Empty]
+CombinatorialParseV2	e	614	613	0	Entry	[Empty]
+CombinatorialParseV2	e	615	614	0	Entry	[Empty]
+Parse	e	616	615	0	Entry	{"TokenIndex":152}
+Parse	e	617	616	0	Entry	{"TokenIndex":152}
+Parse	e	617	616	0	Exit	{"TokenIndex":153}
+Parse	e	616	615	0	Exit	{"TokenIndex":153}
+Parse	e	618	615	0	Entry	{"TokenIndex":153}
+ParseStateUtils	e	619	618	0	Entry	{"existingNodeId":344}
+ParseStateUtils	e	619	618	0	Exit	[Empty]
+Parse	e	620	618	0	Entry	{"TokenIndex":153}
+Parse	x	621	620	0	Entry	{"TokenIndex":153}
+Parse	R	622	620	0	Entry	{"TokenIndex":153}
+Parse	R	623	622	0	Entry	{"TokenIndex":153}
+Parse	R	623	622	0	Exit	{"TokenIndex":154,"IsError":false}
+Parse	R	622	620	0	Exit	{"TokenIndex":154}
+Parse	T	624	620	0	Entry	{"TokenIndex":154}
+Parse	e	625	620	0	Entry	{"TokenIndex":154}
+Parse	e	626	625	0	Entry	{"TokenIndex":154}
+CombinatorialParseV2	p	627	625	0	Entry	[Empty]
+CombinatorialParseV2	e	628	627	0	Entry	[Empty]
+CombinatorialParseV2	e	629	628	0	Entry	[Empty]
+Parse	e	630	629	0	Entry	{"TokenIndex":154}
+Parse	e	631	630	0	Entry	{"TokenIndex":154}
+Parse	e	631	630	0	Exit	{"TokenIndex":155}
+Parse	e	630	629	0	Exit	{"TokenIndex":155}
+CombinatorialParseV2	e	629	628	0	Exit	[Empty]
+CombinatorialParseV2	e	628	627	0	Exit	[Empty]
+CombinatorialParseV2	p	627	625	0	Exit	[Empty]
+Parse	h	632	626	0	Entry	{"TokenIndex":155}
+Parse	h	632	626	0	Exit	[Empty]
+Parse	e	626	625	0	Exit	{"TokenIndex":155}
+Parse	e	625	620	0	Exit	{"TokenIndex":155}
+Parse	e	633	620	0	Entry	{"TokenIndex":156}
+Parse	e	634	633	0	Entry	{"TokenIndex":156}
+CombinatorialParseV2	p	635	633	0	Entry	[Empty]
+CombinatorialParseV2	e	636	635	0	Entry	[Empty]
+CombinatorialParseV2	e	637	636	0	Entry	[Empty]
+CombinatorialParseV2	e	637	636	0	Exit	[Empty]
+Parse	e	638	637	0	Entry	{"TokenIndex":156}
+Parse	e	638	637	0	Exit	{"TokenIndex":157,"IsThrowing":false}
+CombinatorialParseV2	e	636	635	0	Exit	[Empty]
+CombinatorialParseV2	p	635	633	0	Exit	[Empty]
+Parse	h	639	634	0	Entry	{"TokenIndex":157}
+Parse	h	639	634	0	Exit	[Empty]
+Parse	e	634	633	0	Exit	{"TokenIndex":157}
+Parse	e	633	620	0	Exit	{"TokenIndex":157}
+Parse	e	640	620	0	Entry	{"TokenIndex":158}
+Parse	e	641	640	0	Entry	{"TokenIndex":158}
+CombinatorialParseV2	p	642	640	0	Entry	[Empty]
+CombinatorialParseV2	e	643	642	0	Entry	[Empty]
+CombinatorialParseV2	e	644	643	0	Entry	[Empty]
+CombinatorialParseV2	e	644	643	0	Exit	[Empty]
+Parse	e	645	644	0	Entry	{"TokenIndex":158}
+Parse	e	645	644	0	Exit	{"TokenIndex":158,"IsOperatorPresent":false}
+Parse	e	646	645	0	Entry	{"TokenIndex":158}
+Parse	e	647	646	0	Entry	{"TokenIndex":158}
+Parse	e	648	647	0	Entry	{"TokenIndex":158}
+Parse	e	648	647	0	Exit	{"TokenIndex":158,"IsThrowing":true}
+ParserUtils	m	6	4	4	Exit	[Empty]
+ParserUtils	f	649	4	0	Entry	[Empty]
+Parse	e	650	649	0	Entry	{"TokenIndex":0}
+Parse	R	651	650	0	Entry	{"TokenIndex":0}
+Parse	R	652	651	0	Entry	{"TokenIndex":0}
+Parse	R	652	651	0	Exit	{"TokenIndex":0,"IsError":true}
+ParserUtils	f	649	4	0	Exit	[Empty]
+ParserUtils	p	5	4	4	Exit	[Empty]
+ParserUtils	e	4	3	4	Exit	[Empty]
+LexParse	e	3	2	5	Exit	[Empty]
+AnalysisBase	tryLexParse	2		5	Exit	[Empty]
+Validation	e	653		0	Entry	[Empty]
+Inspection.Scope	y	654	653	0	Entry	[Empty]
+Inspection.Scope	h	655	654	0	Entry	[Empty]
+Inspection.Scope	k	656	655	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	657	656	0	Entry	[Empty]
+Inspection.Scope	b	658	657	0	Entry	{"nodeId":1}
+Inspection.Scope	b	658	657	0	Exit	{"Result":"new root scope"}
+Inspection.Scope	v	659	657	0	Entry	[Empty]
+Inspection.Scope	b	660	659	0	Entry	{"nodeId":9}
+Inspection.Scope	b	660	659	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	661	659	0	Entry	{"nodeId":16}
+Inspection.Scope	b	661	659	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	662	659	0	Entry	{"nodeId":23}
+Inspection.Scope	b	662	659	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	663	659	0	Entry	{"nodeId":30}
+Inspection.Scope	b	663	659	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	664	659	0	Entry	{"nodeId":37}
+Inspection.Scope	b	664	659	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	665	659	0	Entry	{"nodeId":43}
+Inspection.Scope	b	665	659	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	666	659	0	Entry	{"nodeId":83}
+Inspection.Scope	b	666	659	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	667	659	0	Entry	{"nodeId":166}
+Inspection.Scope	b	667	659	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	668	659	0	Entry	{"nodeId":208}
+Inspection.Scope	b	668	659	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	669	659	0	Entry	{"nodeId":272}
+Inspection.Scope	b	669	659	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	670	659	0	Entry	{"nodeId":343}
+Inspection.Scope	b	670	659	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	v	659	657	0	Exit	[Empty]
+Inspection.Scope	N	657	656	0	Exit	[Empty]
+Inspection.Scope	k	656	655	0	Exit	[Empty]
+Inspection.Scope	y	671	653	0	Entry	[Empty]
+Inspection.Scope	h	672	671	0	Entry	[Empty]
+Inspection.Scope	k	673	672	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	674	673	0	Entry	[Empty]
+Inspection.Scope	b	675	674	0	Entry	{"nodeId":1}
+Inspection.Scope	b	675	674	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	676	674	0	Entry	[Empty]
+Inspection.Scope	v	676	674	0	Exit	[Empty]
+Inspection.Scope	N	674	673	0	Exit	[Empty]
+Inspection.Scope	k	673	672	0	Exit	[Empty]
+Inspection.Scope	y	677	653	0	Entry	[Empty]
+Inspection.Scope	h	678	677	0	Entry	[Empty]
+Inspection.Scope	k	679	678	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	680	679	0	Entry	[Empty]
+Inspection.Scope	b	681	680	0	Entry	{"nodeId":1}
+Inspection.Scope	b	681	680	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	682	680	0	Entry	[Empty]
+Inspection.Scope	v	682	680	0	Exit	[Empty]
+Inspection.Scope	N	680	679	0	Exit	[Empty]
+Inspection.Scope	k	679	678	0	Exit	[Empty]
+Inspection.Scope	y	683	653	0	Entry	[Empty]
+Inspection.Scope	h	684	683	0	Entry	[Empty]
+Inspection.Scope	k	685	684	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	686	685	0	Entry	[Empty]
+Inspection.Scope	b	687	686	0	Entry	{"nodeId":1}
+Inspection.Scope	b	687	686	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	688	686	0	Entry	[Empty]
+Inspection.Scope	v	688	686	0	Exit	[Empty]
+Inspection.Scope	N	686	685	0	Exit	[Empty]
+Inspection.Scope	k	685	684	0	Exit	[Empty]
+Inspection.Scope	y	689	653	0	Entry	[Empty]
+Inspection.Scope	h	690	689	0	Entry	[Empty]
+Inspection.Scope	k	691	690	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	692	691	0	Entry	[Empty]
+Inspection.Scope	b	693	692	0	Entry	{"nodeId":1}
+Inspection.Scope	b	693	692	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	694	692	0	Entry	[Empty]
+Inspection.Scope	v	694	692	0	Exit	[Empty]
+Inspection.Scope	N	692	691	0	Exit	[Empty]
+Inspection.Scope	k	691	690	0	Exit	[Empty]
+Inspection.Scope	y	695	653	0	Entry	[Empty]
+Inspection.Scope	h	696	695	0	Entry	[Empty]
+Inspection.Scope	k	697	696	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	698	697	0	Entry	[Empty]
+Inspection.Scope	b	699	698	0	Entry	{"nodeId":1}
+Inspection.Scope	b	699	698	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	700	698	0	Entry	[Empty]
+Inspection.Scope	v	700	698	0	Exit	[Empty]
+Inspection.Scope	N	698	697	0	Exit	[Empty]
+Inspection.Scope	k	697	696	0	Exit	[Empty]
+Inspection.Scope	y	701	653	0	Entry	[Empty]
+Inspection.Scope	h	702	701	0	Entry	[Empty]
+Inspection.Scope	k	703	702	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	704	703	0	Entry	[Empty]
+Inspection.Scope	b	705	704	0	Entry	{"nodeId":1}
+Inspection.Scope	b	705	704	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	706	704	0	Entry	[Empty]
+Inspection.Scope	v	706	704	0	Exit	[Empty]
+Inspection.Scope	N	704	703	0	Exit	[Empty]
+Inspection.Scope	k	703	702	0	Exit	[Empty]
+Inspection.Scope	y	707	653	0	Entry	[Empty]
+Inspection.Scope	h	708	707	0	Entry	[Empty]
+Inspection.Scope	k	709	708	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	710	709	0	Entry	[Empty]
+Inspection.Scope	b	711	710	0	Entry	{"nodeId":1}
+Inspection.Scope	b	711	710	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	712	710	0	Entry	[Empty]
+Inspection.Scope	v	712	710	0	Exit	[Empty]
+Inspection.Scope	N	710	709	0	Exit	[Empty]
+Inspection.Scope	k	709	708	0	Exit	[Empty]
+Inspection.Scope	y	713	653	0	Entry	[Empty]
+Inspection.Scope	h	714	713	0	Entry	[Empty]
+Inspection.Scope	k	715	714	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	716	715	0	Entry	[Empty]
+Inspection.Scope	b	717	716	0	Entry	{"nodeId":1}
+Inspection.Scope	b	717	716	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	718	716	0	Entry	[Empty]
+Inspection.Scope	v	718	716	0	Exit	[Empty]
+Inspection.Scope	N	716	715	0	Exit	[Empty]
+Inspection.Scope	k	715	714	0	Exit	[Empty]
+Inspection.Scope	y	719	653	0	Entry	[Empty]
+Inspection.Scope	h	720	719	0	Entry	[Empty]
+Inspection.Scope	k	721	720	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	722	721	0	Entry	[Empty]
+Inspection.Scope	b	723	722	0	Entry	{"nodeId":1}
+Inspection.Scope	b	723	722	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	724	722	0	Entry	[Empty]
+Inspection.Scope	v	724	722	0	Exit	[Empty]
+Inspection.Scope	N	722	721	0	Exit	[Empty]
+Inspection.Scope	k	721	720	0	Exit	[Empty]
+Inspection.Scope	y	725	653	0	Entry	[Empty]
+Inspection.Scope	h	726	725	0	Entry	[Empty]
+Inspection.Scope	k	727	726	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	728	727	0	Entry	[Empty]
+Inspection.Scope	b	729	728	0	Entry	{"nodeId":1}
+Inspection.Scope	b	729	728	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	730	728	0	Entry	[Empty]
+Inspection.Scope	v	730	728	0	Exit	[Empty]
+Inspection.Scope	N	728	727	0	Exit	[Empty]
+Inspection.Scope	k	727	726	0	Exit	[Empty]
+Inspection.Scope	y	731	653	0	Entry	[Empty]
+Inspection.Scope	h	732	731	0	Entry	[Empty]
+Inspection.Scope	k	733	732	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	734	733	0	Entry	[Empty]
+Inspection.Scope	b	735	734	0	Entry	{"nodeId":1}
+Inspection.Scope	b	735	734	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	736	734	0	Entry	[Empty]
+Inspection.Scope	v	736	734	0	Exit	[Empty]
+Inspection.Scope	N	734	733	0	Exit	[Empty]
+Inspection.Scope	k	733	732	0	Exit	[Empty]
+Inspection.Scope	y	737	653	0	Entry	[Empty]
+Inspection.Scope	h	738	737	0	Entry	[Empty]
+Inspection.Scope	k	739	738	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	740	739	0	Entry	[Empty]
+Inspection.Scope	b	741	740	0	Entry	{"nodeId":1}
+Inspection.Scope	b	741	740	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	742	740	0	Entry	[Empty]
+Inspection.Scope	v	742	740	0	Exit	[Empty]
+Inspection.Scope	N	740	739	0	Exit	[Empty]
+Inspection.Scope	k	739	738	0	Exit	[Empty]
+Inspection.Scope	y	743	653	0	Entry	[Empty]
+Inspection.Scope	h	744	743	0	Entry	[Empty]
+Inspection.Scope	k	745	744	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	746	745	0	Entry	[Empty]
+Inspection.Scope	b	747	746	0	Entry	{"nodeId":1}
+Inspection.Scope	b	747	746	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	748	746	0	Entry	[Empty]
+Inspection.Scope	v	748	746	0	Exit	[Empty]
+Inspection.Scope	N	746	745	0	Exit	[Empty]
+Inspection.Scope	k	745	744	0	Exit	[Empty]
+Inspection.Scope	y	749	653	0	Entry	[Empty]
+Inspection.Scope	h	750	749	0	Entry	[Empty]
+Inspection.Scope	k	751	750	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	752	751	0	Entry	[Empty]
+Inspection.Scope	b	753	752	0	Entry	{"nodeId":1}
+Inspection.Scope	b	753	752	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	754	752	0	Entry	[Empty]
+Inspection.Scope	v	754	752	0	Exit	[Empty]
+Inspection.Scope	N	752	751	0	Exit	[Empty]
+Inspection.Scope	k	751	750	0	Exit	[Empty]
+Inspection.Scope	y	755	653	0	Entry	[Empty]
+Inspection.Scope	h	756	755	0	Entry	[Empty]
+Inspection.Scope	k	757	756	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	758	757	0	Entry	[Empty]
+Inspection.Scope	b	759	758	0	Entry	{"nodeId":1}
+Inspection.Scope	b	759	758	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	760	758	0	Entry	[Empty]
+Inspection.Scope	v	760	758	0	Exit	[Empty]
+Inspection.Scope	N	758	757	0	Exit	[Empty]
+Inspection.Scope	k	757	756	0	Exit	[Empty]
+Inspection.Scope	y	761	653	0	Entry	[Empty]
+Inspection.Scope	h	762	761	0	Entry	[Empty]
+Inspection.Scope	k	763	762	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	764	763	0	Entry	[Empty]
+Inspection.Scope	b	765	764	0	Entry	{"nodeId":1}
+Inspection.Scope	b	765	764	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	766	764	0	Entry	[Empty]
+Inspection.Scope	v	766	764	0	Exit	[Empty]
+Inspection.Scope	N	764	763	0	Exit	[Empty]
+Inspection.Scope	k	763	762	0	Exit	[Empty]
+Inspection.Scope	y	767	653	0	Entry	[Empty]
+Inspection.Scope	h	768	767	0	Entry	[Empty]
+Inspection.Scope	k	769	768	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	770	769	0	Entry	[Empty]
+Inspection.Scope	b	771	770	0	Entry	{"nodeId":1}
+Inspection.Scope	b	771	770	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	772	770	0	Entry	[Empty]
+Inspection.Scope	v	772	770	0	Exit	[Empty]
+Inspection.Scope	N	770	769	0	Exit	[Empty]
+Inspection.Scope	k	769	768	0	Exit	[Empty]
+Inspection.Scope	y	773	653	0	Entry	[Empty]
+Inspection.Scope	h	774	773	0	Entry	[Empty]
+Inspection.Scope	k	775	774	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	776	775	0	Entry	[Empty]
+Inspection.Scope	b	777	776	0	Entry	{"nodeId":1}
+Inspection.Scope	b	777	776	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	778	776	0	Entry	[Empty]
+Inspection.Scope	v	778	776	0	Exit	[Empty]
+Inspection.Scope	N	776	775	0	Exit	[Empty]
+Inspection.Scope	k	775	774	0	Exit	[Empty]
+Inspection.Scope	y	779	653	0	Entry	[Empty]
+Inspection.Scope	h	780	779	0	Entry	[Empty]
+Inspection.Scope	k	781	780	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	782	781	0	Entry	[Empty]
+Inspection.Scope	b	783	782	0	Entry	{"nodeId":1}
+Inspection.Scope	b	783	782	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	784	782	0	Entry	[Empty]
+Inspection.Scope	v	784	782	0	Exit	[Empty]
+Inspection.Scope	N	782	781	0	Exit	[Empty]
+Inspection.Scope	k	781	780	0	Exit	[Empty]
+Inspection.Scope	y	785	653	0	Entry	[Empty]
+Inspection.Scope	h	786	785	0	Entry	[Empty]
+Inspection.Scope	k	787	786	0	Entry	{"nodeKind":"LetExpression","nodeId":1}
+Inspection.Scope	N	788	787	0	Entry	[Empty]
+Inspection.Scope	b	789	788	0	Entry	{"nodeId":1}
+Inspection.Scope	b	789	788	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	790	788	0	Entry	[Empty]
+Inspection.Scope	v	790	788	0	Exit	[Empty]
+Inspection.Scope	N	788	787	0	Exit	[Empty]
+Inspection.Scope	k	787	786	0	Exit	[Empty]
+Inspection.Scope	k	791	655	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	792	791	0	Entry	{"nodeId":3}
+Inspection.Scope	b	792	791	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	791	655	0	Exit	[Empty]
+Inspection.Scope	k	793	672	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	794	793	0	Entry	{"nodeId":3}
+Inspection.Scope	b	794	793	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	793	672	0	Exit	[Empty]
+Inspection.Scope	k	795	678	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	796	795	0	Entry	{"nodeId":3}
+Inspection.Scope	b	796	795	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	795	678	0	Exit	[Empty]
+Inspection.Scope	k	797	684	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	798	797	0	Entry	{"nodeId":3}
+Inspection.Scope	b	798	797	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	797	684	0	Exit	[Empty]
+Inspection.Scope	k	799	690	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	800	799	0	Entry	{"nodeId":3}
+Inspection.Scope	b	800	799	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	799	690	0	Exit	[Empty]
+Inspection.Scope	k	801	696	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	802	801	0	Entry	{"nodeId":3}
+Inspection.Scope	b	802	801	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	801	696	0	Exit	[Empty]
+Inspection.Scope	k	803	702	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	804	803	0	Entry	{"nodeId":3}
+Inspection.Scope	b	804	803	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	803	702	0	Exit	[Empty]
+Inspection.Scope	k	805	708	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	806	805	0	Entry	{"nodeId":3}
+Inspection.Scope	b	806	805	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	805	708	0	Exit	[Empty]
+Inspection.Scope	k	807	714	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	808	807	0	Entry	{"nodeId":3}
+Inspection.Scope	b	808	807	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	807	714	0	Exit	[Empty]
+Inspection.Scope	k	809	720	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	810	809	0	Entry	{"nodeId":3}
+Inspection.Scope	b	810	809	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	809	720	0	Exit	[Empty]
+Inspection.Scope	k	811	726	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	812	811	0	Entry	{"nodeId":3}
+Inspection.Scope	b	812	811	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	811	726	0	Exit	[Empty]
+Inspection.Scope	k	813	732	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	814	813	0	Entry	{"nodeId":3}
+Inspection.Scope	b	814	813	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	813	732	0	Exit	[Empty]
+Inspection.Scope	k	815	738	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	816	815	0	Entry	{"nodeId":3}
+Inspection.Scope	b	816	815	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	815	738	0	Exit	[Empty]
+Inspection.Scope	k	817	744	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	818	817	0	Entry	{"nodeId":3}
+Inspection.Scope	b	818	817	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	817	744	0	Exit	[Empty]
+Inspection.Scope	k	819	750	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	820	819	0	Entry	{"nodeId":3}
+Inspection.Scope	b	820	819	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	819	750	0	Exit	[Empty]
+Inspection.Scope	k	821	756	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	822	821	0	Entry	{"nodeId":3}
+Inspection.Scope	b	822	821	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	821	756	0	Exit	[Empty]
+Inspection.Scope	k	823	762	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	824	823	0	Entry	{"nodeId":3}
+Inspection.Scope	b	824	823	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	823	762	0	Exit	[Empty]
+Inspection.Scope	k	825	768	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	826	825	0	Entry	{"nodeId":3}
+Inspection.Scope	b	826	825	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	825	768	0	Exit	[Empty]
+Inspection.Scope	k	827	774	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	828	827	0	Entry	{"nodeId":3}
+Inspection.Scope	b	828	827	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	827	774	0	Exit	[Empty]
+Inspection.Scope	k	829	780	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	830	829	0	Entry	{"nodeId":3}
+Inspection.Scope	b	830	829	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	829	780	0	Exit	[Empty]
+Inspection.Scope	k	831	786	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":3}
+Inspection.Scope	b	832	831	0	Entry	{"nodeId":3}
+Inspection.Scope	b	832	831	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	831	786	0	Exit	[Empty]
+Inspection.Scope	k	833	655	0	Entry	{"nodeKind":"Csv","nodeId":39}
+Inspection.Scope	b	834	833	0	Entry	{"nodeId":39}
+Inspection.Scope	b	834	833	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	833	655	0	Exit	[Empty]
+Inspection.Scope	k	835	672	0	Entry	{"nodeKind":"Csv","nodeId":39}
+Inspection.Scope	b	836	835	0	Entry	{"nodeId":39}
+Inspection.Scope	b	836	835	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	835	672	0	Exit	[Empty]
+Inspection.Scope	k	837	678	0	Entry	{"nodeKind":"Csv","nodeId":76}
+Inspection.Scope	b	838	837	0	Entry	{"nodeId":76}
+Inspection.Scope	b	838	837	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	837	678	0	Exit	[Empty]
+Inspection.Scope	k	839	684	0	Entry	{"nodeKind":"Csv","nodeId":76}
+Inspection.Scope	b	840	839	0	Entry	{"nodeId":76}
+Inspection.Scope	b	840	839	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	839	684	0	Exit	[Empty]
+Inspection.Scope	k	841	690	0	Entry	{"nodeKind":"Csv","nodeId":76}
+Inspection.Scope	b	842	841	0	Entry	{"nodeId":76}
+Inspection.Scope	b	842	841	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	841	690	0	Exit	[Empty]
+Inspection.Scope	k	843	696	0	Entry	{"nodeKind":"Csv","nodeId":76}
+Inspection.Scope	b	844	843	0	Entry	{"nodeId":76}
+Inspection.Scope	b	844	843	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	843	696	0	Exit	[Empty]
+Inspection.Scope	k	845	702	0	Entry	{"nodeKind":"Csv","nodeId":76}
+Inspection.Scope	b	846	845	0	Entry	{"nodeId":76}
+Inspection.Scope	b	846	845	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	845	702	0	Exit	[Empty]
+Inspection.Scope	k	847	708	0	Entry	{"nodeKind":"Csv","nodeId":76}
+Inspection.Scope	b	848	847	0	Entry	{"nodeId":76}
+Inspection.Scope	b	848	847	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	847	708	0	Exit	[Empty]
+Inspection.Scope	k	849	714	0	Entry	{"nodeKind":"Csv","nodeId":159}
+Inspection.Scope	b	850	849	0	Entry	{"nodeId":159}
+Inspection.Scope	b	850	849	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	849	714	0	Exit	[Empty]
+Inspection.Scope	k	851	720	0	Entry	{"nodeKind":"Csv","nodeId":159}
+Inspection.Scope	b	852	851	0	Entry	{"nodeId":159}
+Inspection.Scope	b	852	851	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	851	720	0	Exit	[Empty]
+Inspection.Scope	k	853	726	0	Entry	{"nodeKind":"Csv","nodeId":159}
+Inspection.Scope	b	854	853	0	Entry	{"nodeId":159}
+Inspection.Scope	b	854	853	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	853	726	0	Exit	[Empty]
+Inspection.Scope	k	855	732	0	Entry	{"nodeKind":"Csv","nodeId":159}
+Inspection.Scope	b	856	855	0	Entry	{"nodeId":159}
+Inspection.Scope	b	856	855	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	855	732	0	Exit	[Empty]
+Inspection.Scope	k	857	738	0	Entry	{"nodeKind":"Csv","nodeId":201}
+Inspection.Scope	b	858	857	0	Entry	{"nodeId":201}
+Inspection.Scope	b	858	857	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	857	738	0	Exit	[Empty]
+Inspection.Scope	k	859	744	0	Entry	{"nodeKind":"Csv","nodeId":201}
+Inspection.Scope	b	860	859	0	Entry	{"nodeId":201}
+Inspection.Scope	b	860	859	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	859	744	0	Exit	[Empty]
+Inspection.Scope	k	861	750	0	Entry	{"nodeKind":"Csv","nodeId":265}
+Inspection.Scope	b	862	861	0	Entry	{"nodeId":265}
+Inspection.Scope	b	862	861	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	861	750	0	Exit	[Empty]
+Inspection.Scope	k	863	756	0	Entry	{"nodeKind":"Csv","nodeId":265}
+Inspection.Scope	b	864	863	0	Entry	{"nodeId":265}
+Inspection.Scope	b	864	863	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	863	756	0	Exit	[Empty]
+Inspection.Scope	k	865	762	0	Entry	{"nodeKind":"Csv","nodeId":265}
+Inspection.Scope	b	866	865	0	Entry	{"nodeId":265}
+Inspection.Scope	b	866	865	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	865	762	0	Exit	[Empty]
+Inspection.Scope	k	867	768	0	Entry	{"nodeKind":"Csv","nodeId":265}
+Inspection.Scope	b	868	867	0	Entry	{"nodeId":265}
+Inspection.Scope	b	868	867	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	867	768	0	Exit	[Empty]
+Inspection.Scope	k	869	774	0	Entry	{"nodeKind":"Csv","nodeId":265}
+Inspection.Scope	b	870	869	0	Entry	{"nodeId":265}
+Inspection.Scope	b	870	869	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	869	774	0	Exit	[Empty]
+Inspection.Scope	k	871	780	0	Entry	{"nodeKind":"Csv","nodeId":339}
+Inspection.Scope	b	872	871	0	Entry	{"nodeId":339}
+Inspection.Scope	b	872	871	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	871	780	0	Exit	[Empty]
+Inspection.Scope	k	873	786	0	Entry	{"nodeKind":"Csv","nodeId":339}
+Inspection.Scope	b	874	873	0	Entry	{"nodeId":339}
+Inspection.Scope	b	874	873	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	873	786	0	Exit	[Empty]
+Inspection.Scope	k	875	655	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":40}
+Inspection.Scope	b	876	875	0	Entry	{"nodeId":40}
+Inspection.Scope	b	876	875	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	875	655	0	Exit	[Empty]
+Inspection.Scope	k	877	672	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":40}
+Inspection.Scope	b	878	877	0	Entry	{"nodeId":40}
+Inspection.Scope	b	878	877	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	877	672	0	Exit	[Empty]
+Inspection.Scope	k	879	678	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":77}
+Inspection.Scope	b	880	879	0	Entry	{"nodeId":77}
+Inspection.Scope	b	880	879	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	879	678	0	Exit	[Empty]
+Inspection.Scope	k	881	684	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":77}
+Inspection.Scope	b	882	881	0	Entry	{"nodeId":77}
+Inspection.Scope	b	882	881	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	881	684	0	Exit	[Empty]
+Inspection.Scope	k	883	690	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":77}
+Inspection.Scope	b	884	883	0	Entry	{"nodeId":77}
+Inspection.Scope	b	884	883	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	883	690	0	Exit	[Empty]
+Inspection.Scope	k	885	696	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":77}
+Inspection.Scope	b	886	885	0	Entry	{"nodeId":77}
+Inspection.Scope	b	886	885	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	885	696	0	Exit	[Empty]
+Inspection.Scope	k	887	702	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":77}
+Inspection.Scope	b	888	887	0	Entry	{"nodeId":77}
+Inspection.Scope	b	888	887	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	887	702	0	Exit	[Empty]
+Inspection.Scope	k	889	708	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":77}
+Inspection.Scope	b	890	889	0	Entry	{"nodeId":77}
+Inspection.Scope	b	890	889	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	889	708	0	Exit	[Empty]
+Inspection.Scope	k	891	714	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":160}
+Inspection.Scope	b	892	891	0	Entry	{"nodeId":160}
+Inspection.Scope	b	892	891	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	891	714	0	Exit	[Empty]
+Inspection.Scope	k	893	720	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":160}
+Inspection.Scope	b	894	893	0	Entry	{"nodeId":160}
+Inspection.Scope	b	894	893	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	893	720	0	Exit	[Empty]
+Inspection.Scope	k	895	726	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":160}
+Inspection.Scope	b	896	895	0	Entry	{"nodeId":160}
+Inspection.Scope	b	896	895	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	895	726	0	Exit	[Empty]
+Inspection.Scope	k	897	732	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":160}
+Inspection.Scope	b	898	897	0	Entry	{"nodeId":160}
+Inspection.Scope	b	898	897	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	897	732	0	Exit	[Empty]
+Inspection.Scope	k	899	738	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":202}
+Inspection.Scope	b	900	899	0	Entry	{"nodeId":202}
+Inspection.Scope	b	900	899	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	899	738	0	Exit	[Empty]
+Inspection.Scope	k	901	744	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":202}
+Inspection.Scope	b	902	901	0	Entry	{"nodeId":202}
+Inspection.Scope	b	902	901	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	901	744	0	Exit	[Empty]
+Inspection.Scope	k	903	750	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":266}
+Inspection.Scope	b	904	903	0	Entry	{"nodeId":266}
+Inspection.Scope	b	904	903	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	903	750	0	Exit	[Empty]
+Inspection.Scope	k	905	756	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":266}
+Inspection.Scope	b	906	905	0	Entry	{"nodeId":266}
+Inspection.Scope	b	906	905	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	905	756	0	Exit	[Empty]
+Inspection.Scope	k	907	762	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":266}
+Inspection.Scope	b	908	907	0	Entry	{"nodeId":266}
+Inspection.Scope	b	908	907	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	907	762	0	Exit	[Empty]
+Inspection.Scope	k	909	768	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":266}
+Inspection.Scope	b	910	909	0	Entry	{"nodeId":266}
+Inspection.Scope	b	910	909	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	909	768	0	Exit	[Empty]
+Inspection.Scope	k	911	774	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":266}
+Inspection.Scope	b	912	911	0	Entry	{"nodeId":266}
+Inspection.Scope	b	912	911	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	911	774	0	Exit	[Empty]
+Inspection.Scope	k	913	780	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":340}
+Inspection.Scope	b	914	913	0	Entry	{"nodeId":340}
+Inspection.Scope	b	914	913	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	913	780	0	Exit	[Empty]
+Inspection.Scope	k	915	786	0	Entry	{"nodeKind":"IdentifierPairedExpression","nodeId":340}
+Inspection.Scope	b	916	915	0	Entry	{"nodeId":340}
+Inspection.Scope	b	916	915	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	915	786	0	Exit	[Empty]
+Inspection.Scope	k	917	655	0	Entry	{"nodeKind":"IfExpression","nodeId":43}
+Inspection.Scope	b	918	917	0	Entry	{"nodeId":43}
+Inspection.Scope	b	918	917	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	917	655	0	Exit	[Empty]
+Inspection.Scope	k	919	672	0	Entry	{"nodeKind":"IfExpression","nodeId":43}
+Inspection.Scope	b	920	919	0	Entry	{"nodeId":43}
+Inspection.Scope	b	920	919	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	919	672	0	Exit	[Empty]
+Inspection.Scope	k	921	678	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":83}
+Inspection.Scope	b	922	921	0	Entry	{"nodeId":83}
+Inspection.Scope	b	922	921	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	921	678	0	Exit	[Empty]
+Inspection.Scope	k	923	684	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":83}
+Inspection.Scope	b	924	923	0	Entry	{"nodeId":83}
+Inspection.Scope	b	924	923	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	923	684	0	Exit	[Empty]
+Inspection.Scope	k	925	690	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":83}
+Inspection.Scope	b	926	925	0	Entry	{"nodeId":83}
+Inspection.Scope	b	926	925	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	925	690	0	Exit	[Empty]
+Inspection.Scope	k	927	696	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":83}
+Inspection.Scope	b	928	927	0	Entry	{"nodeId":83}
+Inspection.Scope	b	928	927	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	927	696	0	Exit	[Empty]
+Inspection.Scope	k	929	702	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":83}
+Inspection.Scope	b	930	929	0	Entry	{"nodeId":83}
+Inspection.Scope	b	930	929	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	929	702	0	Exit	[Empty]
+Inspection.Scope	k	931	708	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":83}
+Inspection.Scope	b	932	931	0	Entry	{"nodeId":83}
+Inspection.Scope	b	932	931	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	931	708	0	Exit	[Empty]
+Inspection.Scope	k	933	714	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":166}
+Inspection.Scope	b	934	933	0	Entry	{"nodeId":166}
+Inspection.Scope	b	934	933	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	933	714	0	Exit	[Empty]
+Inspection.Scope	k	935	720	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":166}
+Inspection.Scope	b	936	935	0	Entry	{"nodeId":166}
+Inspection.Scope	b	936	935	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	935	720	0	Exit	[Empty]
+Inspection.Scope	k	937	726	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":166}
+Inspection.Scope	b	938	937	0	Entry	{"nodeId":166}
+Inspection.Scope	b	938	937	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	937	726	0	Exit	[Empty]
+Inspection.Scope	k	939	732	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":166}
+Inspection.Scope	b	940	939	0	Entry	{"nodeId":166}
+Inspection.Scope	b	940	939	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	939	732	0	Exit	[Empty]
+Inspection.Scope	k	941	738	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":208}
+Inspection.Scope	b	942	941	0	Entry	{"nodeId":208}
+Inspection.Scope	b	942	941	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	941	738	0	Exit	[Empty]
+Inspection.Scope	k	943	744	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":208}
+Inspection.Scope	b	944	943	0	Entry	{"nodeId":208}
+Inspection.Scope	b	944	943	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	943	744	0	Exit	[Empty]
+Inspection.Scope	k	945	750	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":272}
+Inspection.Scope	b	946	945	0	Entry	{"nodeId":272}
+Inspection.Scope	b	946	945	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	945	750	0	Exit	[Empty]
+Inspection.Scope	k	947	756	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":272}
+Inspection.Scope	b	948	947	0	Entry	{"nodeId":272}
+Inspection.Scope	b	948	947	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	947	756	0	Exit	[Empty]
+Inspection.Scope	k	949	762	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":272}
+Inspection.Scope	b	950	949	0	Entry	{"nodeId":272}
+Inspection.Scope	b	950	949	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	949	762	0	Exit	[Empty]
+Inspection.Scope	k	951	768	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":272}
+Inspection.Scope	b	952	951	0	Entry	{"nodeId":272}
+Inspection.Scope	b	952	951	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	951	768	0	Exit	[Empty]
+Inspection.Scope	k	953	774	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":272}
+Inspection.Scope	b	954	953	0	Entry	{"nodeId":272}
+Inspection.Scope	b	954	953	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	953	774	0	Exit	[Empty]
+Inspection.Scope	k	955	780	0	Entry	{"nodeKind":"LogicalExpression","nodeId":343}
+Inspection.Scope	b	956	955	0	Entry	{"nodeId":343}
+Inspection.Scope	b	956	955	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	955	780	0	Exit	[Empty]
+Inspection.Scope	k	957	786	0	Entry	{"nodeKind":"LogicalExpression","nodeId":343}
+Inspection.Scope	b	958	957	0	Entry	{"nodeId":343}
+Inspection.Scope	b	958	957	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	957	786	0	Exit	[Empty]
+Inspection.Scope	k	959	655	0	Entry	{"nodeKind":"EqualityExpression","nodeId":51}
+Inspection.Scope	b	960	959	0	Entry	{"nodeId":51}
+Inspection.Scope	b	960	959	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	959	655	0	Exit	[Empty]
+Inspection.Scope	k	961	672	0	Entry	{"nodeKind":"RecordExpression","nodeId":54}
+Inspection.Scope	K	962	961	0	Entry	[Empty]
+Inspection.Scope	b	963	962	0	Entry	{"nodeId":54}
+Inspection.Scope	b	963	962	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	v	964	962	0	Entry	[Empty]
+Inspection.Scope	b	965	964	0	Entry	{"nodeId":67}
+Inspection.Scope	b	965	964	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	v	964	962	0	Exit	[Empty]
+Inspection.Scope	K	962	961	0	Exit	[Empty]
+Inspection.Scope	k	961	672	0	Exit	[Empty]
+Inspection.Scope	k	966	678	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":81}
+Inspection.Scope	b	967	966	0	Entry	{"nodeId":81}
+Inspection.Scope	b	967	966	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	966	678	0	Exit	[Empty]
+Inspection.Scope	k	968	684	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":84}
+Inspection.Scope	b	969	968	0	Entry	{"nodeId":84}
+Inspection.Scope	b	969	968	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	968	684	0	Exit	[Empty]
+Inspection.Scope	k	970	690	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":84}
+Inspection.Scope	b	971	970	0	Entry	{"nodeId":84}
+Inspection.Scope	b	971	970	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	970	690	0	Exit	[Empty]
+Inspection.Scope	k	972	696	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":84}
+Inspection.Scope	b	973	972	0	Entry	{"nodeId":84}
+Inspection.Scope	b	973	972	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	972	696	0	Exit	[Empty]
+Inspection.Scope	k	974	702	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":84}
+Inspection.Scope	b	975	974	0	Entry	{"nodeId":84}
+Inspection.Scope	b	975	974	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	974	702	0	Exit	[Empty]
+Inspection.Scope	k	976	708	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":84}
+Inspection.Scope	b	977	976	0	Entry	{"nodeId":84}
+Inspection.Scope	b	977	976	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	976	708	0	Exit	[Empty]
+Inspection.Scope	k	978	714	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":164}
+Inspection.Scope	b	979	978	0	Entry	{"nodeId":164}
+Inspection.Scope	b	979	978	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	978	714	0	Exit	[Empty]
+Inspection.Scope	k	980	720	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":167}
+Inspection.Scope	b	981	980	0	Entry	{"nodeId":167}
+Inspection.Scope	b	981	980	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	980	720	0	Exit	[Empty]
+Inspection.Scope	k	982	726	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":167}
+Inspection.Scope	b	983	982	0	Entry	{"nodeId":167}
+Inspection.Scope	b	983	982	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	982	726	0	Exit	[Empty]
+Inspection.Scope	k	984	732	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":167}
+Inspection.Scope	b	985	984	0	Entry	{"nodeId":167}
+Inspection.Scope	b	985	984	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	984	732	0	Exit	[Empty]
+Inspection.Scope	k	986	738	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":206}
+Inspection.Scope	b	987	986	0	Entry	{"nodeId":206}
+Inspection.Scope	b	987	986	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	986	738	0	Exit	[Empty]
+Inspection.Scope	k	988	744	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":209}
+Inspection.Scope	b	989	988	0	Entry	{"nodeId":209}
+Inspection.Scope	b	989	988	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	988	744	0	Exit	[Empty]
+Inspection.Scope	k	990	750	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":270}
+Inspection.Scope	b	991	990	0	Entry	{"nodeId":270}
+Inspection.Scope	b	991	990	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	990	750	0	Exit	[Empty]
+Inspection.Scope	k	992	756	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":273}
+Inspection.Scope	b	993	992	0	Entry	{"nodeId":273}
+Inspection.Scope	b	993	992	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	992	756	0	Exit	[Empty]
+Inspection.Scope	k	994	762	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":273}
+Inspection.Scope	b	995	994	0	Entry	{"nodeId":273}
+Inspection.Scope	b	995	994	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	994	762	0	Exit	[Empty]
+Inspection.Scope	k	996	768	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":273}
+Inspection.Scope	b	997	996	0	Entry	{"nodeId":273}
+Inspection.Scope	b	997	996	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	996	768	0	Exit	[Empty]
+Inspection.Scope	k	998	774	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":273}
+Inspection.Scope	b	999	998	0	Entry	{"nodeId":273}
+Inspection.Scope	b	999	998	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	998	774	0	Exit	[Empty]
+Inspection.Scope	k	1000	780	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":346}
+Inspection.Scope	b	1001	1000	0	Entry	{"nodeId":346}
+Inspection.Scope	b	1001	1000	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1000	780	0	Exit	[Empty]
+Inspection.Scope	k	1002	786	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":346}
+Inspection.Scope	b	1003	1002	0	Entry	{"nodeId":346}
+Inspection.Scope	b	1003	1002	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1002	786	0	Exit	[Empty]
+Inspection.Scope	k	1004	655	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":46}
+Inspection.Scope	b	1005	1004	0	Entry	{"nodeId":46}
+Inspection.Scope	b	1005	1004	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1004	655	0	Exit	[Empty]
+Inspection.Scope	k	1006	672	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":56}
+Inspection.Scope	b	1007	1006	0	Entry	{"nodeId":56}
+Inspection.Scope	b	1007	1006	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1006	672	0	Exit	[Empty]
+Inspection.Scope	k	1008	678	0	Entry	{"nodeKind":"Identifier","nodeId":82}
+Inspection.Scope	b	1009	1008	0	Entry	{"nodeId":82}
+Inspection.Scope	b	1009	1008	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1008	678	0	Exit	[Empty]
+Inspection.Scope	k	1010	684	0	Entry	{"nodeKind":"InvokeExpression","nodeId":85}
+Inspection.Scope	b	1011	1010	0	Entry	{"nodeId":85}
+Inspection.Scope	b	1011	1010	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1010	684	0	Exit	[Empty]
+Inspection.Scope	k	1012	690	0	Entry	{"nodeKind":"InvokeExpression","nodeId":85}
+Inspection.Scope	b	1013	1012	0	Entry	{"nodeId":85}
+Inspection.Scope	b	1013	1012	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1012	690	0	Exit	[Empty]
+Inspection.Scope	k	1014	696	0	Entry	{"nodeKind":"InvokeExpression","nodeId":85}
+Inspection.Scope	b	1015	1014	0	Entry	{"nodeId":85}
+Inspection.Scope	b	1015	1014	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1014	696	0	Exit	[Empty]
+Inspection.Scope	k	1016	702	0	Entry	{"nodeKind":"InvokeExpression","nodeId":85}
+Inspection.Scope	b	1017	1016	0	Entry	{"nodeId":85}
+Inspection.Scope	b	1017	1016	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1016	702	0	Exit	[Empty]
+Inspection.Scope	k	1018	708	0	Entry	{"nodeKind":"InvokeExpression","nodeId":85}
+Inspection.Scope	b	1019	1018	0	Entry	{"nodeId":85}
+Inspection.Scope	b	1019	1018	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1018	708	0	Exit	[Empty]
+Inspection.Scope	k	1020	714	0	Entry	{"nodeKind":"Identifier","nodeId":165}
+Inspection.Scope	b	1021	1020	0	Entry	{"nodeId":165}
+Inspection.Scope	b	1021	1020	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1020	714	0	Exit	[Empty]
+Inspection.Scope	k	1022	720	0	Entry	{"nodeKind":"InvokeExpression","nodeId":168}
+Inspection.Scope	b	1023	1022	0	Entry	{"nodeId":168}
+Inspection.Scope	b	1023	1022	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1022	720	0	Exit	[Empty]
+Inspection.Scope	k	1024	726	0	Entry	{"nodeKind":"InvokeExpression","nodeId":168}
+Inspection.Scope	b	1025	1024	0	Entry	{"nodeId":168}
+Inspection.Scope	b	1025	1024	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1024	726	0	Exit	[Empty]
+Inspection.Scope	k	1026	732	0	Entry	{"nodeKind":"InvokeExpression","nodeId":168}
+Inspection.Scope	b	1027	1026	0	Entry	{"nodeId":168}
+Inspection.Scope	b	1027	1026	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1026	732	0	Exit	[Empty]
+Inspection.Scope	k	1028	738	0	Entry	{"nodeKind":"Identifier","nodeId":207}
+Inspection.Scope	b	1029	1028	0	Entry	{"nodeId":207}
+Inspection.Scope	b	1029	1028	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1028	738	0	Exit	[Empty]
+Inspection.Scope	k	1030	744	0	Entry	{"nodeKind":"InvokeExpression","nodeId":210}
+Inspection.Scope	b	1031	1030	0	Entry	{"nodeId":210}
+Inspection.Scope	b	1031	1030	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1030	744	0	Exit	[Empty]
+Inspection.Scope	k	1032	750	0	Entry	{"nodeKind":"Identifier","nodeId":271}
+Inspection.Scope	b	1033	1032	0	Entry	{"nodeId":271}
+Inspection.Scope	b	1033	1032	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1032	750	0	Exit	[Empty]
+Inspection.Scope	k	1034	756	0	Entry	{"nodeKind":"InvokeExpression","nodeId":274}
+Inspection.Scope	b	1035	1034	0	Entry	{"nodeId":274}
+Inspection.Scope	b	1035	1034	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1034	756	0	Exit	[Empty]
+Inspection.Scope	k	1036	762	0	Entry	{"nodeKind":"InvokeExpression","nodeId":274}
+Inspection.Scope	b	1037	1036	0	Entry	{"nodeId":274}
+Inspection.Scope	b	1037	1036	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1036	762	0	Exit	[Empty]
+Inspection.Scope	k	1038	768	0	Entry	{"nodeKind":"InvokeExpression","nodeId":274}
+Inspection.Scope	b	1039	1038	0	Entry	{"nodeId":274}
+Inspection.Scope	b	1039	1038	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1038	768	0	Exit	[Empty]
+Inspection.Scope	k	1040	774	0	Entry	{"nodeKind":"InvokeExpression","nodeId":274}
+Inspection.Scope	b	1041	1040	0	Entry	{"nodeId":274}
+Inspection.Scope	b	1041	1040	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1040	774	0	Exit	[Empty]
+Inspection.Scope	k	1042	780	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":344}
+Inspection.Scope	b	1043	1042	0	Entry	{"nodeId":344}
+Inspection.Scope	b	1043	1042	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1042	780	0	Exit	[Empty]
+Inspection.Scope	k	1044	786	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":347}
+Inspection.Scope	b	1045	1044	0	Entry	{"nodeId":347}
+Inspection.Scope	b	1045	1044	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1044	786	0	Exit	[Empty]
+Inspection.Scope	k	1046	655	0	Entry	{"nodeKind":"Identifier","nodeId":47}
+Inspection.Scope	b	1047	1046	0	Entry	{"nodeId":47}
+Inspection.Scope	b	1047	1046	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1046	655	0	Exit	[Empty]
+Inspection.Scope	k	1048	672	0	Entry	{"nodeKind":"Csv","nodeId":57}
+Inspection.Scope	b	1049	1048	0	Entry	{"nodeId":57}
+Inspection.Scope	b	1049	1048	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1048	672	0	Exit	[Empty]
+Inspection.Scope	h	678	677	2	Exit	[Empty]
+Inspection.Scope	k	1050	684	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":87}
+Inspection.Scope	b	1051	1050	0	Entry	{"nodeId":87}
+Inspection.Scope	b	1051	1050	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1050	684	0	Exit	[Empty]
+Inspection.Scope	k	1052	690	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":87}
+Inspection.Scope	b	1053	1052	0	Entry	{"nodeId":87}
+Inspection.Scope	b	1053	1052	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1052	690	0	Exit	[Empty]
+Inspection.Scope	k	1054	696	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":87}
+Inspection.Scope	b	1055	1054	0	Entry	{"nodeId":87}
+Inspection.Scope	b	1055	1054	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1054	696	0	Exit	[Empty]
+Inspection.Scope	k	1056	702	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":87}
+Inspection.Scope	b	1057	1056	0	Entry	{"nodeId":87}
+Inspection.Scope	b	1057	1056	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1056	702	0	Exit	[Empty]
+Inspection.Scope	k	1058	708	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":87}
+Inspection.Scope	b	1059	1058	0	Entry	{"nodeId":87}
+Inspection.Scope	b	1059	1058	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1058	708	0	Exit	[Empty]
+Inspection.Scope	h	714	713	1	Exit	[Empty]
+Inspection.Scope	k	1060	720	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":170}
+Inspection.Scope	b	1061	1060	0	Entry	{"nodeId":170}
+Inspection.Scope	b	1061	1060	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1060	720	0	Exit	[Empty]
+Inspection.Scope	k	1062	726	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":170}
+Inspection.Scope	b	1063	1062	0	Entry	{"nodeId":170}
+Inspection.Scope	b	1063	1062	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1062	726	0	Exit	[Empty]
+Inspection.Scope	k	1064	732	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":170}
+Inspection.Scope	b	1065	1064	0	Entry	{"nodeId":170}
+Inspection.Scope	b	1065	1064	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1064	732	0	Exit	[Empty]
+Inspection.Scope	h	738	737	1	Exit	[Empty]
+Inspection.Scope	k	1066	744	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":212}
+Inspection.Scope	b	1067	1066	0	Entry	{"nodeId":212}
+Inspection.Scope	b	1067	1066	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1066	744	0	Exit	[Empty]
+Inspection.Scope	h	750	749	1	Exit	[Empty]
+Inspection.Scope	k	1068	756	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":276}
+Inspection.Scope	b	1069	1068	0	Entry	{"nodeId":276}
+Inspection.Scope	b	1069	1068	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1068	756	0	Exit	[Empty]
+Inspection.Scope	k	1070	762	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":276}
+Inspection.Scope	b	1071	1070	0	Entry	{"nodeId":276}
+Inspection.Scope	b	1071	1070	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1070	762	0	Exit	[Empty]
+Inspection.Scope	k	1072	768	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":276}
+Inspection.Scope	b	1073	1072	0	Entry	{"nodeId":276}
+Inspection.Scope	b	1073	1072	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1072	768	0	Exit	[Empty]
+Inspection.Scope	k	1074	774	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":276}
+Inspection.Scope	b	1075	1074	0	Entry	{"nodeId":276}
+Inspection.Scope	b	1075	1074	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1074	774	0	Exit	[Empty]
+Inspection.Scope	k	1076	780	0	Entry	{"nodeKind":"Identifier","nodeId":345}
+Inspection.Scope	b	1077	1076	0	Entry	{"nodeId":345}
+Inspection.Scope	b	1077	1076	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1076	780	0	Exit	[Empty]
+Inspection.Scope	k	1078	786	0	Entry	{"nodeKind":"InvokeExpression","nodeId":348}
+Inspection.Scope	b	1079	1078	0	Entry	{"nodeId":348}
+Inspection.Scope	b	1079	1078	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1078	786	0	Exit	[Empty]
+Inspection.Scope	h	655	654	2	Exit	[Empty]
+Inspection.Scope	k	1080	672	0	Entry	{"nodeKind":"GeneralizedIdentifierPairedExpression","nodeId":58}
+Inspection.Scope	b	1081	1080	0	Entry	{"nodeId":58}
+Inspection.Scope	b	1081	1080	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1080	672	0	Exit	[Empty]
+Inspection.Scope	k	1082	684	0	Entry	{"nodeKind":"Csv","nodeId":88}
+Inspection.Scope	b	1083	1082	0	Entry	{"nodeId":88}
+Inspection.Scope	b	1083	1082	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1082	684	0	Exit	[Empty]
+Inspection.Scope	k	1084	690	0	Entry	{"nodeKind":"Csv","nodeId":88}
+Inspection.Scope	b	1085	1084	0	Entry	{"nodeId":88}
+Inspection.Scope	b	1085	1084	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1084	690	0	Exit	[Empty]
+Inspection.Scope	k	1086	696	0	Entry	{"nodeKind":"Csv","nodeId":88}
+Inspection.Scope	b	1087	1086	0	Entry	{"nodeId":88}
+Inspection.Scope	b	1087	1086	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1086	696	0	Exit	[Empty]
+Inspection.Scope	k	1088	702	0	Entry	{"nodeKind":"Csv","nodeId":88}
+Inspection.Scope	b	1089	1088	0	Entry	{"nodeId":88}
+Inspection.Scope	b	1089	1088	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1088	702	0	Exit	[Empty]
+Inspection.Scope	k	1090	708	0	Entry	{"nodeKind":"Csv","nodeId":88}
+Inspection.Scope	b	1091	1090	0	Entry	{"nodeId":88}
+Inspection.Scope	b	1091	1090	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1090	708	0	Exit	[Empty]
+Inspection.Scope	k	1092	720	0	Entry	{"nodeKind":"Csv","nodeId":171}
+Inspection.Scope	b	1093	1092	0	Entry	{"nodeId":171}
+Inspection.Scope	b	1093	1092	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1092	720	0	Exit	[Empty]
+Inspection.Scope	k	1094	726	0	Entry	{"nodeKind":"Csv","nodeId":176}
+Inspection.Scope	b	1095	1094	0	Entry	{"nodeId":176}
+Inspection.Scope	b	1095	1094	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1094	726	0	Exit	[Empty]
+Inspection.Scope	k	1096	732	0	Entry	{"nodeKind":"Csv","nodeId":195}
+Inspection.Scope	b	1097	1096	0	Entry	{"nodeId":195}
+Inspection.Scope	b	1097	1096	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1096	732	0	Exit	[Empty]
+Inspection.Scope	k	1098	744	0	Entry	{"nodeKind":"Csv","nodeId":213}
+Inspection.Scope	b	1099	1098	0	Entry	{"nodeId":213}
+Inspection.Scope	b	1099	1098	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1098	744	0	Exit	[Empty]
+Inspection.Scope	k	1100	756	0	Entry	{"nodeKind":"Csv","nodeId":277}
+Inspection.Scope	b	1101	1100	0	Entry	{"nodeId":277}
+Inspection.Scope	b	1101	1100	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1100	756	0	Exit	[Empty]
+Inspection.Scope	k	1102	762	0	Entry	{"nodeKind":"Csv","nodeId":282}
+Inspection.Scope	b	1103	1102	0	Entry	{"nodeId":282}
+Inspection.Scope	b	1103	1102	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1102	762	0	Exit	[Empty]
+Inspection.Scope	k	1104	768	0	Entry	{"nodeKind":"Csv","nodeId":282}
+Inspection.Scope	b	1105	1104	0	Entry	{"nodeId":282}
+Inspection.Scope	b	1105	1104	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1104	768	0	Exit	[Empty]
+Inspection.Scope	k	1106	774	0	Entry	{"nodeKind":"Csv","nodeId":282}
+Inspection.Scope	b	1107	1106	0	Entry	{"nodeId":282}
+Inspection.Scope	b	1107	1106	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1106	774	0	Exit	[Empty]
+Inspection.Scope	h	780	779	1	Exit	[Empty]
+Inspection.Scope	k	1108	786	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":350}
+Inspection.Scope	b	1109	1108	0	Entry	{"nodeId":350}
+Inspection.Scope	b	1109	1108	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1108	786	0	Exit	[Empty]
+Inspection.Scope	k	1110	672	0	Entry	{"nodeKind":"ArithmeticExpression","nodeId":67}
+Inspection.Scope	b	1111	1110	0	Entry	{"nodeId":67}
+Inspection.Scope	b	1111	1110	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1110	672	0	Exit	[Empty]
+Inspection.Scope	k	1112	684	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":92}
+Inspection.Scope	b	1113	1112	0	Entry	{"nodeId":92}
+Inspection.Scope	b	1113	1112	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1112	684	0	Exit	[Empty]
+Inspection.Scope	k	1114	690	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":92}
+Inspection.Scope	b	1115	1114	0	Entry	{"nodeId":92}
+Inspection.Scope	b	1115	1114	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1114	690	0	Exit	[Empty]
+Inspection.Scope	k	1116	696	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":92}
+Inspection.Scope	b	1117	1116	0	Entry	{"nodeId":92}
+Inspection.Scope	b	1117	1116	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1116	696	0	Exit	[Empty]
+Inspection.Scope	k	1118	702	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":92}
+Inspection.Scope	b	1119	1118	0	Entry	{"nodeId":92}
+Inspection.Scope	b	1119	1118	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1118	702	0	Exit	[Empty]
+Inspection.Scope	k	1120	708	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":92}
+Inspection.Scope	b	1121	1120	0	Entry	{"nodeId":92}
+Inspection.Scope	b	1121	1120	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1120	708	0	Exit	[Empty]
+Inspection.Scope	k	1122	720	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":173}
+Inspection.Scope	b	1123	1122	0	Entry	{"nodeId":173}
+Inspection.Scope	b	1123	1122	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1122	720	0	Exit	[Empty]
+Inspection.Scope	k	1124	726	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":180}
+Inspection.Scope	b	1125	1124	0	Entry	{"nodeId":180}
+Inspection.Scope	b	1125	1124	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1124	726	0	Exit	[Empty]
+Inspection.Scope	k	1126	732	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":197}
+Inspection.Scope	b	1127	1126	0	Entry	{"nodeId":197}
+Inspection.Scope	b	1127	1126	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1126	732	0	Exit	[Empty]
+Inspection.Scope	k	1128	744	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":215}
+Inspection.Scope	b	1129	1128	0	Entry	{"nodeId":215}
+Inspection.Scope	b	1129	1128	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1128	744	0	Exit	[Empty]
+Inspection.Scope	k	1130	756	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":279}
+Inspection.Scope	b	1131	1130	0	Entry	{"nodeId":279}
+Inspection.Scope	b	1131	1130	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1130	756	0	Exit	[Empty]
+Inspection.Scope	k	1132	762	0	Entry	{"nodeKind":"EachExpression","nodeId":283}
+Inspection.Scope	_	1133	1132	0	Entry	[Empty]
+Inspection.Scope	b	1134	1133	0	Entry	{"nodeId":283}
+Inspection.Scope	b	1134	1133	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	b	1135	1133	0	Entry	{"nodeId":336}
+Inspection.Scope	b	1135	1133	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	_	1133	1132	0	Exit	[Empty]
+Inspection.Scope	k	1132	762	0	Exit	[Empty]
+Inspection.Scope	k	1136	768	0	Entry	{"nodeKind":"EachExpression","nodeId":283}
+Inspection.Scope	_	1137	1136	0	Entry	[Empty]
+Inspection.Scope	b	1138	1137	0	Entry	{"nodeId":283}
+Inspection.Scope	b	1138	1137	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	b	1139	1137	0	Entry	{"nodeId":336}
+Inspection.Scope	b	1139	1137	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	_	1137	1136	0	Exit	[Empty]
+Inspection.Scope	k	1136	768	0	Exit	[Empty]
+Inspection.Scope	k	1140	774	0	Entry	{"nodeKind":"EachExpression","nodeId":283}
+Inspection.Scope	_	1141	1140	0	Entry	[Empty]
+Inspection.Scope	b	1142	1141	0	Entry	{"nodeId":283}
+Inspection.Scope	b	1142	1141	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	b	1143	1141	0	Entry	{"nodeId":336}
+Inspection.Scope	b	1143	1141	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	_	1141	1140	0	Exit	[Empty]
+Inspection.Scope	k	1140	774	0	Exit	[Empty]
+Inspection.Scope	k	1144	786	0	Entry	{"nodeKind":"Csv","nodeId":351}
+Inspection.Scope	b	1145	1144	0	Entry	{"nodeId":351}
+Inspection.Scope	b	1145	1144	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1144	786	0	Exit	[Empty]
+Inspection.Scope	k	1146	672	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":65}
+Inspection.Scope	b	1147	1146	0	Entry	{"nodeId":65}
+Inspection.Scope	b	1147	1146	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1146	672	0	Exit	[Empty]
+Inspection.Scope	y	677	653	2	Exit	[Empty]
+Inspection.Scope	k	1148	684	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":90}
+Inspection.Scope	b	1149	1148	0	Entry	{"nodeId":90}
+Inspection.Scope	b	1149	1148	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1148	684	0	Exit	[Empty]
+Inspection.Scope	k	1150	690	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":93}
+Inspection.Scope	b	1151	1150	0	Entry	{"nodeId":93}
+Inspection.Scope	b	1151	1150	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1150	690	0	Exit	[Empty]
+Inspection.Scope	k	1152	696	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":93}
+Inspection.Scope	b	1153	1152	0	Entry	{"nodeId":93}
+Inspection.Scope	b	1153	1152	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1152	696	0	Exit	[Empty]
+Inspection.Scope	k	1154	702	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":93}
+Inspection.Scope	b	1155	1154	0	Entry	{"nodeId":93}
+Inspection.Scope	b	1155	1154	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1154	702	0	Exit	[Empty]
+Inspection.Scope	k	1156	708	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":93}
+Inspection.Scope	b	1157	1156	0	Entry	{"nodeId":93}
+Inspection.Scope	b	1157	1156	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1156	708	0	Exit	[Empty]
+Inspection.Scope	y	713	653	2	Exit	[Empty]
+Inspection.Scope	k	1158	720	0	Entry	{"nodeKind":"Identifier","nodeId":174}
+Inspection.Scope	b	1159	1158	0	Entry	{"nodeId":174}
+Inspection.Scope	b	1159	1158	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1158	720	0	Exit	[Empty]
+Inspection.Scope	k	1160	726	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":178}
+Inspection.Scope	b	1161	1160	0	Entry	{"nodeId":178}
+Inspection.Scope	b	1161	1160	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1160	726	0	Exit	[Empty]
+Inspection.Scope	k	1162	732	0	Entry	{"nodeKind":"Identifier","nodeId":198}
+Inspection.Scope	b	1163	1162	0	Entry	{"nodeId":198}
+Inspection.Scope	b	1163	1162	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1162	732	0	Exit	[Empty]
+Inspection.Scope	y	737	653	1	Exit	[Empty]
+Inspection.Scope	k	1164	744	0	Entry	{"nodeKind":"Identifier","nodeId":216}
+Inspection.Scope	b	1165	1164	0	Entry	{"nodeId":216}
+Inspection.Scope	b	1165	1164	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1164	744	0	Exit	[Empty]
+Inspection.Scope	y	749	653	1	Exit	[Empty]
+Inspection.Scope	k	1166	756	0	Entry	{"nodeKind":"Identifier","nodeId":280}
+Inspection.Scope	b	1167	1166	0	Entry	{"nodeId":280}
+Inspection.Scope	b	1167	1166	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1166	756	0	Exit	[Empty]
+Inspection.Scope	k	1168	762	0	Entry	{"nodeKind":"LogicalExpression","nodeId":336}
+Inspection.Scope	b	1169	1168	0	Entry	{"nodeId":336}
+Inspection.Scope	b	1169	1168	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1168	762	0	Exit	[Empty]
+Inspection.Scope	k	1170	768	0	Entry	{"nodeKind":"LogicalExpression","nodeId":336}
+Inspection.Scope	b	1171	1170	0	Entry	{"nodeId":336}
+Inspection.Scope	b	1171	1170	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1170	768	0	Exit	[Empty]
+Inspection.Scope	k	1172	774	0	Entry	{"nodeKind":"LogicalExpression","nodeId":336}
+Inspection.Scope	b	1173	1172	0	Entry	{"nodeId":336}
+Inspection.Scope	b	1173	1172	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1172	774	0	Exit	[Empty]
+Inspection.Scope	k	1174	786	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":353}
+Inspection.Scope	b	1175	1174	0	Entry	{"nodeId":353}
+Inspection.Scope	b	1175	1174	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1174	786	0	Exit	[Empty]
+Inspection.Scope	y	654	653	3	Exit	[Empty]
+Inspection.Scope	k	1176	672	0	Entry	{"nodeKind":"Identifier","nodeId":66}
+Inspection.Scope	b	1177	1176	0	Entry	{"nodeId":66}
+Inspection.Scope	b	1177	1176	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1176	672	0	Exit	[Empty]
+Inspection.Scope	k	1178	684	0	Entry	{"nodeKind":"Identifier","nodeId":91}
+Inspection.Scope	b	1179	1178	0	Entry	{"nodeId":91}
+Inspection.Scope	b	1179	1178	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1178	684	0	Exit	[Empty]
+Inspection.Scope	k	1180	690	0	Entry	{"nodeKind":"InvokeExpression","nodeId":94}
+Inspection.Scope	b	1181	1180	0	Entry	{"nodeId":94}
+Inspection.Scope	b	1181	1180	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1180	690	0	Exit	[Empty]
+Inspection.Scope	k	1182	696	0	Entry	{"nodeKind":"InvokeExpression","nodeId":94}
+Inspection.Scope	b	1183	1182	0	Entry	{"nodeId":94}
+Inspection.Scope	b	1183	1182	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1182	696	0	Exit	[Empty]
+Inspection.Scope	k	1184	702	0	Entry	{"nodeKind":"InvokeExpression","nodeId":94}
+Inspection.Scope	b	1185	1184	0	Entry	{"nodeId":94}
+Inspection.Scope	b	1185	1184	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1184	702	0	Exit	[Empty]
+Inspection.Scope	k	1186	708	0	Entry	{"nodeKind":"InvokeExpression","nodeId":94}
+Inspection.Scope	b	1187	1186	0	Entry	{"nodeId":94}
+Inspection.Scope	b	1187	1186	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1186	708	0	Exit	[Empty]
+Inspection.Scope	h	720	719	2	Exit	[Empty]
+Inspection.Scope	k	1188	726	0	Entry	{"nodeKind":"Identifier","nodeId":179}
+Inspection.Scope	b	1189	1188	0	Entry	{"nodeId":179}
+Inspection.Scope	b	1189	1188	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1188	726	0	Exit	[Empty]
+Inspection.Scope	h	732	731	1	Exit	[Empty]
+Inspection.Scope	h	744	743	1	Exit	[Empty]
+Inspection.Scope	h	756	755	1	Exit	[Empty]
+Inspection.Scope	k	1190	762	0	Entry	{"nodeKind":"LogicalExpression","nodeId":335}
+Inspection.Scope	b	1191	1190	0	Entry	{"nodeId":335}
+Inspection.Scope	b	1191	1190	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1190	762	0	Exit	[Empty]
+Inspection.Scope	k	1192	768	0	Entry	{"nodeKind":"LogicalExpression","nodeId":335}
+Inspection.Scope	b	1193	1192	0	Entry	{"nodeId":335}
+Inspection.Scope	b	1193	1192	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1192	768	0	Exit	[Empty]
+Inspection.Scope	k	1194	774	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":318}
+Inspection.Scope	b	1195	1194	0	Entry	{"nodeId":318}
+Inspection.Scope	b	1195	1194	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1194	774	0	Exit	[Empty]
+Inspection.Scope	y	779	653	1	Exit	[Empty]
+Inspection.Scope	k	1196	786	0	Entry	{"nodeKind":"Identifier","nodeId":354}
+Inspection.Scope	b	1197	1196	0	Entry	{"nodeId":354}
+Inspection.Scope	b	1197	1196	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1196	786	0	Exit	[Empty]
+Inspection.Scope	h	672	671	2	Exit	[Empty]
+Inspection.Scope	h	684	683	2	Exit	[Empty]
+Inspection.Scope	k	1198	690	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":96}
+Inspection.Scope	b	1199	1198	0	Entry	{"nodeId":96}
+Inspection.Scope	b	1199	1198	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1198	690	0	Exit	[Empty]
+Inspection.Scope	k	1200	696	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":96}
+Inspection.Scope	b	1201	1200	0	Entry	{"nodeId":96}
+Inspection.Scope	b	1201	1200	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1200	696	0	Exit	[Empty]
+Inspection.Scope	k	1202	702	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":96}
+Inspection.Scope	b	1203	1202	0	Entry	{"nodeId":96}
+Inspection.Scope	b	1203	1202	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1202	702	0	Exit	[Empty]
+Inspection.Scope	k	1204	708	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":96}
+Inspection.Scope	b	1205	1204	0	Entry	{"nodeId":96}
+Inspection.Scope	b	1205	1204	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1204	708	0	Exit	[Empty]
+Inspection.Scope	h	726	725	2	Exit	[Empty]
+Inspection.Scope	k	1206	762	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":297}
+Inspection.Scope	b	1207	1206	0	Entry	{"nodeId":297}
+Inspection.Scope	b	1207	1206	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1206	762	0	Exit	[Empty]
+Inspection.Scope	k	1208	768	0	Entry	{"nodeKind":"RecursivePrimaryExpression","nodeId":297}
+Inspection.Scope	b	1209	1208	0	Entry	{"nodeId":297}
+Inspection.Scope	b	1209	1208	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1208	768	0	Exit	[Empty]
+Inspection.Scope	k	1210	774	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":316}
+Inspection.Scope	b	1211	1210	0	Entry	{"nodeId":316}
+Inspection.Scope	b	1211	1210	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1210	774	0	Exit	[Empty]
+Inspection.Scope	h	786	785	1	Exit	[Empty]
+Inspection.Scope	k	1212	690	0	Entry	{"nodeKind":"Csv","nodeId":97}
+Inspection.Scope	b	1213	1212	0	Entry	{"nodeId":97}
+Inspection.Scope	b	1213	1212	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1212	690	0	Exit	[Empty]
+Inspection.Scope	k	1214	696	0	Entry	{"nodeKind":"Csv","nodeId":102}
+Inspection.Scope	b	1215	1214	0	Entry	{"nodeId":102}
+Inspection.Scope	b	1215	1214	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1214	696	0	Exit	[Empty]
+Inspection.Scope	k	1216	702	0	Entry	{"nodeKind":"Csv","nodeId":102}
+Inspection.Scope	b	1217	1216	0	Entry	{"nodeId":102}
+Inspection.Scope	b	1217	1216	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1216	702	0	Exit	[Empty]
+Inspection.Scope	k	1218	708	0	Entry	{"nodeKind":"Csv","nodeId":102}
+Inspection.Scope	b	1219	1218	0	Entry	{"nodeId":102}
+Inspection.Scope	b	1219	1218	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1218	708	0	Exit	[Empty]
+Inspection.Scope	k	1220	762	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":295}
+Inspection.Scope	b	1221	1220	0	Entry	{"nodeId":295}
+Inspection.Scope	b	1221	1220	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1220	762	0	Exit	[Empty]
+Inspection.Scope	k	1222	768	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":298}
+Inspection.Scope	b	1223	1222	0	Entry	{"nodeId":298}
+Inspection.Scope	b	1223	1222	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1222	768	0	Exit	[Empty]
+Inspection.Scope	k	1224	774	0	Entry	{"nodeKind":"Identifier","nodeId":317}
+Inspection.Scope	b	1225	1224	0	Entry	{"nodeId":317}
+Inspection.Scope	b	1225	1224	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1224	774	0	Exit	[Empty]
+Inspection.Scope	k	1226	690	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":99}
+Inspection.Scope	b	1227	1226	0	Entry	{"nodeId":99}
+Inspection.Scope	b	1227	1226	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1226	690	0	Exit	[Empty]
+Inspection.Scope	k	1228	696	0	Entry	{"nodeKind":"RecordExpression","nodeId":104}
+Inspection.Scope	K	1229	1228	0	Entry	[Empty]
+Inspection.Scope	b	1230	1229	0	Entry	{"nodeId":104}
+Inspection.Scope	b	1230	1229	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	v	1231	1229	0	Entry	[Empty]
+Inspection.Scope	b	1232	1231	0	Entry	{"nodeId":126}
+Inspection.Scope	b	1232	1231	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	1233	1231	0	Entry	{"nodeId":133}
+Inspection.Scope	b	1233	1231	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	b	1234	1231	0	Entry	{"nodeId":149}
+Inspection.Scope	b	1234	1231	0	Exit	{"Result":"created new scope"}
+Inspection.Scope	v	1231	1229	0	Exit	[Empty]
+Inspection.Scope	K	1229	1228	0	Exit	[Empty]
+Inspection.Scope	k	1228	696	0	Exit	[Empty]
+Inspection.Scope	k	1235	702	0	Entry	{"nodeKind":"RecordExpression","nodeId":104}
+Inspection.Scope	K	1236	1235	0	Entry	[Empty]
+Inspection.Scope	b	1237	1236	0	Entry	{"nodeId":104}
+Inspection.Scope	b	1237	1236	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	1238	1236	0	Entry	[Empty]
+Inspection.Scope	v	1238	1236	0	Exit	[Empty]
+Inspection.Scope	K	1236	1235	0	Exit	[Empty]
+Inspection.Scope	k	1235	702	0	Exit	[Empty]
+Inspection.Scope	k	1239	708	0	Entry	{"nodeKind":"RecordExpression","nodeId":104}
+Inspection.Scope	K	1240	1239	0	Entry	[Empty]
+Inspection.Scope	b	1241	1240	0	Entry	{"nodeId":104}
+Inspection.Scope	b	1241	1240	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	v	1242	1240	0	Entry	[Empty]
+Inspection.Scope	v	1242	1240	0	Exit	[Empty]
+Inspection.Scope	K	1240	1239	0	Exit	[Empty]
+Inspection.Scope	k	1239	708	0	Exit	[Empty]
+Inspection.Scope	y	719	653	2	Exit	[Empty]
+Inspection.Scope	y	731	653	2	Exit	[Empty]
+Inspection.Scope	y	743	653	1	Exit	[Empty]
+Inspection.Scope	y	755	653	1	Exit	[Empty]
+Inspection.Scope	k	1243	762	0	Entry	{"nodeKind":"Identifier","nodeId":296}
+Inspection.Scope	b	1244	1243	0	Entry	{"nodeId":296}
+Inspection.Scope	b	1244	1243	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1243	762	0	Exit	[Empty]
+Inspection.Scope	k	1245	768	0	Entry	{"nodeKind":"InvokeExpression","nodeId":299}
+Inspection.Scope	b	1246	1245	0	Entry	{"nodeId":299}
+Inspection.Scope	b	1246	1245	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1245	768	0	Exit	[Empty]
+Inspection.Scope	h	774	773	1	Exit	[Empty]
+Inspection.Scope	y	671	653	2	Exit	[Empty]
+Inspection.Scope	y	683	653	2	Exit	[Empty]
+Inspection.Scope	k	1247	690	0	Entry	{"nodeKind":"Identifier","nodeId":100}
+Inspection.Scope	b	1248	1247	0	Entry	{"nodeId":100}
+Inspection.Scope	b	1248	1247	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1247	690	0	Exit	[Empty]
+Inspection.Scope	k	1249	696	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":106}
+Inspection.Scope	b	1250	1249	0	Entry	{"nodeId":106}
+Inspection.Scope	b	1250	1249	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1249	696	0	Exit	[Empty]
+Inspection.Scope	k	1251	702	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":106}
+Inspection.Scope	b	1252	1251	0	Entry	{"nodeId":106}
+Inspection.Scope	b	1252	1251	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1251	702	0	Exit	[Empty]
+Inspection.Scope	k	1253	708	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":106}
+Inspection.Scope	b	1254	1253	0	Entry	{"nodeId":106}
+Inspection.Scope	b	1254	1253	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1253	708	0	Exit	[Empty]
+Inspection.Scope	y	725	653	2	Exit	[Empty]
+Inspection.Scope	h	762	761	1	Exit	[Empty]
+Inspection.Scope	k	1255	768	0	Entry	{"nodeKind":"ArrayWrapper","nodeId":301}
+Inspection.Scope	b	1256	1255	0	Entry	{"nodeId":301}
+Inspection.Scope	b	1256	1255	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1255	768	0	Exit	[Empty]
+Inspection.Scope	y	785	653	1	Exit	[Empty]
+Inspection.Scope	h	690	689	2	Exit	[Empty]
+Inspection.Scope	k	1257	696	0	Entry	{"nodeKind":"Csv","nodeId":107}
+Inspection.Scope	b	1258	1257	0	Entry	{"nodeId":107}
+Inspection.Scope	b	1258	1257	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1257	696	0	Exit	[Empty]
+Inspection.Scope	k	1259	702	0	Entry	{"nodeKind":"Csv","nodeId":107}
+Inspection.Scope	b	1260	1259	0	Entry	{"nodeId":107}
+Inspection.Scope	b	1260	1259	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1259	702	0	Exit	[Empty]
+Inspection.Scope	k	1261	708	0	Entry	{"nodeKind":"Csv","nodeId":144}
+Inspection.Scope	b	1262	1261	0	Entry	{"nodeId":144}
+Inspection.Scope	b	1262	1261	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1261	708	0	Exit	[Empty]
+Inspection.Scope	k	1263	768	0	Entry	{"nodeKind":"Csv","nodeId":309}
+Inspection.Scope	b	1264	1263	0	Entry	{"nodeId":309}
+Inspection.Scope	b	1264	1263	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1263	768	0	Exit	[Empty]
+Inspection.Scope	k	1265	696	0	Entry	{"nodeKind":"GeneralizedIdentifierPairedExpression","nodeId":108}
+Inspection.Scope	b	1266	1265	0	Entry	{"nodeId":108}
+Inspection.Scope	b	1266	1265	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1265	696	0	Exit	[Empty]
+Inspection.Scope	k	1267	702	0	Entry	{"nodeKind":"GeneralizedIdentifierPairedExpression","nodeId":108}
+Inspection.Scope	b	1268	1267	0	Entry	{"nodeId":108}
+Inspection.Scope	b	1268	1267	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1267	702	0	Exit	[Empty]
+Inspection.Scope	k	1269	708	0	Entry	{"nodeKind":"GeneralizedIdentifierPairedExpression","nodeId":145}
+Inspection.Scope	b	1270	1269	0	Entry	{"nodeId":145}
+Inspection.Scope	b	1270	1269	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1269	708	0	Exit	[Empty]
+Inspection.Scope	k	1271	768	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":311}
+Inspection.Scope	b	1272	1271	0	Entry	{"nodeId":311}
+Inspection.Scope	b	1272	1271	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1271	768	0	Exit	[Empty]
+Inspection.Scope	y	773	653	1	Exit	[Empty]
+Inspection.Scope	k	1273	696	0	Entry	{"nodeKind":"ArithmeticExpression","nodeId":126}
+Inspection.Scope	b	1274	1273	0	Entry	{"nodeId":126}
+Inspection.Scope	b	1274	1273	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1273	696	0	Exit	[Empty]
+Inspection.Scope	k	1275	702	0	Entry	{"nodeKind":"ArithmeticExpression","nodeId":126}
+Inspection.Scope	b	1276	1275	0	Entry	{"nodeId":126}
+Inspection.Scope	b	1276	1275	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1275	702	0	Exit	[Empty]
+Inspection.Scope	k	1277	708	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":149}
+Inspection.Scope	b	1278	1277	0	Entry	{"nodeId":149}
+Inspection.Scope	b	1278	1277	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1277	708	0	Exit	[Empty]
+Inspection.Scope	y	761	653	1	Exit	[Empty]
+Inspection.Scope	k	1279	768	0	Entry	{"nodeKind":"Identifier","nodeId":312}
+Inspection.Scope	b	1280	1279	0	Entry	{"nodeId":312}
+Inspection.Scope	b	1280	1279	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1279	768	0	Exit	[Empty]
+Inspection.Scope	y	689	653	2	Exit	[Empty]
+Inspection.Scope	k	1281	696	0	Entry	{"nodeKind":"ArithmeticExpression","nodeId":125}
+Inspection.Scope	b	1282	1281	0	Entry	{"nodeId":125}
+Inspection.Scope	b	1282	1281	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1281	696	0	Exit	[Empty]
+Inspection.Scope	k	1283	702	0	Entry	{"nodeKind":"ArithmeticExpression","nodeId":125}
+Inspection.Scope	b	1284	1283	0	Entry	{"nodeId":125}
+Inspection.Scope	b	1284	1283	0	Exit	{"Result":"cache hit"}
+Inspection.Scope	k	1283	702	0	Exit	[Empty]
+Inspection.Scope	k	1285	708	0	Entry	{"nodeKind":"Identifier","nodeId":150}
+Inspection.Scope	b	1286	1285	0	Entry	{"nodeId":150}
+Inspection.Scope	b	1286	1285	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1285	708	0	Exit	[Empty]
+Inspection.Scope	h	768	767	1	Exit	[Empty]
+Inspection.Scope	k	1287	696	0	Entry	{"nodeKind":"ArithmeticExpression","nodeId":124}
+Inspection.Scope	b	1288	1287	0	Entry	{"nodeId":124}
+Inspection.Scope	b	1288	1287	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1287	696	0	Exit	[Empty]
+Inspection.Scope	k	1289	702	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":119}
+Inspection.Scope	b	1290	1289	0	Entry	{"nodeId":119}
+Inspection.Scope	b	1290	1289	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1289	702	0	Exit	[Empty]
+Inspection.Scope	h	708	707	2	Exit	[Empty]
+Inspection.Scope	k	1291	696	0	Entry	{"nodeKind":"IdentifierExpression","nodeId":112}
+Inspection.Scope	b	1292	1291	0	Entry	{"nodeId":112}
+Inspection.Scope	b	1292	1291	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1291	696	0	Exit	[Empty]
+Inspection.Scope	k	1293	702	0	Entry	{"nodeKind":"Identifier","nodeId":120}
+Inspection.Scope	b	1294	1293	0	Entry	{"nodeId":120}
+Inspection.Scope	b	1294	1293	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1293	702	0	Exit	[Empty]
+Inspection.Scope	k	1295	696	0	Entry	{"nodeKind":"Identifier","nodeId":113}
+Inspection.Scope	b	1296	1295	0	Entry	{"nodeId":113}
+Inspection.Scope	b	1296	1295	0	Exit	{"Result":"inherited scope"}
+Inspection.Scope	k	1295	696	0	Exit	[Empty]
+Inspection.Scope	h	702	701	2	Exit	[Empty]
+Inspection.Scope	y	767	653	1	Exit	[Empty]
+Inspection.Scope	h	696	695	2	Exit	[Empty]
+Inspection.Scope	y	707	653	2	Exit	[Empty]
+Inspection.Scope	y	701	653	2	Exit	[Empty]
+Inspection.Scope	y	695	653	2	Exit	[Empty]
+Validation	m	1297	653	0	Entry	[Empty]
+Validation	m	1297	653	0	Exit	[Empty]
+Validation	e	653		3	Exit	[Empty]
+Validation	e	1298	1	0	Entry	[Empty]
+Validation	y	1299	1298	0	Entry	[Empty]
+Validation	k	1300	1299	0	Entry	{"numIds":1}
+Validation	k	1300	1299	0	Exit	[Empty]
+Validation	y	1299	1298	0	Exit	[Empty]
+Validation	b	1301	1298	0	Entry	[Empty]
+Validation	k	1302	1301	0	Entry	{"numIds":4}
+Validation	k	1302	1301	0	Exit	[Empty]
+Validation	b	1301	1298	0	Exit	[Empty]
+Validation	g	1303	1298	0	Entry	[Empty]
+Validation	k	1304	1303	0	Entry	{"numIds":0}
+Validation	g	1303	1298	0	Exit	[Empty]
+Validation	h	1305	1298	0	Entry	[Empty]
+Validation	k	1306	1305	0	Entry	{"numIds":0}
+Validation	h	1305	1298	0	Exit	[Empty]
+Validation	e	1298	1	0	Exit	[Empty]
+Validation	e	1		8	Exit	[Empty]

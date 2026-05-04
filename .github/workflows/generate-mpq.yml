@@ -1,0 +1,44 @@
+name: Regenerate M.pq
+
+# Runs whenever .pq function files are pushed to main.
+# Executes M_Creator.py and commits an updated M.pq if anything changed.
+# The [skip ci] tag in the commit message prevents this workflow from
+# re-triggering itself.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "PQ Custom Library/Functions/**"
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run M_Creator.py
+        run: python "PQ Custom Library/M_Creator.py"
+
+      - name: Commit updated M.pq if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet "PQ Custom Library/M.pq" || (
+            git add "PQ Custom Library/M.pq" &&
+            git commit -m "chore: regenerate M.pq [skip ci]" &&
+            git push
+          )
