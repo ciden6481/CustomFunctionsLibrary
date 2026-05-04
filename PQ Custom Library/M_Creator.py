@@ -147,8 +147,8 @@ let
     )[tree],
 
     // --- Build a table from the tree and filter to function .pq files ---------
-    TreeTable     = Table.FromList(RawTree, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
-    Expanded      = Table.ExpandRecordColumn(TreeTable, "Column1", {{"path", "sha", "type"}}, {{"Path", "Sha", "Type"}}),
+    TreeTable = Table.FromRecords(RawTree, {"path", "sha", "type"}, MissingField.UseNull),
+    Expanded  = Table.RenameColumns(TreeTable, {{"path", "Path"}, {"sha", "Sha"}, {"type", "Type"}}),
     FunctionFiles = Table.SelectRows(
         Expanded,
         each [Type] = "blob"
@@ -170,7 +170,7 @@ let
     WithName = Table.AddColumn(
         WithRelPath,
         "Name",
-        each Text.Replace([RelPath], "/", ".", Replacer.ReplaceText)
+        each Text.Replace([RelPath], "/", ".")
     ),
 
     // --- Helper: fetch raw base64 blob content from GitHub --------------------
@@ -217,7 +217,7 @@ let
     ),
 
     // --- Build the output record: {{ "Date.QuarterLabel" = <function>, ... }} --
-    FinalTable   = Table.SelectColumns(WithValue, {{"Name", "Value"}}),
+    FinalTable   = Table.SelectColumns(WithValue, {"Name", "Value"}),
     OutputRecord = Record.FromTable(FinalTable)
 
 in
