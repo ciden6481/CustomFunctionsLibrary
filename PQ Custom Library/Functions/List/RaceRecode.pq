@@ -1,10 +1,11 @@
 let
     // Step 1: Parameter documentation metadata
     metaDocumentation = type function (
-        InputTable as (type table meta [
-            Documentation.FieldCaption = "Input Table",
-            Documentation.FieldDescription = "The table that contains race and ethnicity indicator columns.",
-            Documentation.SampleValues = {"Table with VX_IR_ETHNIC_* fields"},
+
+        colHispFlag as (type text meta [
+            Documentation.FieldCaption = "Hispanic flag Column",
+            Documentation.FieldDescription = "Column name that stores the Hispanic flag, such as VX_IR_ETHNIC_HISP.",
+            Documentation.SampleValues = {"VX_IR_ETHNIC_HISP"},
             Formatting.IsMultiLine = false,
             Formatting.IsCode = false
         ]),
@@ -57,17 +58,17 @@ let
             Formatting.IsMultiLine = false,
             Formatting.IsCode = false
         ])
-    ) as table
+    ) as text
     // Step 2: Function-level documentation
     meta [
         Documentation.Name = "List.RaceRecode",
-        Documentation.Author = "CustomFunctionsLibrary",
+        Documentation.Author = "Win Iden",
         Documentation.LongDescription = "
             <p><b>List.RaceRecode</b></p>
-            <li>Determines race and ethnicity from indicator columns and adds a new <code>Race</code> column.</li>
+            <li>Invoke with Table.AddColumnto determine race and ethnicity from indicator columns.</li>
             <li><b>Parameters:</b></li>
             <ul>
-                <li><b>InputTable</b>: Source table with race and ethnicity indicator columns.</li>
+                <li><b>colHispFlag</b>: Hispanic flag column name.</li>
                 <li><b>colWhite</b>: White indicator column name.</li>
                 <li><b>colBlack</b>: Black/African American indicator column name.</li>
                 <li><b>colHisp</b>: Hispanic indicator column name.</li>
@@ -81,7 +82,7 @@ let
         Documentation.Examples = {
             [
                 Description = "Add a Race column using standard VX_IR_ETHNIC indicator fields.",
-                Code = "List.RaceRecode(SourceTable, \"VX_IR_ETHNIC_1\", \"VX_IR_ETHNIC_2\", \"VX_IR_ETHNIC_3\", \"VX_IR_ETHNIC_4\", \"VX_IR_ETHNIC_5\", \"VX_IR_ETHNIC_6\", \"VX_IR_ETHNIC_7\")",
+                Code = "Table.AddColumn(""Source"", ""Race"", List.RaceRecode([VX_IR_HISP], [VX_IR_ETHNIC_1], [VX_IR_ETHNIC_2], [VX_IR_ETHNIC_3], [VX_IR_ETHNIC_4], [VX_IR_ETHNIC_5], [VX_IR_ETHNIC_6], [VX_IR_ETHNIC_7]))",
                 Result = """Returns SourceTable with a new Race column."""
             ]
         }
@@ -89,7 +90,8 @@ let
 
     // Step 3: Function implementation
     RaceRecode = (
-        InputTable as table,
+
+        colHispFlag as text,
         colWhite as text,
         colBlack as text,
         colHisp as text,
@@ -97,74 +99,20 @@ let
         colAmInAlk as text,
         colNspec as text,
         colHawPac as text
-    ) as table =>
+    ) /*as text*/ =>
         let
-            requiredColumns = {colWhite, colBlack, colHisp, colAsian, colAmInAlk, colNspec, colHawPac},
-            missingColumns = List.Difference(requiredColumns, Table.ColumnNames(InputTable)),
-            validatedTable =
-                if List.IsEmpty(missingColumns) then
-                    InputTable
-                else
-                    error Text.Format(
-                        "Missing required columns in InputTable: #{0}",
-                        {Text.Combine(missingColumns, ", ")}
-                    ),
-            isYes = (value as any) as logical =>
-                if value = null then
-                    false
-                else
-                    Text.Upper(Text.From(value)) = "Y",
-            isNo = (value as any) as logical =>
-                if value = null then
-                    false
-                else
-                    Text.Upper(Text.From(value)) = "N",
-            addedRace = Table.AddColumn(
-                validatedTable,
-                "Race",
-                each
-                    let
-                        whiteYes = isYes(Record.FieldOrDefault(_, colWhite, null)),
-                        blackYes = isYes(Record.FieldOrDefault(_, colBlack, null)),
-                        hispYes = isYes(Record.FieldOrDefault(_, colHisp, null)),
-                        asianYes = isYes(Record.FieldOrDefault(_, colAsian, null)),
-                        amInAlkYes = isYes(Record.FieldOrDefault(_, colAmInAlk, null)),
-                        nspecYes = isYes(Record.FieldOrDefault(_, colNspec, null)),
-                        hawPacYes = isYes(Record.FieldOrDefault(_, colHawPac, null)),
-
-                        whiteNo = isNo(Record.FieldOrDefault(_, colWhite, null)),
-                        blackNo = isNo(Record.FieldOrDefault(_, colBlack, null)),
-                        hispNo = isNo(Record.FieldOrDefault(_, colHisp, null)),
-                        asianNo = isNo(Record.FieldOrDefault(_, colAsian, null)),
-                        amInAlkNo = isNo(Record.FieldOrDefault(_, colAmInAlk, null)),
-                        hawPacNo = isNo(Record.FieldOrDefault(_, colHawPac, null)),
-
-                        markedCount = List.Sum(List.Transform({whiteYes, blackYes, asianYes, amInAlkYes, nspecYes, hawPacYes}, each if _ then 1 else 0)),
-                        noRaceSelected = whiteNo and blackNo and hispNo and asianNo and amInAlkNo and hawPacNo
-                    in
-                        if hispYes then
-                            "Hispanic"
-                        else if noRaceSelected then
-                            "Unknown"
-                        else if nspecYes then
-                            "Not Specified"
-                        else if markedCount >= 2 then
-                            "Two or more"
-                        else if whiteYes then
-                            "White"
-                        else if blackYes then
-                            "Black/African American"
-                        else if asianYes then
-                            "Asian"
-                        else if amInAlkYes then
-                            "American Indian/Alaskan Native"
-                        else if hawPacYes then
-                            "Native Hawaiian/Pacific Islander"
-                        else
-                            "Unknown",
-                type text
-            )
-        in
-            addedRace
+ 
+        
+        addedRace = 
+                if colHisp = "Y" or colHispFlag = "Y" then "Hispanic"
+                else if colNspec = "Y" then "Not Specified"
+                else if List.Count(List.Select({colWhite, colBlack, colAsian, colAmInAlk, colHawPac}, each _ = "Y")) > 1 then "Two or more"
+                else if colWhite = "Y" then "White"
+                else if colBlack = "Y" then "Black/African American"
+                else if colAsian = "Y" then "Asian"
+                else if colAmInAlk = "Y" then "American Indian/Alaskan Native"
+                else if colHawPac = "Y" then "Native Hawaiian/Pacific Islander"
+                else "Unknown"    in
+            addedRace 
 in
     Value.ReplaceType(RaceRecode, metaDocumentation)

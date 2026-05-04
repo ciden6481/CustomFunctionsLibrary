@@ -104,7 +104,7 @@ let
     // Use ?? to supply defaults for optional parameters:
     //   myDefault = param3 ?? true
     // =========================================================================
-    MyFunction = (strm as text) =>
+    STRM2Term = (strm as text) =>
         let
             // ── Your function logic here ──────────────────────────────────
             termNumber = Text.End(strm, 1),
@@ -115,4 +115,4 @@ let
 
 in
     // Bind documentation metadata to the function (required for PQ UI tooltips)
-    Value.ReplaceType(MyFunction, metaDocumentation)
+    Value.ReplaceType(STRM2Term, metaDocumentation)
