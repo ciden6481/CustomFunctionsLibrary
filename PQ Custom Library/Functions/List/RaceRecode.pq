@@ -82,7 +82,7 @@ let
         Documentation.Examples = {
             [
                 Description = "Add a Race column using standard VX_IR_ETHNIC indicator fields.",
-                Code = "Table.AddColumn(""Source"", ""Race"", List.RaceRecode([VX_IR_HISP], [VX_IR_ETHNIC_1], [VX_IR_ETHNIC_2], [VX_IR_ETHNIC_3], [VX_IR_ETHNIC_4], [VX_IR_ETHNIC_5], [VX_IR_ETHNIC_6], [VX_IR_ETHNIC_7]))",
+                Code = "Table.AddColumn(""Source"", ""Race"", M[List.RaceRecode]([VX_IR_HISP], [VX_IR_ETHNIC_1], [VX_IR_ETHNIC_2], [VX_IR_ETHNIC_3], [VX_IR_ETHNIC_4], [VX_IR_ETHNIC_5], [VX_IR_ETHNIC_6], [VX_IR_ETHNIC_7]))",
                 Result = """Returns SourceTable with a new Race column."""
             ]
         }

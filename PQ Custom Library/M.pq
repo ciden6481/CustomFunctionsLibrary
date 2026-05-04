@@ -103,7 +103,10 @@ let
                     Number.IntegerDivide = Number.IntegerDivide,
                     Number.Mod = Number.Mod,
                     Number.ToText = Number.ToText,
+                    Oracle.Database = Oracle.Database,
+                    Table.SelectRows = Table.SelectRows,
                     Text.End = Text.End,
+                    Text.Trim = Text.Trim,
                     Value.ReplaceType = Value.ReplaceType
                     // Web.Contents is intentionally excluded -- it causes a dynamic
                     // data source error in Power BI Service when inside Expression.Evaluate.
