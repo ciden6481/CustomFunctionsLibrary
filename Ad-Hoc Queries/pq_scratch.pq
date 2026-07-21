@@ -1,57 +1,158 @@
 let
-    Source = AllMatchTest,
-    NonEMPLIDCols = List.RemoveItems(Table.ColumnNames(Source), {"EMPLID"}),
-    // AnyTrue can short-circuit once a non-zero value is found in a column.
-    NonMatchCols = List.Select(
-        NonEMPLIDCols,
-        (col) => List.AnyTrue(List.Transform(Table.Column(Source, col), each _ <> null and _ > 0))
-    ),
-    NonMatchTable = Table.SelectColumns(Source, {"EMPLID"} & NonMatchCols),
-    #"Added Custom" = Table.AddColumn(
-        NonMatchTable,
-        "Total",
-        each if List.IsEmpty(NonMatchCols) then 0 else List.Sum(List.RemoveNulls(Record.ToList(Record.SelectFields(_, NonMatchCols)))),
-        type number
-    ),
-    #"Filtered Rows" = Table.SelectRows(#"Added Custom", each [Total] > 0),
-    #"Merged Queries" = Table.NestedJoin(#"Filtered Rows", {"EMPLID"}, sas, {"EMPLID"}, "sas", JoinKind.LeftOuter),
-    #"Merged Queries1" = Table.NestedJoin(#"Merged Queries", {"EMPLID"}, sql, {"EMPLID"}, "sql", JoinKind.LeftOuter),
-    Expandsql = Table.ExpandTableColumn(
-        #"Merged Queries1", "sql", NonMatchCols, List.Transform(NonMatchCols, each Text.Insert(_, 0, "sql."))
-    ),
-    #"Expanded sas" = Table.ExpandTableColumn(
-        Expandsql, "sas", NonMatchCols, List.Transform(NonMatchCols, each Text.Insert(_, 0, "sas."))
-    ),
-    #"Reordered Columns" = Table.ReorderColumns(
-        #"Expanded sas",
+    Source = IR_CLASS_MTG_DETAIL_VW,
+    FilterSTRMandF2 = fnFilterValidSTRM(Source),
+    RemoveUnusedCols = Table.SelectColumns(
+        FilterSTRMandF2,
         {
+            "ACAD_ORG",
+            "CAMPUS",
+            "CATALOG_NBR",
+            "CLASS_NBR",
+            "CLASS_SECTION",
+            "CRSE_ID",
+            "DESCR",
             "EMPLID",
-            "ACADPLAN",
-            "sas.ACADPLAN",
-            "sql.ACADPLAN",
-            "FICE",
-            "sas.FICE",
-            "sql.FICE",
-            "FICE_EXTORG_DESC",
-            "sas.FICE_EXTORG_DESC",
-            "sql.FICE_EXTORG_DESC",
-            "FNAME",
-            "sas.FNAME",
-            "sql.FNAME",
-            "LNAME",
-            "sas.LNAME",
-            "sql.LNAME",
-            "LPCC",
-            "sas.LPCC",
-            "sql.LPCC",
-            "MNAME",
-            "sas.MNAME",
-            "sql.MNAME",
-            "PELLELIG",
-            "sas.PELLELIG",
-            "sql.PELLELIG",
-            "Total"
+            "ENRL_TOT",
+            //"FACILITY_TYPE",
+            "FIRST",
+            "INSTRUCTION_MODE",
+            "LAST",
+            "LOCATION",
+            "SSR_COMPONENT",
+            "STRM",
+            "INSTR_ROLE",
+            "SUBJECT",
+            "UNITS_MINIMUM",
+            "VCCS_EMAIL",
+            "VX_IR_CLS_ATR_XDUL",
+            "VX_IR_CLS_VAL_DED",
+            "VX_IR_CLS_VAL_DLM"
+        }
+    ),
+    //Deduplicate table, but only after removing unused columns to avoid missing duplicates that only differ by the removed columns
+    Deduplicate = Table.Distinct(RemoveUnusedCols),
+    AddClassKey = Table.AddColumn(
+        Deduplicate,
+        "class-key",
+        each Text.Combine({[STRM], Text.From([CLASS_NBR]), [CLASS_SECTION], [SSR_COMPONENT]}, "-"),
+        type text
+    ),
+    RenameCols = Table.RenameColumns(
+        AddClassKey,
+        {
+            {"DESCR", "Class Description"},
+            {"LOCATION", "Class Location"},
+            {"CAMPUS", "Class Campus"},
+            {"INSTRUCTION_MODE", "Class Instruction Mode"},
+            {"SSR_COMPONENT", "Class Component Type"},
+            {"CRSE_ID", "Course ID"},
+            {"SUBJECT", "Subject"},
+            {"CLASS_NBR", "Class Number"},
+            {"CATALOG_NBR", "Catalog Number"},
+            {"CLASS_SECTION", "Class Section"},
+            {"ENRL_TOT", "Enrl Total"},
+            {"UNITS_MINIMUM", "Class Credits"},
+            {"ACAD_ORG", "AcadOrg"},
+            {"FIRST", "Instructor First Name"},
+            {"LAST", "Instructor Last Name"},
+            {"VCCS_EMAIL", "Instructor Email"},
+            {"VX_IR_CLS_VAL_DLM", "Class Delivery Mode"}
+        }
+    ),
+    // Group by class-key, and then filter to PI or, if no PI, keep all. This prevents missing classe info in the fact table.
+    GroupByClass = Table.Group(
+        RenameCols,
+        {"class-key"},
+        {
+            {
+                "All",
+                each _,
+                type table [
+                    AcadOrg = nullable text,
+                    Class Campus = nullable text,
+                    Catalog Number = text,
+                    Class Number = number,
+                    Class Section = text,
+                    Course ID = nullable text,
+                    Class Description = nullable text,
+                    EMPLID = nullable text,
+                    Enrl Total = nullable number,
+                    Instructor First Name = nullable text,
+                    Class Instruction Mode = nullable text,
+                    Instructor Last Name = nullable text,
+                    Class Location = nullable text,
+                    Class Component Type = nullable text,
+                    STRM = text,
+                    INSTR_ROLE = nullable text,
+                    Subject = text,
+                    Class Credits = nullable number,
+                    Instructor Email = nullable text,
+                    VX_IR_CLS_ATR_XDUL = nullable text,
+                    VX_IR_CLS_VAL_DED = nullable text,
+                    Class Delivery Mode = nullable text,
+                    #"class-key" = text
+                ]
+            }
+        }
+    ),
+    FilterPIorAll = (tbl as table) as table =>
+        let
+            piRows = Table.SelectRows(tbl, each [INSTR_ROLE] = "PI"),
+            result = if Table.RowCount(piRows) > 0 then piRows else tbl
+        in
+            result,
+    ApplyFilter = Table.TransformColumns(GroupByClass, {{"All", each FilterPIorAll(_), type table}}),
+    ExpandRows = Table.ExpandTableColumn(
+        ApplyFilter,
+        "All",
+        {
+            "AcadOrg",
+            "Class Campus",
+            "Catalog Number",
+            "Class Number",
+            "Class Section",
+            "Course ID",
+            "Class Description",
+            "EMPLID",
+            "Enrl Total",
+            "Instructor First Name",
+            "Class Instruction Mode",
+            "Instructor Last Name",
+            "Class Location",
+            "Class Component Type",
+            "STRM",
+            "INSTR_ROLE",
+            "Subject",
+            "Class Credits",
+            "Instructor Email",
+            "VX_IR_CLS_ATR_XDUL",
+            "VX_IR_CLS_VAL_DED",
+            "Class Delivery Mode"
+        },
+        {
+            "AcadOrg",
+            "Class Campus",
+            "Catalog Number",
+            "Class Number",
+            "Class Section",
+            "Course ID",
+            "Class Description",
+            "EMPLID",
+            "Enrl Total",
+            "Instructor First Name",
+            "Class Instruction Mode",
+            "Instructor Last Name",
+            "Class Location",
+            "Class Component Type",
+            "STRM",
+            "INSTR_ROLE",
+            "Subject",
+            "Class Credits",
+            "Instructor Email",
+            "VX_IR_CLS_ATR_XDUL",
+            "VX_IR_CLS_VAL_DED",
+            "Class Delivery Mode"
         }
     )
 in
-    #"Reordered Columns"
+    ExpandRows
