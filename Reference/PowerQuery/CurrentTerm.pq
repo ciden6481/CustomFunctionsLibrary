@@ -1,51 +1,54 @@
 let
-    // Function to retrieve the current STRM value from the database
-    output = () =>
+    /*
+        GetCurrentSTRM()
+
+        Returns the active academic term code (STRM) from the IR_STRM_TBL term table.
+
+        Notes:
+        - No input parameters.
+        - If no active term row exists the final indexing step will error; consider using `try GetCurrentSTRM()`
+          or replacing the final lookup with a safe-first-value pattern (`Table.FirstValue`).
+    */
+    GetCurrentSTRM = () =>
         let
-            // Connect to the SQL Server database instance
+            // Capture current local datetime once for consistent comparisons
+            now = DateTime.FixedLocalNow(),
+            // Connect to the SQL Server database instance (environment-specific)
             Source = Sql.Database("IAAS-INSTANTID\CARDS", "DATA"),
             // Access the "IR_STRM_TBL" table in the "dbo" schema
             dbo_IR_STRM_TBL = Source{[Schema = "dbo", Item = "IR_STRM_TBL"]}[Data],
-            // Filter rows where "ACAD_CAREER" equals "CRED"
-            #"Filtered Rows" = Table.SelectRows(dbo_IR_STRM_TBL, each ([ACAD_CAREER] = "CRED")),
-            // Further filter rows where the current date is between "TERM_BEGIN_DT" and "TERM_END_DT"
-            #"Filtered Rows1" = Table.SelectRows(
-                #"Filtered Rows",
-                each [TERM_BEGIN_DT] < DateTime.FixedLocalNow() and [TERM_END_DT] > DateTime.FixedLocalNow()
-            ),
-            // Select only the "STRM" column from the filtered rows
-            #"Removed Other Columns" = Table.SelectColumns(#"Filtered Rows1", {"STRM"}),
-            // Retrieve the first value from the "STRM" column
-            STRM1 = #"Removed Other Columns"{0}[STRM]
+            // Keep only rows where ACAD_CAREER indicates credit-bearing terms
+            FilteredCred = Table.SelectRows(dbo_IR_STRM_TBL, each ([ACAD_CAREER] = "CRED")),
+            // Find rows where the current datetime lies between TERM_BEGIN_DT and TERM_END_DT
+            CurrentTermRows = Table.SelectRows(FilteredCred, each [TERM_BEGIN_DT] < now and [TERM_END_DT] > now),
+            // Keep only the STRM column
+            STRMTable = Table.SelectColumns(CurrentTermRows, {"STRM"}),
+            // Retrieve the first STRM value (will error if table is empty)
+            ResultSTRM = STRMTable{0}[STRM]
         in
-            // Return the "STRM" value
-            STRM1,
-    // Documentation metadata
+            ResultSTRM,
+
+    // Documentation metadata attached to the function for editor/help surfaces
     documentation = [
         Documentation.Name = "GetCurrentSTRM",
-        Documentation.LongDescription = "This function connects to the datamart term table,  filters based on the current date, and retrieves the current 'STRM' value.",
+        Documentation.LongDescription = "Connects to the datamart term table and returns the active academic term code (STRM) where the current local datetime lies between TERM_BEGIN_DT and TERM_END_DT. Filters to ACAD_CAREER = \"CRED\".",
+        Documentation.Description = "Fetches the current 'STRM' value from IR_STRM_TBL based on the current date/time.",
+        Documentation.Category = "Date/Time",
+        Documentation.Source = "IR_STRM_TBL",
         Documentation.Examples = {
             [
-                Description = "Retrieve the current 'STRM' value from the database.",
+                Description = "Return the current STRM value.",
                 Code = "CurrentSTRM = GetCurrentSTRM()",
-                Result = "E.g., 2201"
+                Result = "2201"
             ]
         },
-        //Documentation.Author = "Your Name",
-        //Documentation.Version = "1.0",
-        //Documentation.Category = "Database Functions",
-        Documentation.Source = "IR_STRM_TBL",
-        Documentation.Description = "Fetches the current 'STRM' value from the database based on specific filters."
+        Documentation.Notes = "If no active term is found the function will error when attempting to index the first row; consider using `try GetCurrentSTRM()` or using `Table.FirstValue(STRMTable, null)` to return null instead of an error."
     ]
 in
     Value.ReplaceType(
-    // Replace type of the value
-    output,
-    // Function caller
-    Value.ReplaceMetadata(
-        // Replace metadata of the function
-        Value.Type(output),
-        // Return output type of function
-        documentation
-        // Documentation assigment
-    ))
+        GetCurrentSTRM,
+        Value.ReplaceMetadata(
+            Value.Type(GetCurrentSTRM),
+            documentation
+        )
+    )

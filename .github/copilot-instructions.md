@@ -3,15 +3,16 @@ This repository is a collection of Power Query (M) helpers, DAX snippets, and re
 
 ## Big picture
 This repository and the files within serve three main purposes.
-### Reference library 
-Reusable Power Query and DAX code, patterns, and modules that can be used across projects by pasting directly into Power Query.
-    - The files in `DAX/`, `Other Libraries/`, `PowerQuery/` and `Snippets/` represent the main reference files for reusable code, patterns and modules. These files should be considered relatively stable but may be added to over time as new reusable code is developed.
-### Ad-hoc Development
+
+### [Reference library](../Reference/)
+Reusable Power Query and DAX code, patterns, and modules that can be re-used across projects by adapting them to the specific needs of each query.
+    - The files in `DAX/`, `PowerQuery/`, and `Snippets/` represent possible reference files for reusable code, patterns and modules developed over time and are specific to the tables and sources often used in the projects. These may or may not represent the best logic or processes as they are not often updated.
+    - The `Other Libraries/` directory contains code copied from other sources that may be useful for reference, but should not be considered authoritative or up-to-date.
+### [Ad-hoc Development](../Ad-Hoc Queries/)
 A staging and development area for ad-hoc queries that will ultimately be used in external files.
     - The `Ad-Hoc Queries/` directory is the main working area for developing and refining queries that will be copied to external files. These files are expected to change frequently and represent the primary interface for query development.
-### Power Query Custom Function Libarary 
-Custom function libraries that can be imported and used directly in Excel and Power BI files.
-    - The `PQ Custom Libarary/` directory contains Power Query M modules that are designed to be imported as custom function libraries in Excel and Power BI. The directory also includes a template file (`FunctionTemplate.pq`) that provides a standardized structure for creating new functions, including documentation and examples, as well as scripts for generating new function files based on the template.
+### [Power Query Custom Function Libarary](../Functions/)
+More up-to-date and reusable Power Query M functions and snippets, often developed from ad-hoc queries or the Reference library, that have been refined and optimized for reusability. These should be considered the most authoritative and up-to-date source for reusable Power Query M functions and snippets.
 
 ## Project-specific conventions and patterns
 - File extension: use `.pq` for M-language files and `.dax` for DAX queries and files.
@@ -37,9 +38,7 @@ Custom function libraries that can be imported and used directly in Excel and Po
 - The AI agent will provide guidance on how to fix issues, optimize performance, and ensure that the query adheres to project conventions and patterns.
 - Any improvements to logic, syntax, performance or efficiency that are not specifically asked for should be suggested as part of the assistance.
 ### Power Query Custom Function Libarary development
-- When developing new functions for the custom library, use the `FunctionTemplate.pq` file as a starting point. This template includes sections for function logic, documentation, and examples.
-- The AI agent can assist in filling out the template, ensuring that the function logic is sound, the documentation is clear and comprehensive, and the examples are relevant and illustrative of the function's capabilities.
-- Files developed in the `PQ Custom Libarary/` directory are expected to be more stable and reusable across projects, so the AI agent should focus on creating robust, well-documented functions that adhere to project conventions and patterns.
+- Files developed in the `Functions/` directory are expected to be more stable and reusable across projects, so the AI agent should focus on creating robust, well-documented functions that adhere to project conventions and patterns.
 - Files and subdirectories in the directory are structured and any existing queries used in external files will depend on this structure remaining intact, so any refactoring or restructuring should be done with caution and ideally should maintain the overall organization of the directory.
 
 
