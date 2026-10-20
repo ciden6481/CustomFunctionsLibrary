@@ -1,0 +1,32 @@
+{
+  "templateName": "Page Refreshed Datetime",
+  "parameters": [],
+  "encoding": [
+    {
+      "format": {
+        "formatString": "",
+        "UseParenthesisForNegativeValues": "",
+        "UseThousandSeparator": ""
+      },
+      "objectType": "measure",
+      "name": "Page Refreshed Datetime",
+      "expression": "= \n// https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst\n// Calculates time in Pacific timezone\n\nVAR _utcnow =\n    UTCNOW ()\nVAR _year =\n    YEAR ( _utcnow )\nVAR _utcdate =\n    DATE ( YEAR ( _utcnow ), MONTH ( _utcnow ), DAY ( _utcnow ) ) // DST begins on the second Sunday of March    \nVAR _dstbegins =\n    DATE ( _year, 3, 1 )\n        + MOD ( 8 - WEEKDAY ( DATE ( _year, 3, 1 ) ), 7 ) + 7 // DST ends on the first Sunday of November            \nVAR _dstends =\n    DATE ( _year, 11, 1 )\n        + MOD ( 8 - WEEKDAY ( DATE ( _year, 11, 1 ) ), 7 )\nVAR _IsDST = _utcdate >= _dstbegins\n    && _utcdate < _dstends\nRETURN\n    SWITCH (\n        TRUE,\n        _IsDST, _utcnow - TIME ( 4, 00, 00 ), //For Pacific Timezone\n        _utcnow - TIME ( 5, 00, 00 )\n    )",
+      "description": "Type object description here",
+      "folder": "",
+      "hidden": "false"
+    }
+  ],
+  "tags": [],
+  "authors": [
+    "ciden"
+  ],
+  "instructions": [
+    "Type your instructions here"
+  ],
+  "supportURLs": [
+    "Type support URL here"
+  ],
+  "description": "Type template description here\n\nTemplate created from 'PBI Program Review Dashbo25dbc7b6-262f-492f-9868-5cc334aaf564.pbix'",
+  "buildVersion": "v1.0.0",
+  "schemaVersion": "https://github.com/PowerBI-tips/DAX-Templates/blob/main/schema/v1.ts"
+}

@@ -1,0 +1,26 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+# Ignore individual scratch files (legacy)
+scratch.pq
+scratch2.pq
+scratch3.pq
+scratch.tmdl
+
+# Ignore the entire Ad-Hoc Queries working folder (and its contents)
+# Use the repository root path `/Ad-Hoc Queries/` so the rule is explicit.
+/Ad-Hoc Queries/
+
+
+
+## Visual Studio Code workspace and settings
+# Ignore the workspace folder and VS Code workspace files
+/.vscode/
+*.code-workspace
+
+## Ignore node_modules folder
+/node_modules/
+
+
+
